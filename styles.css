@@ -185,7 +185,7 @@ img { max-width: 100%; height: auto; display: block; }
 .nav-toggle { display: none; background: none; border: 0; cursor: pointer; padding: .5rem; color: var(--text); }
 @media (max-width: 860px) {
   /* Mobile nav: logo centered, hamburger right, both more prominent */
-  .nav {
+  .site-header .nav {
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -193,7 +193,8 @@ img { max-width: 100%; height: auto; display: block; }
     padding: .85rem 0;
     min-height: 64px;
   }
-  .brand {
+  /* Scoped to header brand only — footer brand stays normal */
+  .site-header .brand {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -201,7 +202,7 @@ img { max-width: 100%; height: auto; display: block; }
     font-size: 1.85rem;
     gap: .55rem;
   }
-  .brand-dot {
+  .site-header .brand-dot {
     width: 32px;
     height: 32px;
   }
@@ -240,11 +241,33 @@ img { max-width: 100%; height: auto; display: block; }
   }
   .nav-links.open { display: flex; }
   .nav-links li { padding: .75rem var(--gutter); }
+
+  /* Hero on mobile — detelina above text, smaller padding */
+  .hero { padding: 1.5rem 0 2rem; }
+  .hero-split {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: left;
+  }
+  .hero-clover-solid {
+    order: -1; /* clover above text on mobile */
+    width: 110px;
+    margin: 0 0 .5rem;
+  }
+  .hero-headline {
+    font-size: clamp(1.85rem, 8vw, 2.5rem);
+    max-width: 100%;
+  }
+  .hero-lead {
+    font-size: 1rem;
+  }
+  .hero-cta-row { gap: .75rem; }
+  .hero-cta-row .btn { width: 100%; justify-content: center; }
 }
 @media (max-width: 420px) {
   /* Extra-small phones — slight tightening */
-  .brand { font-size: 1.55rem; }
-  .brand-dot { width: 28px; height: 28px; }
+  .site-header .brand { font-size: 1.55rem; }
+  .site-header .brand-dot { width: 28px; height: 28px; }
 }
 
 /* ----------------- HERO ----------------- */
