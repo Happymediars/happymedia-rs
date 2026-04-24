@@ -125,13 +125,71 @@
   <url><loc>https://happymedia.rs/ru/kontakt.html</loc><lastmod>2026-04-24</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://happymedia.rs/zh/lianxi.html</loc><lastmod>2026-04-24</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
 
-  <!-- Blog (only SR for now) -->
-  <url><loc>https://happymedia.rs/blog.html</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://happymedia.rs/blog-cena-izrade-sajta.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://happymedia.rs/blog-seo-za-male-firme.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://happymedia.rs/blog-google-ads-male-firme.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://happymedia.rs/blog-cena-odrzavanja-sajta.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://happymedia.rs/blog-kako-odabrati-agenciju.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://happymedia.rs/blog-lokalni-seo.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Blog — SR (with EN alternates) -->
+  <url>
+    <loc>https://happymedia.rs/blog.html</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="sr-Latn-RS" href="https://happymedia.rs/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happymedia.rs/en/blog.html"/>
+  </url>
+  <url>
+    <loc>https://happymedia.rs/blog-cena-izrade-sajta.html</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sr-Latn-RS" href="https://happymedia.rs/blog-cena-izrade-sajta.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happymedia.rs/en/blog-website-cost.html"/>
+  </url>
+  <url>
+    <loc>https://happymedia.rs/blog-seo-za-male-firme.html</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sr-Latn-RS" href="https://happymedia.rs/blog-seo-za-male-firme.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happymedia.rs/en/blog-seo-small-business.html"/>
+  </url>
+  <url>
+    <loc>https://happymedia.rs/blog-google-ads-male-firme.html</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sr-Latn-RS" href="https://happymedia.rs/blog-google-ads-male-firme.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happymedia.rs/en/blog-google-ads.html"/>
+  </url>
+  <url>
+    <loc>https://happymedia.rs/blog-cena-odrzavanja-sajta.html</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sr-Latn-RS" href="https://happymedia.rs/blog-cena-odrzavanja-sajta.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happymedia.rs/en/blog-maintenance-cost.html"/>
+  </url>
+  <url>
+    <loc>https://happymedia.rs/blog-kako-odabrati-agenciju.html</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sr-Latn-RS" href="https://happymedia.rs/blog-kako-odabrati-agenciju.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happymedia.rs/en/blog-choosing-agency.html"/>
+  </url>
+  <url>
+    <loc>https://happymedia.rs/blog-lokalni-seo.html</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="sr-Latn-RS" href="https://happymedia.rs/blog-lokalni-seo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://happymedia.rs/en/blog-local-seo.html"/>
+  </url>
+
+  <!-- Blog — EN -->
+  <url><loc>https://happymedia.rs/en/blog.html</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://happymedia.rs/en/blog-website-cost.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://happymedia.rs/en/blog-seo-small-business.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://happymedia.rs/en/blog-google-ads.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://happymedia.rs/en/blog-maintenance-cost.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://happymedia.rs/en/blog-choosing-agency.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://happymedia.rs/en/blog-local-seo.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
 </urlset>
