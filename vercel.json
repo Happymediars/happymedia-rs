@@ -36,7 +36,8 @@
     { "source": "/optimizacija-sajta/", "destination": "/optimizacija-sajta", "permanent": true },
     { "source": "/online-marketing/", "destination": "/online-marketing", "permanent": true },
     { "source": "/odrzavanje-sajta/", "destination": "/odrzavanje-sajta", "permanent": true },
-    { "source": "/priprema-za-stampu/", "destination": "/priprema-za-stampu", "permanent": true },
-    { "source": "/kontakt/", "destination": "/kontakt", "permanent": true }
+    { "source": "/kontakt/", "destination": "/kontakt", "permanent": true },
+    { "source": "/priprema-za-stampu", "destination": "/", "permanent": true },
+    { "source": "/priprema-za-stampu/", "destination": "/", "permanent": true }
   ]
 }
