@@ -12,6 +12,7 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://happymedia.rs/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://happymedia.rs/de/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://happymedia.rs/ru/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://happymedia.rs/zh/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://happymedia.rs/"/>
   </url>
   <url>
@@ -32,6 +33,12 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://happymedia.rs/zh/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 
   <!-- Website development -->
   <url>
@@ -43,10 +50,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://happymedia.rs/en/website-development.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://happymedia.rs/de/webseiten-erstellung.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://happymedia.rs/ru/razrabotka-saytov.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://happymedia.rs/zh/wangzhan-jianshe.html"/>
   </url>
   <url><loc>https://happymedia.rs/en/website-development.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://happymedia.rs/de/webseiten-erstellung.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://happymedia.rs/ru/razrabotka-saytov.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://happymedia.rs/zh/wangzhan-jianshe.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 
   <!-- SEO -->
   <url>
@@ -58,10 +67,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://happymedia.rs/en/seo-services.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://happymedia.rs/de/seo-optimierung.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://happymedia.rs/ru/seo-prodvizhenie.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://happymedia.rs/zh/seo-youhua.html"/>
   </url>
   <url><loc>https://happymedia.rs/en/seo-services.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://happymedia.rs/de/seo-optimierung.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://happymedia.rs/ru/seo-prodvizhenie.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://happymedia.rs/zh/seo-youhua.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 
   <!-- Online marketing -->
   <url>
@@ -73,10 +84,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://happymedia.rs/en/online-marketing.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://happymedia.rs/de/online-marketing.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://happymedia.rs/ru/internet-marketing.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://happymedia.rs/zh/wangluo-yingxiao.html"/>
   </url>
   <url><loc>https://happymedia.rs/en/online-marketing.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://happymedia.rs/de/online-marketing.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://happymedia.rs/ru/internet-marketing.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://happymedia.rs/zh/wangluo-yingxiao.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 
   <!-- Maintenance -->
   <url>
@@ -88,10 +101,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://happymedia.rs/en/website-maintenance.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://happymedia.rs/de/webseiten-wartung.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://happymedia.rs/ru/podderzhka-saytov.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://happymedia.rs/zh/wangzhan-weihu.html"/>
   </url>
   <url><loc>https://happymedia.rs/en/website-maintenance.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://happymedia.rs/de/webseiten-wartung.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://happymedia.rs/ru/podderzhka-saytov.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://happymedia.rs/zh/wangzhan-weihu.html</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
 
   <!-- Contact -->
   <url>
@@ -103,10 +118,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://happymedia.rs/en/contact.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://happymedia.rs/de/kontakt.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://happymedia.rs/ru/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://happymedia.rs/zh/lianxi.html"/>
   </url>
   <url><loc>https://happymedia.rs/en/contact.html</loc><lastmod>2026-04-24</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://happymedia.rs/de/kontakt.html</loc><lastmod>2026-04-24</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
   <url><loc>https://happymedia.rs/ru/kontakt.html</loc><lastmod>2026-04-24</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://happymedia.rs/zh/lianxi.html</loc><lastmod>2026-04-24</lastmod><changefreq>yearly</changefreq><priority>0.7</priority></url>
 
   <!-- Blog (only SR for now) -->
   <url><loc>https://happymedia.rs/blog.html</loc><lastmod>2026-04-24</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
