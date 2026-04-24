@@ -121,30 +121,28 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 1rem 0;
 }
 .brand {
-  font-family: var(--font-heading);
-  font-weight: 700; font-size: 1.25rem; color: var(--text);
-  border-bottom: none; letter-spacing: -0.02em;
-  display: inline-flex; align-items: center; gap: .55rem;
+  font-family: var(--font-display);
+  font-weight: 400; font-size: 1.5rem; color: var(--text);
+  border-bottom: none; letter-spacing: -0.01em;
+  text-transform: lowercase;
+  display: inline-flex; align-items: baseline; gap: .55rem;
+  line-height: 1;
 }
-/* Logo — 4-list detelina (CSS mask; color inherits from --accent-green) */
+.brand::after {
+  content: ".";
+  color: var(--accent);
+  margin-left: -.05em;
+}
+/* Logo — multi-tonal 4-list detelina (4 different greens + cream center) */
 .brand-dot {
-  width: 20px; height: 20px;
+  width: 24px; height: 24px;
   display: inline-block;
-  vertical-align: -4px;
-  background-color: var(--accent-green);
-  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='7' r='4.6'/><circle cx='17' cy='12' r='4.6'/><circle cx='12' cy='17' r='4.6'/><circle cx='7' cy='12' r='4.6'/><circle cx='12' cy='12' r='1.2' fill='white'/></svg>");
-  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='7' r='4.6'/><circle cx='17' cy='12' r='4.6'/><circle cx='12' cy='17' r='4.6'/><circle cx='7' cy='12' r='4.6'/><circle cx='12' cy='12' r='1.2' fill='white'/></svg>");
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  transition: transform .3s ease, background-color .3s ease;
+  align-self: center;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-50 -50 100 100'><circle cx='0' cy='-22' r='22' fill='%235A9D6F'/><circle cx='22' cy='0' r='22' fill='%234D8B5F'/><circle cx='0' cy='22' r='22' fill='%233D7A4E'/><circle cx='-22' cy='0' r='22' fill='%236AAE7F'/><circle cx='0' cy='0' r='5' fill='%23FAF9F5'/></svg>") no-repeat center / contain;
+  transition: transform .3s ease;
 }
 .brand:hover .brand-dot {
   transform: rotate(15deg) scale(1.08);
-  background-color: var(--accent);
 }
 .nav-links {
   list-style: none; margin: 0; padding: 0;
@@ -704,71 +702,63 @@ section { padding: clamp(3rem, 6vw, 5rem) 0; }
   justify-content: center;
   align-items: flex-start;
   gap: clamp(1rem, 3vw, 2.5rem);
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 .team-bar-member {
   text-align: center;
-  width: 88px;
+  width: clamp(110px, 16vw, 160px);
+  flex-shrink: 0;
   text-decoration: none;
   color: inherit;
+  cursor: default;
 }
 .team-bar-member .photo-wrap {
-  width: 72px;
-  height: 72px;
-  margin: 0 auto .5rem;
+  width: clamp(96px, 14vw, 140px);
+  height: clamp(96px, 14vw, 140px);
+  margin: 0 auto .75rem;
   border-radius: 50%;
   overflow: hidden;
   background: var(--surface);
   box-shadow: 0 2px 8px rgba(20,20,19,0.06);
-  transition: box-shadow .25s ease, transform .25s ease;
+  transition: box-shadow .25s ease;
 }
 .team-bar-member:hover .photo-wrap {
   box-shadow: 0 4px 14px rgba(20,20,19,0.12);
-  transform: translateY(-2px);
 }
 .team-bar-member img {
   width: 100%; height: 100%;
   object-fit: cover;
   display: block;
   filter: grayscale(100%) contrast(0.95);
-  transition: filter .3s ease, transform .3s ease;
+  transition: filter .3s ease;
 }
 .team-bar-member:hover img {
   filter: grayscale(0%) contrast(1);
-  transform: scale(1.05);
 }
 .team-bar-member .name {
   font-family: var(--font-heading);
-  font-size: .78rem;
+  font-size: .9rem;
   font-weight: 500;
   color: var(--text);
-  line-height: 1.2;
-  margin: 0 0 .15rem 0;
+  line-height: 1.25;
+  margin: 0 0 .2rem 0;
 }
 .team-bar-member .role {
   font-family: var(--font-heading);
-  font-size: .68rem;
+  font-size: .72rem;
   text-transform: uppercase;
   letter-spacing: .08em;
   color: var(--accent);
   margin: 0;
 }
-.team-bar-cta {
-  text-align: center;
-  margin-top: 1.75rem;
-}
-.team-bar-cta a {
-  font-family: var(--font-heading);
-  font-size: .9rem;
-  color: var(--text-muted);
-  text-decoration: none;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 2px;
-  transition: color .2s ease, border-color .2s ease;
-}
-.team-bar-cta a:hover {
-  color: var(--accent);
-  border-color: var(--accent);
+/* Mobile — allow horizontal scroll instead of wrap, keeps 1-row identity */
+@media (max-width: 540px) {
+  .team-bar .team-bar-row {
+    justify-content: flex-start;
+    padding: 0 var(--gutter);
+    margin: 0 calc(-1 * var(--gutter));
+  }
 }
 
 /* Team — full page (detailed cards) */
@@ -1046,4 +1036,349 @@ section { padding: clamp(3rem, 6vw, 5rem) 0; }
 
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0s !important; transition: none !important; }
+}
+
+/* ========================================================================
+   PHASE 5 — Editorial redesign (dark bands + multi-tonal clover + tagged cards)
+   ======================================================================== */
+
+:root {
+  /* Dark band ink */
+  --ink: #1A1815;
+  --ink-text: #F5F1EA;
+  --ink-muted: #8E8980;
+
+  /* Third accent — warm gold (italic em color, used sparingly) */
+  --accent-gold: #C4A57B;
+
+  /* Multi-tonal greens for hero clover */
+  --leaf-top: #5A9D6F;
+  --leaf-right: #4D8B5F;
+  --leaf-bottom: #3D7A4E;
+  --leaf-left: #6AAE7F;
+}
+
+/* ---- Italic em color variants (sit alongside default terracotta em) ---- */
+h1 em.green, h2 em.green, h3 em.green { color: var(--accent-green); }
+h1 em.gold,  h2 em.gold,  h3 em.gold  { color: var(--accent-gold); }
+html[lang="zh-Hans"] h1 em.green,
+html[lang="zh-Hans"] h2 em.green,
+html[lang="zh-Hans"] h3 em.green { font-style: normal; color: var(--accent-green); }
+html[lang="zh-Hans"] h1 em.gold,
+html[lang="zh-Hans"] h2 em.gold,
+html[lang="zh-Hans"] h3 em.gold { font-style: normal; color: var(--accent-gold); }
+
+/* ---- Dark sections (stats + process) ---- */
+.section-dark {
+  background: var(--ink);
+  color: var(--ink-text);
+  padding: clamp(2.75rem, 5vw, 4rem) 0;
+}
+.section-dark h2,
+.section-dark h3,
+.section-dark h4 { color: var(--ink-text); }
+.section-dark p { color: var(--ink-muted); }
+.section-dark .section-eyebrow {
+  color: var(--ink-muted);
+}
+.section-dark .section-eyebrow::before {
+  background: var(--accent-gold);
+}
+.section-dark a:not(.btn) { color: var(--accent-gold); border-bottom-color: transparent; }
+.section-dark a:not(.btn):hover { border-bottom-color: var(--accent-gold); }
+
+/* Stats band — 4 stats edge-to-edge on dark */
+.stats-band {
+  background: var(--ink);
+  color: var(--ink-text);
+  padding: clamp(2.25rem, 4vw, 3.25rem) 0;
+}
+.stats-band .stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  align-items: end;
+}
+@media (max-width: 720px) {
+  .stats-band .stats-row { grid-template-columns: repeat(2, 1fr); gap: 2rem 1.5rem; }
+}
+.stats-band .stat-num {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  line-height: 1;
+  color: var(--ink-text);
+  letter-spacing: -0.02em;
+  margin: 0 0 .35rem;
+}
+.stats-band .stat-label {
+  font-family: var(--font-heading);
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--ink-muted);
+  margin: 0;
+}
+
+/* Process dark band — 4 columns of steps */
+.process-dark { background: var(--ink); color: var(--ink-text); }
+.process-dark .process-header { max-width: 60ch; margin-bottom: 2.5rem; }
+.process-dark .process-header h2 { color: var(--ink-text); }
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+@media (max-width: 860px) { .process-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .process-grid { grid-template-columns: 1fr; } }
+.process-step { padding-top: 1.25rem; border-top: 1px solid #2D2A26; }
+.process-step .step-num {
+  font-family: var(--font-heading);
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--accent-gold);
+  margin: 0 0 .65rem;
+}
+.process-step h3 {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 .5rem;
+  color: var(--ink-text);
+}
+.process-step p {
+  font-size: .92rem;
+  line-height: 1.55;
+  margin: 0;
+  color: var(--ink-muted);
+}
+
+/* ---- Hero — solid multi-tonal clover (replaces faint deco) ---- */
+.hero-clover-solid {
+  width: clamp(180px, 22vw, 280px);
+  height: auto;
+  display: block;
+  flex-shrink: 0;
+}
+.hero-clover-solid .leaf-top    { fill: var(--leaf-top); }
+.hero-clover-solid .leaf-right  { fill: var(--leaf-right); }
+.hero-clover-solid .leaf-bottom { fill: var(--leaf-bottom); }
+.hero-clover-solid .leaf-left   { fill: var(--leaf-left); }
+.hero-clover-solid .leaf-center { fill: var(--bg); }
+
+.hero-split {
+  display: grid;
+  grid-template-columns: 1.4fr auto;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: center;
+}
+@media (max-width: 860px) {
+  .hero-split { grid-template-columns: 1fr; }
+  .hero-clover-solid { width: 160px; margin: 0 0 .5rem; }
+}
+
+/* Hero eyebrow as PILL (chip) — design uses outlined pill */
+.hero-pills { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+.hero-pill {
+  display: inline-flex; align-items: center;
+  font-family: var(--font-heading);
+  font-size: .68rem; font-weight: 500;
+  text-transform: uppercase; letter-spacing: .14em;
+  color: var(--text-muted);
+  padding: .35rem .85rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+}
+.hero-pill.green { color: var(--accent-green); border-color: var(--accent-green-soft); }
+
+/* CTA primary in hero — design uses BLACK pill, not terracotta */
+.btn-dark {
+  background: var(--ink); color: var(--ink-text);
+  border-bottom: none;
+  box-shadow: 0 2px 8px rgba(20,20,19,0.18);
+}
+.btn-dark:hover {
+  background: #000; color: var(--ink-text);
+  border-bottom: none;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(20,20,19,0.28);
+}
+
+/* ---- Service cards: editorial variant (numbered + tags + footer row) ---- */
+.services-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: end;
+  margin-bottom: 2.5rem;
+}
+.services-header .lead { color: var(--text-muted); font-size: 1rem; line-height: 1.6; max-width: 44ch; }
+@media (max-width: 720px) { .services-header { grid-template-columns: 1fr; gap: 1rem; align-items: start; } }
+
+.cards-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--border);
+}
+@media (max-width: 720px) { .cards-2x2 { grid-template-columns: 1fr; } }
+.cards-2x2 .card-row {
+  position: relative;
+  padding: 2rem 1.75rem;
+  border-bottom: 1px solid var(--border);
+  background: transparent;
+  border-left: none; border-right: none; border-top: none;
+  border-radius: 0;
+  overflow: visible;
+  display: flex; flex-direction: column;
+  transition: background .2s ease;
+}
+.cards-2x2 .card-row:nth-child(odd) { border-right: 1px solid var(--border); }
+@media (max-width: 720px) {
+  .cards-2x2 .card-row:nth-child(odd) { border-right: none; }
+}
+.cards-2x2 .card-row::before { display: none; } /* no left bar on flat layout */
+
+/* Mini-clover indicator in top-right of each card */
+.cards-2x2 .card-clover {
+  position: absolute;
+  top: 1.5rem; right: 1.5rem;
+  width: 32px; height: 32px;
+  margin: 0;
+}
+
+/* Default leaf indicator — green per card position (matches data-leaf) */
+.cards-2x2 .card-row .card-clover .leaf {
+  fill: var(--border);
+  transition: fill .3s ease, transform .3s ease;
+}
+.cards-2x2 .card-row[data-leaf="top"]    .card-clover .top,
+.cards-2x2 .card-row[data-leaf="right"]  .card-clover .right,
+.cards-2x2 .card-row[data-leaf="bottom"] .card-clover .bottom,
+.cards-2x2 .card-row[data-leaf="left"]   .card-clover .left {
+  fill: var(--accent-green);
+}
+
+/* HOVER — full dark inversion (cream → ink) */
+.cards-2x2 .card-row:hover {
+  background: var(--ink);
+  color: var(--ink-text);
+  transform: none;
+  box-shadow: none;
+}
+.cards-2x2 .card-row:hover h3 { color: var(--ink-text); }
+.cards-2x2 .card-row:hover p { color: var(--ink-muted); }
+.cards-2x2 .card-row:hover .card-num { color: var(--ink-muted); }
+.cards-2x2 .card-row:hover .card-tag {
+  background: transparent;
+  border-color: #3A3631;
+  color: var(--ink-muted);
+}
+.cards-2x2 .card-row:hover .card-bottom { border-top-color: #3A3631; }
+.cards-2x2 .card-row:hover .card-link {
+  color: var(--ink-text);
+  border-bottom-color: transparent;
+}
+.cards-2x2 .card-row:hover .card-link:hover { border-bottom-color: var(--ink-text); }
+/* Clover on dark hover — soft grey base + lighter green for highlighted leaf */
+.cards-2x2 .card-row:hover .card-clover .leaf { fill: #3A3631; }
+.cards-2x2 .card-row:hover[data-leaf="top"]    .card-clover .top,
+.cards-2x2 .card-row:hover[data-leaf="right"]  .card-clover .right,
+.cards-2x2 .card-row:hover[data-leaf="bottom"] .card-clover .bottom,
+.cards-2x2 .card-row:hover[data-leaf="left"]   .card-clover .left {
+  fill: var(--leaf-top); /* lighter green pops on dark */
+}
+/* Price stays green on dark */
+.cards-2x2 .card-row:hover .card-price { color: var(--leaf-top); }
+.card-num {
+  font-family: var(--font-heading);
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--text-muted);
+  margin: 0 0 .75rem;
+}
+.cards-2x2 .card-row h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.4rem, 2.4vw, 1.85rem);
+  letter-spacing: -0.01em;
+  margin: 0 0 .65rem;
+  color: var(--text);
+}
+.cards-2x2 .card-row p {
+  color: var(--text-muted);
+  font-size: .96rem;
+  line-height: 1.55;
+  margin: 0 0 1rem;
+  max-width: 44ch;
+}
+.card-tags { display: flex; gap: .4rem; flex-wrap: wrap; margin: 0 0 1.25rem; }
+.card-tag {
+  font-family: var(--font-heading);
+  font-size: .65rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--text-muted);
+  padding: .3rem .65rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+}
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+  margin-top: auto;
+}
+.card-bottom .card-price { margin: 0; }
+.card-bottom .card-link { color: var(--text-muted); border-bottom: 1px solid transparent; }
+.card-bottom .card-link:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* ---- Reviews stripe (cream, with serif H2 + 3 review cards) ---- */
+.reviews-stripe { padding: clamp(3rem, 6vw, 5rem) 0; }
+.reviews-head {
+  display: flex; justify-content: space-between; align-items: end;
+  flex-wrap: wrap; gap: 1rem;
+  margin-bottom: 2rem;
+}
+.reviews-head h2 { margin: 0; }
+.reviews-head .reviews-meta {
+  font-family: var(--font-heading);
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--text-muted);
+}
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+@media (max-width: 860px) { .reviews-grid { grid-template-columns: 1fr; } }
+.review-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+}
+.review-card .stars { color: var(--accent); font-size: .85rem; margin-bottom: .65rem; }
+.review-card blockquote {
+  margin: 0 0 1rem; font-size: 1rem; line-height: 1.55;
+  color: var(--text); font-style: normal;
+}
+.review-card .reviewer {
+  font-family: var(--font-heading);
+  font-weight: 500; font-size: .92rem;
+  color: var(--text); margin: 0;
+}
+.review-card .reviewer-meta {
+  font-family: var(--font-heading);
+  font-size: .75rem; color: var(--text-muted);
+  margin: .15rem 0 0;
 }

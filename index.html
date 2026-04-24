@@ -47,7 +47,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=4">
 
   <!-- JSON-LD: Organization -->
   <script type="application/ld+json">
@@ -220,154 +220,207 @@
 
   <main id="main">
 
-    <!-- HERO — Phase 4A editorial redesign -->
+    <!-- HERO — Phase 5 editorial redesign: split (text + solid clover) -->
     <section class="hero">
-      <svg class="hero-clover" aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <g fill="currentColor">
-          <circle cx="100" cy="55" r="38"/>
-          <circle cx="145" cy="100" r="38"/>
-          <circle cx="100" cy="145" r="38"/>
-          <circle cx="55" cy="100" r="38"/>
-        </g>
-      </svg>
       <div class="container">
-        <p class="hero-eyebrow">Digitalna agencija · Beograd · od 2010.</p>
-        <h1 class="hero-headline">
-          Sreća dolazi u <em>četiri lista</em>.<span class="line-2">Rast dolazi u <em>četiri kanala</em>.</span>
-        </h1>
-        <p class="hero-lead">Izrada sajtova, SEO optimizacija, marketing kampanje i održavanje — pod jednim krovom. Od 2010. godine pomažemo firmama u Srbiji i regionu da rastu online, jasno i merljivo.</p>
-        <div class="hero-cta-row">
-          <a href="kontakt.html" class="btn btn-primary">Zakaži besplatne konsultacije →</a>
-          <a href="#usluge" class="btn btn-secondary">Pogledaj usluge</a>
-        </div>
-
-        <div class="stats" aria-label="Rezultati u brojevima">
-          <div><div class="stat-num">15+</div><div class="stat-label">godina iskustva</div></div>
-          <div><div class="stat-num">300+</div><div class="stat-label">izrađenih sajtova</div></div>
-          <div><div class="stat-num">4.9/5</div><div class="stat-label">ocena klijenata</div></div>
-          <div><div class="stat-num">24/7</div><div class="stat-label">tehnička podrška</div></div>
+        <div class="hero-split">
+          <div class="hero-text">
+            <div class="hero-pills">
+              <span class="hero-pill green">Beograd · od 2010</span>
+              <span class="hero-pill">Agencija od 2010</span>
+            </div>
+            <h1 class="hero-headline">
+              Sreća dolazi u <em class="green">četiri lista</em>.<span class="line-2">Rast dolazi u četiri <em>kanala</em>.</span>
+            </h1>
+            <p class="hero-lead">Izrada sajtova, SEO, plaćene kampanje i AI automatizacija — četiri discipline, jedan tim, merljiv rezultat. 15+ godina pravimo da firme u Srbiji rastu online.</p>
+            <div class="hero-cta-row">
+              <a href="kontakt.html" class="btn btn-dark">Zakaži besplatne konsultacije →</a>
+              <a href="#usluge" class="btn btn-secondary">Pogledaj usluge ↓</a>
+            </div>
+          </div>
+          <svg class="hero-clover-solid" aria-hidden="true" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle class="leaf-top"    cx="0"   cy="-22" r="22"/>
+            <circle class="leaf-right"  cx="22"  cy="0"   r="22"/>
+            <circle class="leaf-bottom" cx="0"   cy="22"  r="22"/>
+            <circle class="leaf-left"   cx="-22" cy="0"   r="22"/>
+            <circle class="leaf-center" cx="0"   cy="0"   r="5"/>
+          </svg>
         </div>
       </div>
     </section>
 
-    <!-- SERVICES -->
+    <!-- STATS BAND — dark editorial bar -->
+    <section class="stats-band" aria-label="Rezultati u brojevima">
+      <div class="container">
+        <div class="stats-row">
+          <div><p class="stat-num">15+</p><p class="stat-label">godina iskustva</p></div>
+          <div><p class="stat-num">300+</p><p class="stat-label">izrađenih sajtova</p></div>
+          <div><p class="stat-num">4.9/5</p><p class="stat-label">ocena klijenata</p></div>
+          <div><p class="stat-num">24/7</p><p class="stat-label">tehnička podrška</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES — 4 channels in 2×2 editorial grid (AI as 4th channel) -->
     <section id="usluge">
       <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Usluge</p>
-          <h2>Sve što vam treba za ozbiljno online prisustvo.</h2>
-          <p class="section-lead">Od dizajna i izrade sajta do SEO-a i plaćenih kampanja — vodimo ceo proces, ili radimo tačno onaj deo koji vam treba.</p>
+        <div class="services-header">
+          <div>
+            <p class="section-eyebrow">Usluge</p>
+            <h2>Četiri lista, <em class="green">jedan proces</em>.</h2>
+          </div>
+          <p class="lead">Vodimo ceo proces od ideje do rezultata, ili radimo tačno onaj deo koji vam treba. Transparentno, bez "crne kutije" — u direktnoj komunikaciji.</p>
         </div>
 
-        <div class="grid">
-          <article class="card" data-leaf="top">
+        <div class="cards-2x2">
+          <article class="card-row" data-leaf="top">
             <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
               <circle class="leaf top"    cx="28" cy="14" r="11"/>
               <circle class="leaf right"  cx="42" cy="28" r="11"/>
               <circle class="leaf bottom" cx="28" cy="42" r="11"/>
               <circle class="leaf left"   cx="14" cy="28" r="11"/>
             </svg>
+            <p class="card-num">01 / 04</p>
             <h3>Izrada sajtova</h3>
-            <p class="card-price">od 380 €</p>
-            <p>Profesionalni sajtovi sa responsive dizajnom, online prodavnicama i SEO osnovama — temelj svakog ozbiljnog online prisustva.</p>
-            <a href="izrada-sajtova.html" class="card-link">Saznaj više →</a>
+            <p>Responsive dizajn, online prodavnice, SEO osnova i custom landing strane do kompleksnog web shop-a.</p>
+            <div class="card-tags">
+              <span class="card-tag">Responsive</span>
+              <span class="card-tag">Web</span>
+              <span class="card-tag">Shops</span>
+            </div>
+            <div class="card-bottom">
+              <p class="card-price">od 380 €</p>
+              <a href="izrada-sajtova.html" class="card-link">Saznaj više →</a>
+            </div>
           </article>
 
-          <article class="card" data-leaf="right">
+          <article class="card-row" data-leaf="right">
             <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
               <circle class="leaf top"    cx="28" cy="14" r="11"/>
               <circle class="leaf right"  cx="42" cy="28" r="11"/>
               <circle class="leaf bottom" cx="28" cy="42" r="11"/>
               <circle class="leaf left"   cx="14" cy="28" r="11"/>
             </svg>
+            <p class="card-num">02 / 04</p>
             <h3>SEO optimizacija</h3>
-            <p class="card-price">od 300 € / mesec</p>
             <p>Analiza ključnih reči, on-page i tehnički SEO, link building — da se rangirate za termine koji donose klijente.</p>
-            <a href="optimizacija-sajta.html" class="card-link">Saznaj više →</a>
+            <div class="card-tags">
+              <span class="card-tag">Keywords</span>
+              <span class="card-tag">On-page</span>
+              <span class="card-tag">Linkbuild</span>
+            </div>
+            <div class="card-bottom">
+              <p class="card-price">od 300 € / mes.</p>
+              <a href="optimizacija-sajta.html" class="card-link">Saznaj više →</a>
+            </div>
           </article>
 
-          <article class="card" data-leaf="bottom">
+          <article class="card-row" data-leaf="bottom">
             <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
               <circle class="leaf top"    cx="28" cy="14" r="11"/>
               <circle class="leaf right"  cx="42" cy="28" r="11"/>
               <circle class="leaf bottom" cx="28" cy="42" r="11"/>
               <circle class="leaf left"   cx="14" cy="28" r="11"/>
             </svg>
-            <h3>Marketing</h3>
-            <p class="card-price">od 150 € / mesec</p>
-            <p>Google Ads, Facebook i Instagram kampanje — kreativa, setup, optimizacija i izveštaji iz Google Analytics-a.</p>
-            <a href="online-marketing.html" class="card-link">Saznaj više →</a>
+            <p class="card-num">03 / 04</p>
+            <h3>Online marketing</h3>
+            <p>Google Ads, Facebook i Instagram kampanje. Kreativa, setup, optimizacija i izveštaji iz GA4.</p>
+            <div class="card-tags">
+              <span class="card-tag">Google Ads</span>
+              <span class="card-tag">Meta</span>
+              <span class="card-tag">GA4</span>
+            </div>
+            <div class="card-bottom">
+              <p class="card-price">od 150 € / mes.</p>
+              <a href="online-marketing.html" class="card-link">Saznaj više →</a>
+            </div>
           </article>
 
-          <article class="card" data-leaf="left">
+          <article class="card-row" data-leaf="left">
             <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
               <circle class="leaf top"    cx="28" cy="14" r="11"/>
               <circle class="leaf right"  cx="42" cy="28" r="11"/>
               <circle class="leaf bottom" cx="28" cy="42" r="11"/>
               <circle class="leaf left"   cx="14" cy="28" r="11"/>
             </svg>
-            <h3>Održavanje</h3>
-            <p class="card-price">od 30 € / mesec</p>
-            <p>Administracija sadržaja, sigurnosne zakrpe, bekapovi i tehnička podrška — sajt radi dok vi radite svoj posao.</p>
-            <a href="odrzavanje-sajta.html" class="card-link">Saznaj više →</a>
+            <p class="card-num">04 / 04</p>
+            <h3>AI automatizacija</h3>
+            <p>Chatbotovi, automatizacija procesa, AI-generisani sadržaj. Ušteda vremena na rutinskim zadacima.</p>
+            <div class="card-tags">
+              <span class="card-tag">Bots</span>
+              <span class="card-tag">Kontent</span>
+              <span class="card-tag">Custom</span>
+            </div>
+            <div class="card-bottom">
+              <p class="card-price">od 200 € / mes.</p>
+              <a href="ai-automatizacija.html" class="card-link">Saznaj više →</a>
+            </div>
           </article>
-
         </div>
       </div>
     </section>
 
-    <!-- AI TEASER — Phase 4C, "centar koji povezuje" -->
-    <section>
+    <!-- PROCESS — dark editorial band -->
+    <section class="section-dark process-dark">
       <div class="container">
-        <div class="ai-teaser">
-          <p class="eyebrow">AI infrastruktura</p>
-          <h2>Centar koji povezuje <em>četiri kanala</em>.</h2>
-          <p>AI nije peti kanal. To je sloj iznad svake od naših 4 usluga — ubrzava produkciju 3–5×, automatizuje repetitivne radnje, čini sve merljivijim. Ne hype, ne magija. Konkretni alati za konkretne sate.</p>
-          <a href="ai-automatizacija.html" class="btn btn-green">Saznaj kako AI radi za vas →</a>
+        <div class="process-header">
+          <p class="section-eyebrow">Kako radimo</p>
+          <h2>Predvidiv proces. <em class="gold">Bez iznenađenja</em>.</h2>
+        </div>
+        <div class="process-grid">
+          <div class="process-step">
+            <p class="step-num">Korak 01</p>
+            <h3>Besplatne konsultacije</h3>
+            <p>Razgovaramo o ciljevima pre bilo kakve ponude. 30 minuta, bez obaveze.</p>
+          </div>
+          <div class="process-step">
+            <p class="step-num">Korak 02</p>
+            <h3>Jasna ponuda</h3>
+            <p>Fiksne cene po koracima. Bez skrivenih troškova ili "extra" fakturi.</p>
+          </div>
+          <div class="process-step">
+            <p class="step-num">Korak 03</p>
+            <h3>Dizajn i razvoj</h3>
+            <p>U direktnoj komunikaciji sa nama, bez "crne kutije". Info na svaku tačku.</p>
+          </div>
+          <div class="process-step">
+            <p class="step-num">Korak 04</p>
+            <h3>Lansiranje i rast</h3>
+            <p>SEO, kampanje, održavanje. Mesečni izveštaji iz GA4 i Search Console.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- PROCESS -->
-    <section style="background: var(--surface-alt);">
+    <!-- REVIEWS — cream stripe with serif headline -->
+    <section class="reviews-stripe">
       <div class="container">
-        <div class="two-col">
+        <div class="reviews-head">
           <div>
-            <p class="section-eyebrow">Kako radimo</p>
-            <h2>Proces koji je predvidiv i bez iznenađenja.</h2>
-            <ul class="feature-list">
-              <li>Besplatne konsultacije — razgovaramo o ciljevima pre bilo kakve ponude</li>
-              <li>Jasna ponuda sa rokovima i isporukama po koracima</li>
-              <li>Dizajn i razvoj u direktnoj komunikaciji — bez "crne kutije"</li>
-              <li>Lansiranje, pa nastavak: SEO, kampanje, održavanje</li>
-              <li>Mesečni izveštaji iz Google Analytics-a i Search Console</li>
-            </ul>
-            <a href="kontakt.html" class="btn btn-primary">Započni projekat →</a>
+            <p class="section-eyebrow">Google review</p>
+            <h2><em class="green">5.0</em> ★ na Google-u.</h2>
           </div>
-          <div>
-            <p class="section-eyebrow" style="margin-bottom:1rem;">Klijenti o nama · <a href="https://maps.app.goo.gl/Vhd9KJZTwp1xYk1q7" rel="noopener" style="color:var(--accent);">5.0 ★ na Google-u</a></p>
-            <div class="card" style="padding:1.5rem; margin-bottom:.75rem;">
-              <div style="color:var(--accent); font-size:.9rem; margin-bottom:.5rem;" aria-label="5 od 5 zvezdica">★★★★★</div>
-              <blockquote style="font-size:1.05rem; line-height:1.55; margin:0; color:var(--text);">
-                "Ozbiljna kompanija. Svi moji zahtevi su ispunjeni. Veoma sam zadovoljan."
-              </blockquote>
-              <p style="margin-top:.75rem; font-family:var(--font-heading); font-weight:500; color:var(--text); font-size:.92rem;">Dušan Marković</p>
-            </div>
-            <div class="card" style="padding:1.5rem; margin-bottom:.75rem;">
-              <div style="color:var(--accent); font-size:.9rem; margin-bottom:.5rem;" aria-label="5 od 5 zvezdica">★★★★★</div>
-              <blockquote style="font-size:1.05rem; line-height:1.55; margin:0; color:var(--text);">
-                "Zadovoljan u svakom pogledu, svaka preporuka!"
-              </blockquote>
-              <p style="margin-top:.75rem; font-family:var(--font-heading); font-weight:500; color:var(--text); font-size:.92rem;">Milan Damnjanović</p>
-            </div>
-            <div class="card" style="padding:1.5rem;">
-              <div style="color:var(--accent); font-size:.9rem; margin-bottom:.5rem;" aria-label="5 od 5 zvezdica">★★★★★</div>
-              <blockquote style="font-size:1.05rem; line-height:1.55; margin:0; color:var(--text);">
-                "Sve pohvale za korektnu i stručnu saradnju!"
-              </blockquote>
-              <p style="margin-top:.75rem; font-family:var(--font-heading); font-weight:500; color:var(--text); font-size:.92rem;">Tajci Lalić</p>
-            </div>
-          </div>
+          <p class="reviews-meta"><a href="https://maps.app.goo.gl/Vhd9KJZTwp1xYk1q7" rel="noopener">Sa zadovoljnih klijenata →</a></p>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="stars" aria-label="5 od 5 zvezdica">★★★★★</div>
+            <blockquote>"Ozbiljna kompanija. Svi moji zahtevi su ispunjeni. Veoma sam zadovoljan."</blockquote>
+            <p class="reviewer">Dušan Marković</p>
+            <p class="reviewer-meta">Klijent · 2017.</p>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 od 5 zvezdica">★★★★★</div>
+            <blockquote>"Zadovoljan u svakom pogledu, svaka preporuka!"</blockquote>
+            <p class="reviewer">Milan Damnjanović</p>
+            <p class="reviewer-meta">Klijent · 2017.</p>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 od 5 zvezdica">★★★★★</div>
+            <blockquote>"Sve pohvale za korektnu i stručnu saradnju!"</blockquote>
+            <p class="reviewer">Tajci Lalić</p>
+            <p class="reviewer-meta">Klijent · 2014.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -393,33 +446,32 @@
         <p class="team-bar-sub">Tim od petoro stalnih saradnika sa preko 15 godina iskustva.</p>
       </div>
       <div class="team-bar-row">
-        <a href="/nas-tim.html" class="team-bar-member" itemscope itemtype="https://schema.org/Person">
+        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person">
           <div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Marko-Covic.png" alt="Marko Čović — CEO" itemprop="image" loading="lazy" width="500" height="500"></div>
           <p class="name" itemprop="name">Marko Čović</p>
           <p class="role" itemprop="jobTitle">CEO</p>
-        </a>
-        <a href="/nas-tim.html" class="team-bar-member" itemscope itemtype="https://schema.org/Person">
+        </div>
+        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person">
           <div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Natasa-Vujovic.png" alt="Nataša Vujović — Programer" itemprop="image" loading="lazy" width="500" height="500"></div>
           <p class="name" itemprop="name">Nataša Vujović</p>
           <p class="role" itemprop="jobTitle">Programer</p>
-        </a>
-        <a href="/nas-tim.html" class="team-bar-member" itemscope itemtype="https://schema.org/Person">
+        </div>
+        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person">
           <div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Danijela-Maksimovic.png" alt="Danijela Maksimović — Web dizajner" itemprop="image" loading="lazy" width="500" height="500"></div>
           <p class="name" itemprop="name">Danijela Maksimović</p>
           <p class="role" itemprop="jobTitle">Web dizajner</p>
-        </a>
-        <a href="/nas-tim.html" class="team-bar-member" itemscope itemtype="https://schema.org/Person">
+        </div>
+        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person">
           <div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Nebojsa-Jankovic-2.png" alt="Nebojša Janković — YouTube specialist" itemprop="image" loading="lazy" width="500" height="500"></div>
           <p class="name" itemprop="name">Nebojša Janković</p>
           <p class="role" itemprop="jobTitle">YouTube specialist</p>
-        </a>
-        <a href="/nas-tim.html" class="team-bar-member" itemscope itemtype="https://schema.org/Person">
+        </div>
+        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person">
           <div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Ana-Covic.png" alt="Ana Čović — Administracija" itemprop="image" loading="lazy" width="500" height="500"></div>
           <p class="name" itemprop="name">Ana Čović</p>
           <p class="role" itemprop="jobTitle">Administracija</p>
-        </a>
+        </div>
       </div>
-      <p class="team-bar-cta"><a href="/nas-tim.html">Upoznajte ceo tim →</a></p>
     </div>
   </section>
 
