@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Explicitno dozvoli ključne stranice
+Allow: /izrada-sajtova/
+Allow: /optimizacija-sajta/
+Allow: /online-marketing/
+Allow: /odrzavanje-sajta/
+Allow: /priprema-za-stampu/
+Allow: /kontakt/
+
+# Sitemap
+Sitemap: https://happymedia.rs/sitemap.xml
