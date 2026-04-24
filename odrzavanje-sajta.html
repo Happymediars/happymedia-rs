@@ -29,19 +29,42 @@
     "serviceType": "Održavanje sajta",
     "name": "Održavanje sajta",
     "provider": { "@type": "Organization", "@id": "https://happymedia.rs/#organization", "name": "Happy Media" },
-    "areaServed": { "@type": "Country", "name": "Srbija" },
+    "areaServed": [
+      { "@type": "Country", "name": "Srbija" },
+      { "@type": "City", "name": "Beograd" },
+      { "@type": "City", "name": "Novi Sad" }
+    ],
     "url": "https://happymedia.rs/odrzavanje-sajta/",
-    "description": "Sigurnosne zakrpe, bekapovi, administracija sadržaja, tehnička podrška.",
-    "offers": {
-      "@type": "Offer",
-      "price": "30",
-      "priceCurrency": "EUR",
-      "priceSpecification": { "@type": "UnitPriceSpecification", "price": "30", "priceCurrency": "EUR", "unitText": "MONTH" },
-      "availability": "https://schema.org/InStock"
-    },
+    "description": "Sigurnosne zakrpe, bekapovi, administracija sadržaja, tehnička podrška i hosting monitoring za WordPress sajtove.",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Basic — održavanje",
+        "description": "Mesečna ažuriranja, nedeljni bekap, 1 sat administracije, email podrška",
+        "price": "30",
+        "priceCurrency": "EUR",
+        "priceSpecification": { "@type": "UnitPriceSpecification", "price": "30", "priceCurrency": "EUR", "unitText": "MONTH" },
+        "availability": "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        "name": "Pro — održavanje",
+        "description": "Nedeljna ažuriranja, dnevni bekap, 3 sata administracije, email + telefon podrška",
+        "price": "60",
+        "priceCurrency": "EUR",
+        "priceSpecification": { "@type": "UnitPriceSpecification", "price": "60", "priceCurrency": "EUR", "unitText": "MONTH" },
+        "availability": "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        "name": "Business — održavanje",
+        "description": "Dedikovani menadžer, 24/7 hitne intervencije, SLA 99.9 posto uptime",
+        "availability": "https://schema.org/InStock"
+      }
+    ],
     "audience": {
       "@type": "BusinessAudience",
-      "audienceType": "Vlasnici WordPress sajtova koji žele tehničko održavanje i sigurnost"
+      "audienceType": "Vlasnici WordPress sajtova u Srbiji koji žele tehničko održavanje i sigurnost bez angažovanja internog IT-a"
     },
     "dateModified": "2026-04-24"
   }
@@ -54,6 +77,35 @@
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Početna", "item": "https://happymedia.rs/" },
       { "@type": "ListItem", "position": 2, "name": "Održavanje sajta", "item": "https://happymedia.rs/odrzavanje-sajta/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Koliko košta održavanje sajta?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Basic paket — 30 EUR mesečno (mesečna ažuriranja, nedeljni bekap, 1 sat administracije). Pro paket — 60 EUR mesečno (nedeljna ažuriranja, dnevni bekap, 3 sata administracije). Business paket — po dogovoru za kompanije sa 24/7 potrebama." }
+      },
+      {
+        "@type": "Question",
+        "name": "Šta je uključeno u održavanje?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ažuriranje WordPress jezgra, plugin-ova i tema. Bekapovi van servera. Monitoring bezbednosti i uptime-a. Administracija sadržaja (blog postovi, slike, izmene) do određenog broja sati mesečno. Tehnička podrška putem email-a (Pro dodaje telefon)." }
+      },
+      {
+        "@type": "Question",
+        "name": "Da li radite održavanje sajtova koje niste vi izradili?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Da, preuzimamo i WordPress sajtove koje su pravili drugi. Pre potpisivanja ugovora radimo tehnički pregled da procenimo stanje — ako je potrebno krpljenje postojećih problema, nudimo zasebnu jednokratnu stavku." }
+      },
+      {
+        "@type": "Question",
+        "name": "Šta se dešava ako sajt padne?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Basic i Pro klijenti — reakcija u radnom vremenu (Pon–Pet 09–17). Business klijenti — 24/7 hitne intervencije sa SLA 99.9 posto uptime. Bekap oporavak u roku od 2 sata u slučaju ozbiljnog incidenta." }
+      }
     ]
   }
   </script>
@@ -84,6 +136,26 @@
         <span class="price-tag">Već od 30 € / mesec</span>
         <h1>Održavanje sajta bez briga.</h1>
         <p class="hero-lead">Sajt je živ projekat — treba mu redovno ažuriranje, bekapovi i brza reakcija kad nešto krene loše. Mi to radimo u pozadini dok vi radite svoj posao.</p>
+
+        <dl class="answer-grid" aria-label="Ključne informacije o održavanju sajta">
+          <div class="answer-card">
+            <dt>Šta prodajemo</dt>
+            <dd>Sigurnosna ažuriranja, bekapovi van servera, administracija sadržaja, tehnička podrška i hosting monitoring za WordPress sajtove.</dd>
+          </div>
+          <div class="answer-card">
+            <dt>Za koga je</dt>
+            <dd>Vlasnici WordPress sajtova u Srbiji koji nemaju internog IT-a a žele da sajt radi stabilno, bezbedno i brzo.</dd>
+          </div>
+          <div class="answer-card">
+            <dt>Koliko košta</dt>
+            <dd>Basic <strong>30 €/mesec</strong>, Pro <strong>60 €/mesec</strong>, Business <strong>po dogovoru</strong>. Bez ugovorne obaveze — mesečno naplaćivanje.</dd>
+          </div>
+          <div class="answer-card">
+            <dt>Kako funkcioniše</dt>
+            <dd>1) Tehnički pregled postojećeg sajta → 2) Setup monitoring-a i bekap sistema → 3) Mesečni ciklus ažuriranja → 4) Izveštaj o stanju sajta.</dd>
+          </div>
+        </dl>
+
         <div class="hero-cta-row">
           <a href="kontakt.html" class="btn btn-primary">Zakaži konsultacije →</a>
           <a href="#paketi" class="btn btn-secondary">Pogledaj pakete</a>
@@ -138,39 +210,59 @@
           <p class="section-eyebrow">Paketi</p>
           <h2>Transparentne cene, bez skrivenih stavki.</h2>
         </div>
+        <table class="pricing-table" aria-label="Paketi održavanja sajta sa cenama">
+          <thead>
+            <tr>
+              <th scope="col">Paket</th>
+              <th scope="col">Ažuriranja</th>
+              <th scope="col">Bekap</th>
+              <th scope="col">Administracija</th>
+              <th scope="col">Podrška</th>
+              <th scope="col">Cena</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Basic</th>
+              <td>mesečno</td>
+              <td>nedeljni</td>
+              <td>1 sat / mesec</td>
+              <td>email</td>
+              <td class="price-col">30 € / mesec</td>
+            </tr>
+            <tr>
+              <th scope="row">Pro</th>
+              <td>nedeljno</td>
+              <td>dnevni</td>
+              <td>3 sata / mesec</td>
+              <td>email + telefon</td>
+              <td class="price-col">60 € / mesec</td>
+            </tr>
+            <tr>
+              <th scope="row">Business</th>
+              <td>po potrebi</td>
+              <td>dnevni + real-time</td>
+              <td>neograničeno*</td>
+              <td>24/7 + SLA</td>
+              <td class="price-col">po dogovoru</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="color:var(--text-muted); font-size:.9rem; margin-top:1rem;">* Business: neograničene manje izmene, mesečni strateški poziv, dedikovani menadžer projekta.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Česta pitanja</p>
+          <h2>Najčešća pitanja o održavanju sajta.</h2>
+        </div>
         <div class="grid">
-          <div class="card">
-            <span class="price-tag">30 € / mesec</span>
-            <h3>Basic</h3>
-            <ul class="feature-list">
-              <li>Mesečna ažuriranja</li>
-              <li>Nedeljni bekap</li>
-              <li>1 sat administracije sadržaja</li>
-              <li>Email podrška</li>
-            </ul>
-          </div>
-          <div class="card" style="border-color: var(--accent);">
-            <span class="price-tag">60 € / mesec</span>
-            <h3>Pro</h3>
-            <ul class="feature-list">
-              <li>Nedeljna ažuriranja</li>
-              <li>Dnevni bekap</li>
-              <li>3 sata administracije</li>
-              <li>Email + telefon podrška</li>
-              <li>Brzina i SEO monitoring</li>
-            </ul>
-          </div>
-          <div class="card">
-            <span class="price-tag">Po dogovoru</span>
-            <h3>Business</h3>
-            <ul class="feature-list">
-              <li>Dedikovani menadžer</li>
-              <li>24/7 hitne intervencije</li>
-              <li>Neograničene manje izmene</li>
-              <li>SLA 99.9% uptime</li>
-              <li>Mesečni strateški poziv</li>
-            </ul>
-          </div>
+          <div class="card"><h3>Koliko košta?</h3><p>Basic 30 €/mesec, Pro 60 €/mesec, Business po dogovoru. Bez ugovorne obaveze — mesečno naplaćivanje.</p></div>
+          <div class="card"><h3>Šta je uključeno?</h3><p>Ažuriranja, bekapovi, monitoring, administracija sadržaja do određenog broja sati, tehnička podrška.</p></div>
+          <div class="card"><h3>Tuđi sajt?</h3><p>Da, preuzimamo i WordPress sajtove koje su pravili drugi. Prvo radimo tehnički pregled.</p></div>
+          <div class="card"><h3>Ako sajt padne?</h3><p>Basic/Pro — reakcija u radnom vremenu. Business — 24/7 SLA 99.9 %. Oporavak iz bekapa u roku od 2 sata.</p></div>
         </div>
       </div>
     </section>

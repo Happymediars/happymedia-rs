@@ -29,13 +29,45 @@
     "serviceType": "SEO optimizacija",
     "name": "SEO optimizacija sajta",
     "provider": { "@type": "Organization", "@id": "https://happymedia.rs/#organization", "name": "Happy Media" },
-    "areaServed": { "@type": "Country", "name": "Srbija" },
+    "areaServed": [
+      { "@type": "Country", "name": "Srbija" },
+      { "@type": "City", "name": "Beograd" },
+      { "@type": "City", "name": "Novi Sad" }
+    ],
     "url": "https://happymedia.rs/optimizacija-sajta/",
-    "description": "Analiza ključnih reči, on-page i tehnički SEO, link building, mesečni izveštaji.",
+    "description": "Analiza ključnih reči, on-page i tehnički SEO, link building, mesečni izveštaji za male i srednje firme u Srbiji.",
     "audience": {
       "@type": "BusinessAudience",
       "audienceType": "Male i srednje firme, B2B kompanije u Srbiji koje žele rast organskog saobraćaja"
     },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "SEO audit",
+        "description": "Tehnički audit, analiza ključnih reči, plan optimizacije",
+        "price": "250",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        "name": "SEO Starter — mesečno",
+        "description": "On-page optimizacija, tehnički SEO, osnovni link building",
+        "price": "300",
+        "priceCurrency": "EUR",
+        "priceSpecification": { "@type": "UnitPriceSpecification", "price": "300", "priceCurrency": "EUR", "unitText": "MONTH" },
+        "availability": "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        "name": "SEO Growth — mesečno",
+        "description": "Sadržaj, link building, iteracija, mesečni izveštaji",
+        "price": "600",
+        "priceCurrency": "EUR",
+        "priceSpecification": { "@type": "UnitPriceSpecification", "price": "600", "priceCurrency": "EUR", "unitText": "MONTH" },
+        "availability": "https://schema.org/InStock"
+      }
+    ],
     "dateModified": "2026-04-24"
   }
   </script>
@@ -47,6 +79,35 @@
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Početna", "item": "https://happymedia.rs/" },
       { "@type": "ListItem", "position": 2, "name": "Optimizacija sajta", "item": "https://happymedia.rs/optimizacija-sajta/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Koliko košta SEO optimizacija?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Jednokratni SEO audit sa planom optimizacije — od 250 EUR. Mesečno upravljanje — Starter paket od 300 EUR, Growth paket od 600 EUR, zavisno od obima sadržaja i konkurencije." }
+      },
+      {
+        "@type": "Question",
+        "name": "Kada se vide prvi rezultati SEO-a?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Prvi pomaci u rangiranju obično se vide u roku od 3 do 4 meseca. Značajan rast organskog saobraćaja — između 6 i 9 meseci. SEO je dugoročna investicija, ne brzi kanal kao oglasi." }
+      },
+      {
+        "@type": "Question",
+        "name": "Koje SEO tehnike koristite?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Isključivo white-hat tehnike prema Google smernicama — kvalitetan sadržaj, tehnička optimizacija, zasluženi backlinkovi iz relevantnih izvora. Nikakve farme linkova, PBN mreže ili druge kratkoročne 'hakove'." }
+      },
+      {
+        "@type": "Question",
+        "name": "Šta je uključeno u mesečni SEO paket?",
+        "acceptedAnswer": { "@type": "Answer", "text": "On-page optimizacija, tehnički SEO, praćenje pozicija, mesečni izveštaj sa Search Console i Analytics podacima, preporuke za sadržaj. Growth paket dodaje pisanje blog članaka i aktivni link building." }
+      }
     ]
   }
   </script>
@@ -74,8 +135,29 @@
     <section class="hero" style="padding-top:2.5rem;">
       <div class="container">
         <p class="hero-eyebrow">Usluga · SEO</p>
+        <span class="price-tag">Audit od 250 € · Mesečno od 300 €</span>
         <h1>Optimizacija sajta koja donosi klijente.</h1>
         <p class="hero-lead">Ne gonimo "broj poseta". Gonimo kvalifikovan saobraćaj — ljude koji traže baš to što vi prodajete. Na prvu stranu Google-a dolazi se postupno i sistematski.</p>
+
+        <dl class="answer-grid" aria-label="Ključne informacije o SEO usluzi">
+          <div class="answer-card">
+            <dt>Šta prodajemo</dt>
+            <dd>Tehnički audit sajta, on-page optimizaciju, izbor ključnih reči, link building i mesečne izveštaje o napretku.</dd>
+          </div>
+          <div class="answer-card">
+            <dt>Za koga je</dt>
+            <dd>B2B firme i uslužne delatnosti u Srbiji koje već imaju sajt i žele organski saobraćaj iz Google pretrage.</dd>
+          </div>
+          <div class="answer-card">
+            <dt>Koliko košta</dt>
+            <dd>Jednokratni audit <strong>od 250 €</strong>. Mesečno upravljanje <strong>od 300 €</strong> (Starter) do <strong>600 €</strong> (Growth).</dd>
+          </div>
+          <div class="answer-card">
+            <dt>Kako funkcioniše</dt>
+            <dd>1) Audit + plan → 2) On-page i tehnička optimizacija → 3) Sadržaj i linkovi → 4) Mesečni izveštaj + iteracija.</dd>
+          </div>
+        </dl>
+
         <div class="hero-cta-row">
           <a href="kontakt.html" class="btn btn-primary">Zakaži SEO konsultacije →</a>
           <a href="#proces" class="btn btn-secondary">Pogledaj proces</a>
@@ -149,6 +231,61 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="paketi">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Paketi i cene</p>
+          <h2>Transparentne SEO cene.</h2>
+        </div>
+        <table class="pricing-table" aria-label="SEO paketi sa cenama">
+          <thead>
+            <tr>
+              <th scope="col">Paket</th>
+              <th scope="col">Šta je uključeno</th>
+              <th scope="col">Cena</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">SEO audit</th>
+              <td>Tehnički audit, analiza ključnih reči, plan optimizacije (jednokratno)</td>
+              <td class="price-col">od 250 €</td>
+            </tr>
+            <tr>
+              <th scope="row">Starter</th>
+              <td>On-page optimizacija, tehnički SEO, osnovni link building, mesečni izveštaj</td>
+              <td class="price-col">od 300 € / mesec</td>
+            </tr>
+            <tr>
+              <th scope="row">Growth</th>
+              <td>Sve iz Starter-a + sadržaj (blog), aktivni link building, praćenje konkurencije</td>
+              <td class="price-col">od 600 € / mesec</td>
+            </tr>
+            <tr>
+              <th scope="row">Enterprise</th>
+              <td>Dedikovani tim, multijezični SEO, integracije, mesečni strateški poziv</td>
+              <td class="price-col">po dogovoru</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section style="background: var(--surface-alt);">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Česta pitanja</p>
+          <h2>Najčešća pitanja o SEO optimizaciji.</h2>
+        </div>
+        <div class="grid">
+          <div class="card"><h3>Koliko košta?</h3><p>Audit od 250 €. Mesečno upravljanje od 300 € (Starter) do 600 € (Growth), zavisno od obima sadržaja i konkurencije.</p></div>
+          <div class="card"><h3>Kada se vide rezultati?</h3><p>Prvi pomaci u rangiranju — 3 do 4 meseca. Značajan rast organskog saobraćaja — 6 do 9 meseci.</p></div>
+          <div class="card"><h3>Koje tehnike koristite?</h3><p>Isključivo white-hat — kvalitetan sadržaj, tehnički SEO, zasluženi backlinkovi. Nikakve farme linkova ili PBN mreže.</p></div>
+          <div class="card"><h3>Šta je uključeno?</h3><p>On-page, tehnički SEO, praćenje pozicija, mesečni izveštaj iz Search Console i Analytics. Growth paket dodaje blog sadržaj.</p></div>
         </div>
       </div>
     </section>

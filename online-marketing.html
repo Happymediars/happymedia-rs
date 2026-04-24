@@ -29,13 +29,41 @@
     "serviceType": "Online marketing i oglašavanje",
     "name": "Online marketing — Google Ads, Facebook i Instagram kampanje",
     "provider": { "@type": "Organization", "@id": "https://happymedia.rs/#organization", "name": "Happy Media" },
-    "areaServed": { "@type": "Country", "name": "Srbija" },
+    "areaServed": [
+      { "@type": "Country", "name": "Srbija" },
+      { "@type": "City", "name": "Beograd" },
+      { "@type": "City", "name": "Novi Sad" }
+    ],
     "url": "https://happymedia.rs/online-marketing/",
-    "description": "Google Ads, Facebook i Instagram kampanje — od kreative do optimizacije i izveštaja.",
+    "description": "Google Ads, Facebook i Instagram kampanje — od kreative do optimizacije i izveštaja. Za firme u Srbiji sa oglasnim budžetom od 300 € mesečno.",
     "audience": {
       "@type": "BusinessAudience",
       "audienceType": "Firme u Srbiji sa budžetom za oglašavanje od 300 € mesečno"
     },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Starter — upravljanje kampanjama",
+        "description": "Do 300 € oglasnog budžeta, jedna platforma (Google ili Meta)",
+        "price": "150",
+        "priceCurrency": "EUR",
+        "priceSpecification": { "@type": "UnitPriceSpecification", "price": "150", "priceCurrency": "EUR", "unitText": "MONTH" },
+        "availability": "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        "name": "Growth — upravljanje kampanjama",
+        "description": "300–2000 € oglasnog budžeta, više platformi, remarketing",
+        "priceSpecification": { "@type": "UnitPriceSpecification", "price": "15", "priceCurrency": "EUR", "unitText": "MONTH", "description": "15–20% oglasnog budžeta mesečno" },
+        "availability": "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        "name": "Scale — upravljanje kampanjama",
+        "description": "Preko 2000 € oglasnog budžeta, full-funnel strategija",
+        "availability": "https://schema.org/InStock"
+      }
+    ],
     "dateModified": "2026-04-24"
   }
   </script>
@@ -47,6 +75,35 @@
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Početna", "item": "https://happymedia.rs/" },
       { "@type": "ListItem", "position": 2, "name": "Online marketing", "item": "https://happymedia.rs/online-marketing/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Koliko košta online marketing?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Upravljanje kampanjama — Starter paket 150 EUR mesečno za budžete do 300 EUR. Za veće budžete naplaćujemo 15–20 posto oglasnog budžeta. Minimalni oglasni budžet za ozbiljnu kampanju — 300 EUR mesečno po platformi." }
+      },
+      {
+        "@type": "Question",
+        "name": "Koliko mesečno treba uložiti u oglase da bi kampanja imala smisla?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Minimum 300 EUR mesečno po platformi (Google ili Meta). Ispod toga algoritam nema dovoljno podataka za optimizaciju i rezultati su nekonzistentni. Za kompetitivne niše preporuka je 500–1000 EUR mesečno." }
+      },
+      {
+        "@type": "Question",
+        "name": "Ko je vlasnik oglasnih naloga?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Isključivo klijent. Google Ads, Meta Business i svi drugi oglasni nalozi uvek su u vašem vlasništvu. Mi smo menadžeri, ne vlasnici — kad god poželite, sav istorijat i podaci ostaju vaši." }
+      },
+      {
+        "@type": "Question",
+        "name": "Koliko brzo se vide rezultati od oglasa?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Prve klikove i leadove dobijate u roku od nekoliko dana. Optimizovane, profitabilne kampanje — obično nakon 4 do 6 nedelja učenja i A/B testiranja. Remarketing daje najbolji povrat uloženog nakon prvih 2 nedelje." }
+      }
     ]
   }
   </script>
@@ -74,8 +131,29 @@
     <section class="hero" style="padding-top:2.5rem;">
       <div class="container">
         <p class="hero-eyebrow">Usluga</p>
+        <span class="price-tag">Upravljanje od 150 € / mesec</span>
         <h1>Online marketing sa jasnom metrikom.</h1>
         <p class="hero-lead">Google Ads, Facebook i Instagram kampanje. Ne postavljamo oglase i zaboravljamo — svakog meseca analiziramo šta donosi klijente, a šta je bacanje budžeta.</p>
+
+        <dl class="answer-grid" aria-label="Ključne informacije o uslugama online marketinga">
+          <div class="answer-card">
+            <dt>Šta prodajemo</dt>
+            <dd>Google Ads (Search, Display, YouTube), Facebook i Instagram kampanje, remarketing, kreativa i mesečni izveštaji.</dd>
+          </div>
+          <div class="answer-card">
+            <dt>Za koga je</dt>
+            <dd>Firme u Srbiji sa minimalnim oglasnim budžetom od 300 € mesečno koje žele merljive konverzije, ne samo lajkove.</dd>
+          </div>
+          <div class="answer-card">
+            <dt>Koliko košta</dt>
+            <dd>Upravljanje od <strong>150 € / mesec</strong> (Starter). Za budžete preko 300 € — <strong>15–20 %</strong> oglasnog budžeta.</dd>
+          </div>
+          <div class="answer-card">
+            <dt>Kako funkcioniše</dt>
+            <dd>1) Strategija + proračun CPA → 2) Setup pixela i tagova → 3) Pokretanje kampanja → 4) Mesečna optimizacija + izveštaj.</dd>
+          </div>
+        </dl>
+
         <div class="hero-cta-row">
           <a href="kontakt.html" class="btn btn-primary">Zakaži konsultacije →</a>
           <a href="#kanali" class="btn btn-secondary">Pogledaj kanale</a>
@@ -143,13 +221,49 @@
             <a href="kontakt.html" class="btn btn-primary" style="margin-top:1rem;">Traži strategiju →</a>
           </div>
           <div>
-            <div class="card">
-              <h3>Budžeti sa kojima radimo</h3>
-              <p><strong>Starter</strong> — do 300 € mesečno oglasnog budžeta. <em>Upravljanje od 150 €/mesec.</em></p>
-              <p><strong>Growth</strong> — 300–2000 €. <em>Upravljanje 15–20 % budžeta.</em></p>
-              <p><strong>Scale</strong> — preko 2000 €. <em>Fiksno + % po dogovoru.</em></p>
-            </div>
+            <h3>Paketi upravljanja kampanjama</h3>
+            <table class="pricing-table" aria-label="Paketi online marketinga sa cenama upravljanja">
+              <thead>
+                <tr>
+                  <th scope="col">Paket</th>
+                  <th scope="col">Oglasni budžet</th>
+                  <th scope="col">Upravljanje</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Starter</th>
+                  <td>do 300 € / mesec</td>
+                  <td class="price-col">od 150 € / mesec</td>
+                </tr>
+                <tr>
+                  <th scope="row">Growth</th>
+                  <td>300 – 2000 € / mesec</td>
+                  <td class="price-col">15 – 20 % budžeta</td>
+                </tr>
+                <tr>
+                  <th scope="row">Scale</th>
+                  <td>preko 2000 € / mesec</td>
+                  <td class="price-col">fiksno + % po dogovoru</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Česta pitanja</p>
+          <h2>Najčešća pitanja o online marketingu.</h2>
+        </div>
+        <div class="grid">
+          <div class="card"><h3>Koliko košta?</h3><p>Upravljanje od 150 € mesečno (Starter, budžet do 300 €). Za veće budžete — 15–20 % oglasnog budžeta mesečno.</p></div>
+          <div class="card"><h3>Koji je minimalni budžet?</h3><p>Minimum 300 € mesečno po platformi za ozbiljnu kampanju. Ispod toga algoritam nema dovoljno podataka.</p></div>
+          <div class="card"><h3>Čiji su oglasni nalozi?</h3><p>Uvek vaši. Google Ads i Meta Business su u vlasništvu klijenta — mi smo samo menadžeri.</p></div>
+          <div class="card"><h3>Kada se vide rezultati?</h3><p>Prve konverzije — nekoliko dana. Optimizovane profitabilne kampanje — 4 do 6 nedelja.</p></div>
         </div>
       </div>
     </section>
