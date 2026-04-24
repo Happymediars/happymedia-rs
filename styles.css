@@ -241,6 +241,77 @@ section { padding: clamp(3rem, 6vw, 5rem) 0; }
 }
 .stat-label { color: var(--text-muted); font-size: .95rem; margin-top: .25rem; }
 
+/* ----------------- AI-ANSWER GRID (4 pitanja above fold) ----------------- */
+.answer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.answer-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+}
+.answer-card dt {
+  font-family: var(--font-heading);
+  font-size: .75rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .1em;
+  color: var(--accent);
+  margin-bottom: .4rem;
+}
+.answer-card dd {
+  margin: 0; color: var(--text);
+  font-size: 1rem; line-height: 1.5;
+}
+
+/* ----------------- PRICING TABLE (AI-friendly) ----------------- */
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin: 1.5rem 0;
+  font-size: .95rem;
+}
+.pricing-table th,
+.pricing-table td {
+  padding: .9rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+.pricing-table th {
+  background: var(--surface-alt);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: .85rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--text);
+}
+.pricing-table tr:last-child td { border-bottom: none; }
+.pricing-table tr:hover td { background: var(--surface-alt); }
+.pricing-table .price-col { font-family: var(--font-heading); font-weight: 600; color: var(--accent); white-space: nowrap; }
+
+/* ----------------- LAST UPDATED (freshness signal) ----------------- */
+.last-updated {
+  font-family: var(--font-heading);
+  font-size: .82rem;
+  color: var(--text-muted);
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding: .35rem .75rem;
+  background: var(--surface-alt);
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
+.last-updated::before {
+  content: "●"; color: var(--green); font-size: .6rem;
+}
+
 /* ----------------- CALLOUT / CTA BAND ----------------- */
 .cta-band {
   background: var(--text); color: var(--bg);

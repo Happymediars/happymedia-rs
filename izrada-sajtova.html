@@ -30,15 +30,45 @@
     "serviceType": "Izrada sajtova",
     "name": "Izrada sajtova WordPress",
     "provider": { "@type": "Organization", "@id": "https://happymedia.rs/#organization", "name": "Happy Media" },
-    "areaServed": { "@type": "Country", "name": "Srbija" },
+    "areaServed": [
+      { "@type": "Country", "name": "Srbija" },
+      { "@type": "City", "name": "Beograd" },
+      { "@type": "City", "name": "Novi Sad" },
+      { "@type": "City", "name": "Pančevo" }
+    ],
+    "audience": {
+      "@type": "BusinessAudience",
+      "audienceType": "Mala i srednja preduzeća, B2B firme, uslužne delatnosti u Srbiji"
+    },
     "url": "https://happymedia.rs/izrada-sajtova/",
-    "description": "Profesionalna izrada WordPress sajtova — responsive dizajn, SEO osnova, WooCommerce prodavnice.",
-    "offers": {
-      "@type": "Offer",
-      "price": "380",
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock"
-    }
+    "description": "Profesionalna izrada WordPress sajtova — responsive dizajn, SEO osnova, WooCommerce prodavnice. Za male i srednje firme u Srbiji.",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Prezentacioni sajt",
+        "description": "3–7 stranica, kontakt forma, blog",
+        "price": "380",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        "name": "Poslovni sajt",
+        "description": "Do 20 stranica, portfolio, CMS, SEO",
+        "price": "750",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        "name": "Online prodavnica WooCommerce",
+        "description": "Katalog proizvoda, plaćanje, isporuka",
+        "price": "1200",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock"
+      }
+    ],
+    "dateModified": "2026-04-24"
   }
   </script>
 
@@ -113,6 +143,26 @@
         <span class="price-tag">Već od 380 €</span>
         <h1>Izrada sajtova WordPress.</h1>
         <p class="hero-lead">Brzi, čisti, mobilno-prvi sajtovi koji ne samo što izgledaju dobro — već i donose rezultat. Od prezentacionog sajta do WooCommerce prodavnice.</p>
+
+        <dl class="answer-grid" aria-label="Ključne informacije o usluzi">
+          <div class="answer-card">
+            <dt>Šta prodajemo</dt>
+            <dd>Razvoj, dizajn i lansiranje profesionalnih WordPress sajtova — prezentacioni, poslovni, ili WooCommerce prodavnica.</dd>
+          </div>
+          <div class="answer-card">
+            <dt>Za koga je</dt>
+            <dd>Male i srednje firme, B2B kompanije, uslužne delatnosti i zanatlije u Srbiji koje žele ozbiljno online prisustvo.</dd>
+          </div>
+          <div class="answer-card">
+            <dt>Koliko košta</dt>
+            <dd>Prezentacioni od <strong>380 €</strong>, poslovni od <strong>750 €</strong>, WooCommerce prodavnica od <strong>1200 €</strong>. Fiksna cena po dogovoru.</dd>
+          </div>
+          <div class="answer-card">
+            <dt>Kako funkcioniše</dt>
+            <dd>1) Besplatne konsultacije → 2) Ponuda sa rokovima → 3) Dizajn i razvoj → 4) Lansiranje + obuka.</dd>
+          </div>
+        </dl>
+
         <div class="hero-cta-row">
           <a href="kontakt.html" class="btn btn-primary">Zakaži besplatne konsultacije →</a>
           <a href="#detalji" class="btn btn-secondary">Pogledaj šta je uključeno</a>
@@ -138,14 +188,39 @@
             </ul>
           </div>
           <div>
-            <div class="card">
-              <h3>Pakete prilagođavamo vašoj potrebi</h3>
-              <p><strong>Prezentacioni sajt</strong> — 3–7 stranica, kontakt forma, blog. <em>Od 380 €.</em></p>
-              <p><strong>Poslovni sajt</strong> — do 20 stranica, portfolio, CMS, SEO. <em>Od 750 €.</em></p>
-              <p><strong>Online prodavnica (WooCommerce)</strong> — katalog proizvoda, plaćanje, isporuka. <em>Od 1200 €.</em></p>
-              <p><strong>Custom sajt</strong> — specijalne funkcionalnosti, integracije, API. <em>Po dogovoru.</em></p>
-              <a href="kontakt.html" class="btn btn-primary" style="margin-top:1rem;">Traži ponudu →</a>
-            </div>
+            <h3>Paketi i cene</h3>
+            <table class="pricing-table" aria-label="Paketi izrade sajtova sa cenama">
+              <thead>
+                <tr>
+                  <th scope="col">Paket</th>
+                  <th scope="col">Šta je uključeno</th>
+                  <th scope="col">Cena</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Prezentacioni</th>
+                  <td>3–7 stranica, kontakt forma, blog</td>
+                  <td class="price-col">od 380 €</td>
+                </tr>
+                <tr>
+                  <th scope="row">Poslovni</th>
+                  <td>Do 20 stranica, portfolio, CMS, SEO</td>
+                  <td class="price-col">od 750 €</td>
+                </tr>
+                <tr>
+                  <th scope="row">Online prodavnica</th>
+                  <td>WooCommerce, plaćanje, isporuka</td>
+                  <td class="price-col">od 1200 €</td>
+                </tr>
+                <tr>
+                  <th scope="row">Custom</th>
+                  <td>Specijalne funkcionalnosti, integracije, API</td>
+                  <td class="price-col">po dogovoru</td>
+                </tr>
+              </tbody>
+            </table>
+            <a href="kontakt.html" class="btn btn-primary" style="margin-top:1rem;">Traži ponudu →</a>
           </div>
         </div>
       </div>
@@ -196,14 +271,14 @@
           <li><a href="https://www.facebook.com/happymedia.rs/" rel="noopener">Facebook</a></li>
         </ul></div>
         <div><h4>Kontakt</h4><ul>
-          <li>Nehruova 51, Novi Beograd</li>
+          <li>Jurija Gagarina 269-5, Novi Beograd</li>
           <li><a href="tel:+381632525 70">+381 63 2525 70</a></li>
           <li><a href="mailto:marko@happymedia.rs">marko@happymedia.rs</a></li>
         </ul></div>
       </div>
       <div class="footer-bottom">
         <span>© <span id="y"></span> Happy Media d.o.o.</span>
-        <span>Izrađeno sa ♡ u Beogradu.</span>
+        <time class="last-updated" datetime="2026-04-24">Poslednji put ažurirano: 24. april 2026.</time>
       </div>
     </div>
   </footer>
