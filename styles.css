@@ -104,14 +104,33 @@ img { max-width: 100%; height: auto; display: block; }
 .nav-links a:hover { color: var(--accent); }
 .nav-links a.active { color: var(--accent); }
 
-.nav-cta {
-  display: inline-block;
-  padding: .6rem 1.1rem; border-radius: 999px;
-  background: var(--text); color: var(--bg);
-  font-family: var(--font-heading); font-weight: 500; font-size: .9rem;
-  border-bottom: none;
+/* Zakaži konsultacije — CTA dugme u nav-u */
+.nav-links a.nav-cta {
+  display: inline-flex; align-items: center; gap: .4rem;
+  padding: .65rem 1.25rem; border-radius: 999px;
+  background: var(--accent) !important;
+  color: #ffffff !important;
+  font-family: var(--font-heading); font-weight: 600; font-size: .92rem;
+  letter-spacing: .01em;
+  border-bottom: none !important;
+  box-shadow: 0 2px 8px rgba(217, 119, 87, 0.25);
+  transition: background .18s ease, color .18s ease, transform .15s ease, box-shadow .18s ease;
 }
-.nav-cta:hover { background: var(--accent); color: var(--bg); border-bottom: none; }
+.nav-links a.nav-cta:hover,
+.nav-links a.nav-cta:focus-visible {
+  background: var(--accent-hover) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(217, 119, 87, 0.35);
+  border-bottom: none !important;
+}
+.nav-links a.nav-cta:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(217, 119, 87, 0.25);
+}
+.nav-links a.nav-cta.active {
+  color: #ffffff !important;
+}
 
 /* mobile nav */
 .nav-toggle { display: none; background: none; border: 0; cursor: pointer; padding: .5rem; color: var(--text); }
