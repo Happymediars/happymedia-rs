@@ -52,25 +52,25 @@
     "offers": [
       {
         "@type": "Offer",
-        "name": "Prezentacioni sajt",
-        "description": "3–7 stranica, kontakt forma, blog",
+        "name": "Starter — izrada sajta",
+        "description": "Do 5 stranica, responsive dizajn, osnovna SEO struktura, kontakt forma, SSL + hosting prvih 6 meseci",
         "price": "380",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock"
       },
       {
         "@type": "Offer",
-        "name": "Poslovni sajt",
-        "description": "Do 20 stranica, portfolio, CMS, SEO",
-        "price": "750",
+        "name": "Business — izrada sajta",
+        "description": "Do 15 stranica, custom dizajn (bez template-a), napredni SEO, blog sistem, GA4 + Search Console, multi-jezik opciono, SSL + hosting + CDN 12 meseci",
+        "price": "780",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock"
       },
       {
         "@type": "Offer",
-        "name": "Online prodavnica",
-        "description": "Katalog proizvoda, plaćanje, isporuka",
-        "price": "1200",
+        "name": "E-commerce — online prodavnica",
+        "description": "Neograničen broj proizvoda, korpa + checkout, plaćanja kartice + IPS, fiskalna kasa, integracije sa kuririma, email automation, napredni SEO za proizvode",
+        "price": "1450",
         "priceCurrency": "EUR",
         "availability": "https://schema.org/InStock"
       }
@@ -152,17 +152,70 @@
       <a href="/">Početna</a><span class="sep">/</span><span>Izrada sajtova</span>
     </nav>
 
-    <section class="hero" style="padding-top:2.5rem;">
+    <!-- HERO — split: text + browser mockup -->
+    <section class="service-hero">
       <div class="container">
-        <p class="hero-eyebrow">Usluga</p>
-        <span class="price-tag">Već od 380 €</span>
-        <h1>Izrada sajtova.</h1>
-        <p class="hero-lead">Brzi, čisti, mobilno-prvi sajtovi koji ne samo što izgledaju dobro — već i donose rezultat. Od prezentacionog sajta do online prodavnice.</p>
+        <div class="hero-grid">
+          <div>
+            <div class="hero-pills">
+              <span class="hero-pill green">01 · Usluga</span>
+              <span class="hero-pill">Beograd · od 2010</span>
+            </div>
+            <h1>Profesionalan sajt za firmu <em class="green">od 380 €</em>.</h1>
+            <p class="hero-lead">Responsive dizajn, brzo učitavanje, SEO osnove i online prodavnica — sve po fiksnoj ceni, bez skrivenih troškova. Lansiramo za 14 dana.</p>
+            <div class="hero-cta-row">
+              <a href="kontakt.html" class="btn btn-dark">Zakaži besplatne konsultacije →</a>
+              <a href="#paketi" class="btn btn-secondary">↓ Paketi i cene</a>
+            </div>
+            <div class="hero-stats-inline">
+              <div><p class="stat-num">300+</p><p class="stat-label">Sajtova</p></div>
+              <div><p class="stat-num">14 dana</p><p class="stat-label">Prosek lansiranja</p></div>
+              <div><p class="stat-num">5.0 ★</p><p class="stat-label">Google ocena</p></div>
+            </div>
+          </div>
 
-        <dl class="answer-grid" aria-label="Ključne informacije o usluzi">
+          <!-- Browser mockup — decorative, signals what we make -->
+          <div class="hero-mockup" aria-hidden="true">
+            <div class="browser-bar">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <div class="browser-url">klijent-sajt.rs</div>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-row">
+                <div class="mockup-clover"></div>
+                <div class="mockup-line short"></div>
+                <div class="mockup-line short"></div>
+                <div class="mockup-line short"></div>
+              </div>
+              <h4>Vaš novi sajt <em>koji donosi klijente</em>.</h4>
+              <div class="mockup-line"></div>
+              <div class="mockup-cta">Zakaži konsultacije →</div>
+              <div class="mockup-image">Hero image</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGO BAR — real clients -->
+    <section class="logo-bar" aria-label="Klijenti koji su nam ukazali poverenje">
+      <div class="container">
+        <p class="logo-bar-eyebrow">Sa preko 300+ firmi koje smo lansirali</p>
+        <div class="logo-bar-row">
+          <span>Newsmax Balkans</span>
+          <span>Mega Concept</span>
+          <span>Eurodom</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI-SEO answer cards (preserved from previous structure) -->
+    <section style="padding-top:1rem;">
+      <div class="container">
+        <dl class="answer-grid" aria-label="Ključne informacije o usluzi izrade sajtova">
           <div class="answer-card">
             <dt>Šta prodajemo</dt>
-            <dd>Razvoj, dizajn i lansiranje profesionalnih sajtova — prezentacioni, poslovni, ili online prodavnica.</dd>
+            <dd>Razvoj, dizajn i lansiranje profesionalnih sajtova — Starter, Business, ili E-commerce paket.</dd>
           </div>
           <div class="answer-card">
             <dt>Za koga je</dt>
@@ -170,92 +223,191 @@
           </div>
           <div class="answer-card">
             <dt>Koliko košta</dt>
-            <dd>Prezentacioni od <strong>380 €</strong>, poslovni od <strong>750 €</strong>, online prodavnica od <strong>1200 €</strong>. Fiksna cena po dogovoru.</dd>
+            <dd>Starter <strong>380 €</strong>, Business <strong>780 €</strong>, E-commerce <strong>od 1.450 €</strong>. Fiksna cena, bez skrivenih troškova.</dd>
           </div>
           <div class="answer-card">
             <dt>Kako funkcioniše</dt>
-            <dd>1) Besplatne konsultacije → 2) Ponuda sa rokovima → 3) Dizajn i razvoj → 4) Lansiranje + obuka.</dd>
+            <dd>1) Besplatne konsultacije → 2) Ponuda + wireframe → 3) Dizajn → 4) Razvoj + sadržaj → 5) Lansiranje za 14 dana.</dd>
           </div>
         </dl>
-
-        <div class="hero-cta-row">
-          <a href="kontakt.html" class="btn btn-primary">Zakaži besplatne konsultacije →</a>
-          <a href="#detalji" class="btn btn-secondary">Pogledaj šta je uključeno</a>
-        </div>
       </div>
     </section>
 
-    <section id="detalji">
+    <!-- PRICING — 3 cards (Starter, Business featured, E-commerce) -->
+    <section id="paketi" style="background: var(--surface-alt);">
       <div class="container">
-        <div class="two-col">
-          <div>
-            <p class="section-eyebrow">Šta dobijate</p>
-            <h2>Sajt koji je spreman za Google — već od prvog dana.</h2>
-            <ul class="feature-list">
-              <li>Responsive dizajn — savršeno na telefonu, tabletu i desktopu</li>
-              <li>Brzina i optimizacija slika (Core Web Vitals)</li>
-              <li>SEO osnova — sitemap, schema markup, meta tagovi</li>
-              <li>SSL sertifikat i podešen domen</li>
-              <li>Admin panel za samostalno menjanje sadržaja</li>
-              <li>Višejezična verzija po potrebi</li>
-              <li>Integracija sa Google Analytics i Search Console</li>
-              <li>Jedan sat obuke + pisano uputstvo</li>
+        <div class="section-header" style="text-align:center; margin: 0 auto 1rem;">
+          <p class="section-eyebrow" style="justify-content:center;">Paketi</p>
+          <h2>Tri paketa. <em class="green">Fiksne cene</em>.</h2>
+          <p class="section-lead">Bez skrivenih troškova, bez "pa ispalo je više". Plaćate pola pre početka, pola po isporuci.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <p class="pricing-eyebrow">Za male firme</p>
+            <h3 class="pricing-name">Starter</h3>
+            <p class="pricing-price">380 €<span class="price-suffix">jednokratno</span></p>
+            <ul class="pricing-features">
+              <li>Do 5 stranica</li>
+              <li>Responsive dizajn (mobilni + tablet)</li>
+              <li>Osnovna SEO struktura</li>
+              <li>Kontakt forma + Google Maps</li>
+              <li>SSL + hosting prvih 6 meseci</li>
+              <li>Obuka za administriranje</li>
             </ul>
-          </div>
+            <a href="kontakt.html" class="btn btn-dark">Zakaži Starter paket →</a>
+          </article>
+
+          <article class="pricing-card featured">
+            <span class="pricing-badge">★ Najpopularnije</span>
+            <p class="pricing-eyebrow">Najpopularnije · 60% klijenata</p>
+            <h3 class="pricing-name">Business</h3>
+            <p class="pricing-price">780 €<span class="price-suffix">jednokratno</span></p>
+            <ul class="pricing-features">
+              <li>Do 15 stranica</li>
+              <li>Custom dizajn (bez template-a)</li>
+              <li>Napredni SEO (schema, sitemap, optimizacija slika)</li>
+              <li>Blog sistem + kategorije</li>
+              <li>Integracija sa GA4 i Search Console</li>
+              <li>Multi-jezik (SR/EN) opciono</li>
+              <li>SSL + hosting + CDN 12 meseci</li>
+              <li>3 besplatne izmene nakon lansiranja</li>
+            </ul>
+            <a href="kontakt.html" class="btn">Zakaži Business paket →</a>
+          </article>
+
+          <article class="pricing-card">
+            <p class="pricing-eyebrow">Online prodavnica</p>
+            <h3 class="pricing-name">E-commerce</h3>
+            <p class="pricing-price">1.450 €<span class="price-suffix">od</span></p>
+            <ul class="pricing-features">
+              <li>Neograničen broj proizvoda</li>
+              <li>Korpa, checkout, plaćanja (kartice + IPS)</li>
+              <li>Povezivanje sa fiskalnom kasom</li>
+              <li>Upravljanje zalihama</li>
+              <li>Integracije: Pošta Srbije, DExpress, BEX</li>
+              <li>Email automation (napuštena korpa, itd.)</li>
+              <li>Napredni SEO za proizvode</li>
+              <li>Mesec dana podrške nakon lansiranja</li>
+            </ul>
+            <a href="kontakt.html" class="btn btn-dark">Zakaži E-commerce paket →</a>
+          </article>
+        </div>
+
+        <p class="pricing-footnote">Ne znate koji paket? <a href="kontakt.html">Zakažite 30-min konsultacije</a> — preporučićemo vam nakon razgovora.</p>
+      </div>
+    </section>
+
+    <!-- PROCESS — dark band, 5 steps over 14 days -->
+    <section class="section-dark process-dark">
+      <div class="container">
+        <div class="process-header-row">
           <div>
-            <h3>Paketi i cene</h3>
-            <table class="pricing-table" aria-label="Paketi izrade sajtova sa cenama">
-              <thead>
-                <tr>
-                  <th scope="col">Paket</th>
-                  <th scope="col">Šta je uključeno</th>
-                  <th scope="col">Cena</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Prezentacioni</th>
-                  <td>3–7 stranica, kontakt forma, blog</td>
-                  <td class="price-col">od 380 €</td>
-                </tr>
-                <tr>
-                  <th scope="row">Poslovni</th>
-                  <td>Do 20 stranica, portfolio, CMS, SEO</td>
-                  <td class="price-col">od 750 €</td>
-                </tr>
-                <tr>
-                  <th scope="row">Online prodavnica</th>
-                  <td>Katalog proizvoda, plaćanje, isporuka</td>
-                  <td class="price-col">od 1200 €</td>
-                </tr>
-                <tr>
-                  <th scope="row">Custom</th>
-                  <td>Specijalne funkcionalnosti, integracije, API</td>
-                  <td class="price-col">po dogovoru</td>
-                </tr>
-              </tbody>
-            </table>
-            <a href="kontakt.html" class="btn btn-primary" style="margin-top:1rem;">Traži ponudu →</a>
+            <p class="section-eyebrow">Proces</p>
+            <h2>Od poziva do <em class="gold">lansiranja za 14 dana</em>.</h2>
+          </div>
+          <p class="process-header-text">Tačno znate šta se dešava svakog dana. Komuniciramo preko email-a i deljene Notion stranice — bez misterije, bez "javićemo se".</p>
+        </div>
+        <div class="process-grid-5">
+          <div class="process-step">
+            <p class="step-num">01<span class="day">Dan 1</span></p>
+            <h3>Besplatne konsultacije</h3>
+            <p>30 minuta razgovora. Razumemo šta vam treba, procenjujemo obim.</p>
+          </div>
+          <div class="process-step">
+            <p class="step-num">02<span class="day">Dan 2–3</span></p>
+            <h3>Ponuda + wireframe</h3>
+            <p>Šaljemo fiksnu ponudu i skicu strukture stranice. Vi potvrđujete.</p>
+          </div>
+          <div class="process-step">
+            <p class="step-num">03<span class="day">Dan 4–8</span></p>
+            <h3>Dizajn</h3>
+            <p>Prikazujemo 2 pravca dizajna. Birate jedan, uglađujemo detalje.</p>
+          </div>
+          <div class="process-step">
+            <p class="step-num">04<span class="day">Dan 9–13</span></p>
+            <h3>Razvoj i sadržaj</h3>
+            <p>Pravimo sajt. Vi šaljete tekstove i slike, mi optimizujemo.</p>
+          </div>
+          <div class="process-step">
+            <p class="step-num">05<span class="day">Dan 14</span></p>
+            <h3>Lansiranje</h3>
+            <p>Sajt je vaš. Radimo obuku. Garantujemo 30 dana besplatnih ispravki.</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- REVIEWS — cream stripe -->
+    <section class="reviews-stripe">
+      <div class="container">
+        <div class="reviews-head">
+          <div>
+            <p class="section-eyebrow">Klijenti o nama</p>
+            <h2><em class="green">5.0</em> ★ na Google-u.</h2>
+          </div>
+          <p class="reviews-meta"><a href="https://maps.app.goo.gl/Vhd9KJZTwp1xYk1q7" rel="noopener">Vidi sve recenzije →</a></p>
+        </div>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="stars" aria-label="5 od 5 zvezdica">★★★★★</div>
+            <blockquote>"Ozbiljna kompanija. Svi moji zahtevi su ispunjeni. Veoma sam zadovoljan."</blockquote>
+            <p class="reviewer">Dušan Marković</p>
+            <p class="reviewer-meta">Klijent · 2017.</p>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 od 5 zvezdica">★★★★★</div>
+            <blockquote>"Zadovoljan u svakom pogledu, svaka preporuka!"</blockquote>
+            <p class="reviewer">Milan Damnjanović</p>
+            <p class="reviewer-meta">Klijent · 2017.</p>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 od 5 zvezdica">★★★★★</div>
+            <blockquote>"Sve pohvale za korektnu i stručnu saradnju! Pouzdani i brzi."</blockquote>
+            <p class="reviewer">Tajci Lalić</p>
+            <p class="reviewer-meta">Klijent · 2014.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ — accordion -->
     <section style="background: var(--surface-alt);">
       <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Česta pitanja</p>
-          <h2>Najčešća pitanja o izradi sajta.</h2>
+        <div class="section-header" style="text-align:center; margin: 0 auto 1rem;">
+          <p class="section-eyebrow" style="justify-content:center;">FAQ</p>
+          <h2>Pitanja koja svi <em class="green">postavljaju</em>.</h2>
         </div>
-        <div class="grid">
-          <div class="card"><h3>Koliko košta?</h3><p>Osnovni sajt kreće od 380 EUR. Finalna cena zavisi od broja stranica, funkcionalnosti i integracija.</p></div>
-          <div class="card"><h3>Koliko traje?</h3><p>Prezentacioni sajt — 2–3 nedelje. Online prodavnica — 4–6 nedelja, u zavisnosti od obima.</p></div>
-          <div class="card"><h3>Mobilno?</h3><p>Da, svi sajtovi su responsive i testirani na realnim uređajima — telefon, tablet, desktop.</p></div>
-          <div class="card"><h3>Šta je uključeno?</h3><p>Dizajn, razvoj, SSL, osnovna SEO podešavanja, obuka. Domen i hosting po želji.</p></div>
+        <div class="faq-accordion">
+          <details class="faq-item" open>
+            <summary>Koliko ću morati da budem uključen?</summary>
+            <p class="faq-answer">Realno — 2 do 4 sata tokom 14 dana. Tražimo samo tekstove, slike i feedback. Sve ostalo radimo mi.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Šta ako mi se ne svidi dizajn?</summary>
+            <p class="faq-answer">Prikazujemo 2 različita pravca u dizajn fazi. Birate koji vam odgovara, uglađujemo detalje. Ako baš nijedan ne radi — pravimo treći bez dodatne naknade.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Da li mogu sam da dopunjavam sadržaj posle?</summary>
+            <p class="faq-answer">Da. Sve naše sajtove pravimo sa admin panelom za samostalno menjanje sadržaja. Pri lansiranju dobijate 1 sat obuke + pisano uputstvo.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Ko drži domen i hosting?</summary>
+            <p class="faq-answer">Vi. Domen i hosting su uvek u vašem vlasništvu. Mi vam pomažemo da ih registrujete na vaše ime, ili migriramo postojeće. Bez "zaključavanja" kod nas.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Šta ako zakasnite?</summary>
+            <p class="faq-answer">U 15 godina rada nismo zakasnili nijednom kad je zavisilo samo od nas. Ako se ipak dogodi (zbog naše greške), za svaki dan kašnjenja imate 5 % popusta na finalni račun.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Možete li raditi samo dizajn ili samo razvoj?</summary>
+            <p class="faq-answer">Da. Imamo zasebne ponude za samo dizajn (od 250 €) i samo razvoj (od 200 €) ako već imate dizajn iz druge agencije. Pišite za detalje.</p>
+          </details>
         </div>
       </div>
     </section>
 
+    <!-- CTA BAND -->
     <section>
       <div class="container">
         <div class="cta-band">
