@@ -145,10 +145,20 @@
 
   <main id="main">
     <section class="hero">
+      <svg class="hero-clover" aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <g fill="currentColor">
+          <circle cx="100" cy="55" r="38"/>
+          <circle cx="145" cy="100" r="38"/>
+          <circle cx="100" cy="145" r="38"/>
+          <circle cx="55" cy="100" r="38"/>
+        </g>
+      </svg>
       <div class="container">
-        <p class="hero-eyebrow">Digital agency · Belgrade</p>
-        <h1>Digital marketing that <em>actually</em> moves the needle.</h1>
-        <p class="hero-lead">Website development, SEO, advertising campaigns, and maintenance — under one roof. We work with clients across Serbia and the region since 2010.</p>
+        <p class="hero-eyebrow">Digital agency · Belgrade · since 2010</p>
+        <h1 class="hero-headline">
+          Luck comes in <em>four leaves</em>.<span class="line-2">Growth comes in <em>four channels</em>.</span>
+        </h1>
+        <p class="hero-lead">Website development, SEO, advertising campaigns, and maintenance — under one roof. Since 2010, we help businesses across Serbia and the region grow online — clearly and measurably.</p>
 
         <dl class="answer-grid" aria-label="Key information about Happy Media">
           <div class="answer-card">
@@ -190,30 +200,54 @@
           <p class="section-lead">We build, promote, and maintain websites that bring you clients — not just visitors.</p>
         </div>
         <div class="grid">
-          <div class="card">
-            <div class="card-icon">◐</div>
+          <article class="card" data-leaf="top">
+            <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle class="leaf top"    cx="28" cy="14" r="11"/>
+              <circle class="leaf right"  cx="42" cy="28" r="11"/>
+              <circle class="leaf bottom" cx="28" cy="42" r="11"/>
+              <circle class="leaf left"   cx="14" cy="28" r="11"/>
+            </svg>
             <h3>Website development</h3>
-            <p>Professional websites with responsive design, online stores, and SEO fundamentals — from <strong>€380</strong>.</p>
+            <p class="card-price">from €380</p>
+            <p>Professional websites with responsive design, online stores, and SEO fundamentals — the foundation of any serious online presence.</p>
             <a href="/en/website-development.html" class="card-link">Learn more →</a>
-          </div>
-          <div class="card">
-            <div class="card-icon">↑</div>
+          </article>
+          <article class="card" data-leaf="right">
+            <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle class="leaf top"    cx="28" cy="14" r="11"/>
+              <circle class="leaf right"  cx="42" cy="28" r="11"/>
+              <circle class="leaf bottom" cx="28" cy="42" r="11"/>
+              <circle class="leaf left"   cx="14" cy="28" r="11"/>
+            </svg>
             <h3>SEO optimization</h3>
+            <p class="card-price">from €300 / month</p>
             <p>Ranking for keywords that bring clients. Technical SEO, on-page, content strategy and link building.</p>
             <a href="/en/seo-services.html" class="card-link">Learn more →</a>
-          </div>
-          <div class="card">
-            <div class="card-icon">◇</div>
-            <h3>Online marketing</h3>
+          </article>
+          <article class="card" data-leaf="bottom">
+            <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle class="leaf top"    cx="28" cy="14" r="11"/>
+              <circle class="leaf right"  cx="42" cy="28" r="11"/>
+              <circle class="leaf bottom" cx="28" cy="42" r="11"/>
+              <circle class="leaf left"   cx="14" cy="28" r="11"/>
+            </svg>
+            <h3>Marketing</h3>
+            <p class="card-price">from €150 / month</p>
             <p>Google Ads, Facebook and Instagram campaigns. Creative, setup, optimization — results measured monthly.</p>
             <a href="/en/online-marketing.html" class="card-link">Learn more →</a>
-          </div>
-          <div class="card">
-            <div class="card-icon">⚙</div>
-            <h3>Website maintenance</h3>
-            <p>Security updates, backups, content administration, technical support. From <strong>€30/month</strong>.</p>
+          </article>
+          <article class="card" data-leaf="left">
+            <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle class="leaf top"    cx="28" cy="14" r="11"/>
+              <circle class="leaf right"  cx="42" cy="28" r="11"/>
+              <circle class="leaf bottom" cx="28" cy="42" r="11"/>
+              <circle class="leaf left"   cx="14" cy="28" r="11"/>
+            </svg>
+            <h3>Maintenance</h3>
+            <p class="card-price">from €30 / month</p>
+            <p>Security updates, backups, content administration, technical support — your site runs while you run your business.</p>
             <a href="/en/website-maintenance.html" class="card-link">Learn more →</a>
-          </div>
+          </article>
         </div>
       </div>
     </section>

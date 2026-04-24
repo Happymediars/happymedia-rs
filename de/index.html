@@ -121,10 +121,20 @@
 
   <main id="main">
     <section class="hero">
+      <svg class="hero-clover" aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <g fill="currentColor">
+          <circle cx="100" cy="55" r="38"/>
+          <circle cx="145" cy="100" r="38"/>
+          <circle cx="100" cy="145" r="38"/>
+          <circle cx="55" cy="100" r="38"/>
+        </g>
+      </svg>
       <div class="container">
-        <p class="hero-eyebrow">Digitalagentur · Belgrad</p>
-        <h1>Digitalmarketing, das <em>wirklich</em> Wirkung zeigt.</h1>
-        <p class="hero-lead">Webseiten-Erstellung, SEO, Werbekampagnen und Wartung — alles aus einer Hand. Wir arbeiten seit 2010 mit Kunden in Serbien und der gesamten Region.</p>
+        <p class="hero-eyebrow">Digitalagentur · Belgrad · seit 2010</p>
+        <h1 class="hero-headline">
+          Glück hat <em>vier Blätter</em>.<span class="line-2">Wachstum hat <em>vier Kanäle</em>.</span>
+        </h1>
+        <p class="hero-lead">Webseiten-Erstellung, SEO, Werbekampagnen und Wartung — alles aus einer Hand. Seit 2010 helfen wir Unternehmen in Serbien und der Region, online zu wachsen — klar und messbar.</p>
 
         <dl class="answer-grid" aria-label="Wichtige Informationen über Happy Media">
           <div class="answer-card">
@@ -166,30 +176,54 @@
           <p class="section-lead">Wir erstellen, vermarkten und warten Webseiten, die Kunden bringen — nicht nur Besucher.</p>
         </div>
         <div class="grid">
-          <div class="card">
-            <div class="card-icon">◐</div>
+          <article class="card" data-leaf="top">
+            <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle class="leaf top"    cx="28" cy="14" r="11"/>
+              <circle class="leaf right"  cx="42" cy="28" r="11"/>
+              <circle class="leaf bottom" cx="28" cy="42" r="11"/>
+              <circle class="leaf left"   cx="14" cy="28" r="11"/>
+            </svg>
             <h3>Webseiten-Erstellung</h3>
-            <p>Professionelle Webseiten mit responsivem Design, Online-Shops und SEO-Grundlagen — ab <strong>380 €</strong>.</p>
+            <p class="card-price">ab 380 €</p>
+            <p>Professionelle Webseiten mit responsivem Design, Online-Shops und SEO-Grundlagen — die Basis jeder seriösen Online-Präsenz.</p>
             <a href="/de/webseiten-erstellung.html" class="card-link">Mehr erfahren →</a>
-          </div>
-          <div class="card">
-            <div class="card-icon">↑</div>
+          </article>
+          <article class="card" data-leaf="right">
+            <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle class="leaf top"    cx="28" cy="14" r="11"/>
+              <circle class="leaf right"  cx="42" cy="28" r="11"/>
+              <circle class="leaf bottom" cx="28" cy="42" r="11"/>
+              <circle class="leaf left"   cx="14" cy="28" r="11"/>
+            </svg>
             <h3>SEO-Optimierung</h3>
+            <p class="card-price">ab 300 € / Monat</p>
             <p>Ranking für Keywords, die Kunden bringen. Technisches SEO, On-Page, Content-Strategie und Linkbuilding.</p>
             <a href="/de/seo-optimierung.html" class="card-link">Mehr erfahren →</a>
-          </div>
-          <div class="card">
-            <div class="card-icon">◇</div>
-            <h3>Online-Marketing</h3>
+          </article>
+          <article class="card" data-leaf="bottom">
+            <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle class="leaf top"    cx="28" cy="14" r="11"/>
+              <circle class="leaf right"  cx="42" cy="28" r="11"/>
+              <circle class="leaf bottom" cx="28" cy="42" r="11"/>
+              <circle class="leaf left"   cx="14" cy="28" r="11"/>
+            </svg>
+            <h3>Marketing</h3>
+            <p class="card-price">ab 150 € / Monat</p>
             <p>Google Ads, Facebook- und Instagram-Kampagnen. Kreativ, Setup, Optimierung — monatlich messbar.</p>
             <a href="/de/online-marketing.html" class="card-link">Mehr erfahren →</a>
-          </div>
-          <div class="card">
-            <div class="card-icon">⚙</div>
-            <h3>Webseiten-Wartung</h3>
-            <p>Sicherheitsupdates, Backups, Content-Administration, technischer Support. Ab <strong>30 €/Monat</strong>.</p>
+          </article>
+          <article class="card" data-leaf="left">
+            <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle class="leaf top"    cx="28" cy="14" r="11"/>
+              <circle class="leaf right"  cx="42" cy="28" r="11"/>
+              <circle class="leaf bottom" cx="28" cy="42" r="11"/>
+              <circle class="leaf left"   cx="14" cy="28" r="11"/>
+            </svg>
+            <h3>Wartung</h3>
+            <p class="card-price">ab 30 € / Monat</p>
+            <p>Sicherheitsupdates, Backups, Content-Administration, technischer Support — die Seite läuft, während Sie Ihr Geschäft führen.</p>
             <a href="/de/webseiten-wartung.html" class="card-link">Mehr erfahren →</a>
-          </div>
+          </article>
         </div>
       </div>
     </section>

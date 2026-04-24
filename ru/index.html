@@ -120,10 +120,20 @@
 
   <main id="main">
     <section class="hero">
+      <svg class="hero-clover" aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <g fill="currentColor">
+          <circle cx="100" cy="55" r="38"/>
+          <circle cx="145" cy="100" r="38"/>
+          <circle cx="100" cy="145" r="38"/>
+          <circle cx="55" cy="100" r="38"/>
+        </g>
+      </svg>
       <div class="container">
-        <p class="hero-eyebrow">Digital-агентство · Белград</p>
-        <h1>Digital-маркетинг, который <em>действительно</em> приносит результат.</h1>
-        <p class="hero-lead">Разработка сайтов, SEO, рекламные кампании и поддержка — всё в одном месте. Работаем с клиентами в Сербии и регионе с 2010 года.</p>
+        <p class="hero-eyebrow">Digital-агентство · Белград · с 2010 года</p>
+        <h1 class="hero-headline">
+          Удача — в <em>четырёх листьях</em>.<span class="line-2">Рост — в <em>четырёх каналах</em>.</span>
+        </h1>
+        <p class="hero-lead">Разработка сайтов, SEO, рекламные кампании и поддержка — всё в одном месте. С 2010 года помогаем компаниям в Сербии и регионе расти онлайн — ясно и измеримо.</p>
 
         <dl class="answer-grid" aria-label="Ключевая информация о Happy Media">
           <div class="answer-card">
@@ -165,30 +175,54 @@
           <p class="section-lead">Мы создаём, продвигаем и поддерживаем сайты, которые приносят клиентов — а не просто посетителей.</p>
         </div>
         <div class="grid">
-          <div class="card">
-            <div class="card-icon">◐</div>
+          <article class="card" data-leaf="top">
+            <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle class="leaf top"    cx="28" cy="14" r="11"/>
+              <circle class="leaf right"  cx="42" cy="28" r="11"/>
+              <circle class="leaf bottom" cx="28" cy="42" r="11"/>
+              <circle class="leaf left"   cx="14" cy="28" r="11"/>
+            </svg>
             <h3>Разработка сайтов</h3>
-            <p>Профессиональные сайты с адаптивным дизайном, интернет-магазины и базовое SEO — от <strong>380 €</strong>.</p>
+            <p class="card-price">от 380 €</p>
+            <p>Профессиональные сайты с адаптивным дизайном, интернет-магазины и базовое SEO — основа любого серьёзного онлайн-присутствия.</p>
             <a href="/ru/razrabotka-saytov.html" class="card-link">Подробнее →</a>
-          </div>
-          <div class="card">
-            <div class="card-icon">↑</div>
+          </article>
+          <article class="card" data-leaf="right">
+            <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle class="leaf top"    cx="28" cy="14" r="11"/>
+              <circle class="leaf right"  cx="42" cy="28" r="11"/>
+              <circle class="leaf bottom" cx="28" cy="42" r="11"/>
+              <circle class="leaf left"   cx="14" cy="28" r="11"/>
+            </svg>
             <h3>SEO-продвижение</h3>
+            <p class="card-price">от 300 € / месяц</p>
             <p>Ранжирование по запросам, которые приводят клиентов. Техническое SEO, on-page, контент и ссылочное.</p>
             <a href="/ru/seo-prodvizhenie.html" class="card-link">Подробнее →</a>
-          </div>
-          <div class="card">
-            <div class="card-icon">◇</div>
-            <h3>Интернет-маркетинг</h3>
+          </article>
+          <article class="card" data-leaf="bottom">
+            <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle class="leaf top"    cx="28" cy="14" r="11"/>
+              <circle class="leaf right"  cx="42" cy="28" r="11"/>
+              <circle class="leaf bottom" cx="28" cy="42" r="11"/>
+              <circle class="leaf left"   cx="14" cy="28" r="11"/>
+            </svg>
+            <h3>Маркетинг</h3>
+            <p class="card-price">от 150 € / месяц</p>
             <p>Google Ads, Facebook- и Instagram-кампании. Креатив, запуск, оптимизация — результаты ежемесячно.</p>
             <a href="/ru/internet-marketing.html" class="card-link">Подробнее →</a>
-          </div>
-          <div class="card">
-            <div class="card-icon">⚙</div>
-            <h3>Поддержка сайтов</h3>
-            <p>Обновления безопасности, бэкапы, администрирование контента, техподдержка. От <strong>30 €/месяц</strong>.</p>
+          </article>
+          <article class="card" data-leaf="left">
+            <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle class="leaf top"    cx="28" cy="14" r="11"/>
+              <circle class="leaf right"  cx="42" cy="28" r="11"/>
+              <circle class="leaf bottom" cx="28" cy="42" r="11"/>
+              <circle class="leaf left"   cx="14" cy="28" r="11"/>
+            </svg>
+            <h3>Поддержка</h3>
+            <p class="card-price">от 30 € / месяц</p>
+            <p>Обновления безопасности, бэкапы, администрирование контента, техподдержка — сайт работает, пока вы занимаетесь делом.</p>
             <a href="/ru/podderzhka-saytov.html" class="card-link">Подробнее →</a>
-          </div>
+          </article>
         </div>
       </div>
     </section>

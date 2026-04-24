@@ -220,12 +220,22 @@
 
   <main id="main">
 
-    <!-- HERO -->
+    <!-- HERO — Phase 4A editorial redesign -->
     <section class="hero">
+      <svg class="hero-clover" aria-hidden="true" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <g fill="currentColor">
+          <circle cx="100" cy="55" r="38"/>
+          <circle cx="145" cy="100" r="38"/>
+          <circle cx="100" cy="145" r="38"/>
+          <circle cx="55" cy="100" r="38"/>
+        </g>
+      </svg>
       <div class="container">
         <p class="hero-eyebrow">Digitalna agencija · Beograd · od 2010.</p>
-        <h1>Agencija za <em>digitalni</em> online marketing.</h1>
-        <p class="hero-lead">Izrada sajtova, SEO optimizacija, Google Ads i Facebook kampanje, održavanje i hosting — sve na jednom mestu. Pomažemo firmama u Srbiji da rastu online, jasno i merljivo.</p>
+        <h1 class="hero-headline">
+          Sreća dolazi u <em>četiri lista</em>.<span class="line-2">Rast dolazi u <em>četiri kanala</em>.</span>
+        </h1>
+        <p class="hero-lead">Izrada sajtova, SEO optimizacija, marketing kampanje i održavanje — pod jednim krovom. Od 2010. godine pomažemo firmama u Srbiji i regionu da rastu online, jasno i merljivo.</p>
         <div class="hero-cta-row">
           <a href="kontakt.html" class="btn btn-primary">Zakaži besplatne konsultacije →</a>
           <a href="#usluge" class="btn btn-secondary">Pogledaj usluge</a>
@@ -250,31 +260,55 @@
         </div>
 
         <div class="grid">
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">◐</div>
+          <article class="card" data-leaf="top">
+            <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle class="leaf top"    cx="28" cy="14" r="11"/>
+              <circle class="leaf right"  cx="42" cy="28" r="11"/>
+              <circle class="leaf bottom" cx="28" cy="42" r="11"/>
+              <circle class="leaf left"   cx="14" cy="28" r="11"/>
+            </svg>
             <h3>Izrada sajtova</h3>
-            <p>Profesionalni sajtovi sa responsive dizajnom, online prodavnicama i SEO osnovama — već <strong>od 380 €</strong>.</p>
+            <p class="card-price">od 380 €</p>
+            <p>Profesionalni sajtovi sa responsive dizajnom, online prodavnicama i SEO osnovama — temelj svakog ozbiljnog online prisustva.</p>
             <a href="izrada-sajtova.html" class="card-link">Saznaj više →</a>
           </article>
 
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">↗</div>
-            <h3>SEO optimizacija sajta</h3>
-            <p>Analiza ključnih reči, on-page i tehnički SEO, link building — da se rangirate za termine koji vam donose klijente.</p>
+          <article class="card" data-leaf="right">
+            <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle class="leaf top"    cx="28" cy="14" r="11"/>
+              <circle class="leaf right"  cx="42" cy="28" r="11"/>
+              <circle class="leaf bottom" cx="28" cy="42" r="11"/>
+              <circle class="leaf left"   cx="14" cy="28" r="11"/>
+            </svg>
+            <h3>SEO optimizacija</h3>
+            <p class="card-price">od 300 € / mesec</p>
+            <p>Analiza ključnih reči, on-page i tehnički SEO, link building — da se rangirate za termine koji donose klijente.</p>
             <a href="optimizacija-sajta.html" class="card-link">Saznaj više →</a>
           </article>
 
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">⌖</div>
-            <h3>Online marketing</h3>
+          <article class="card" data-leaf="bottom">
+            <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle class="leaf top"    cx="28" cy="14" r="11"/>
+              <circle class="leaf right"  cx="42" cy="28" r="11"/>
+              <circle class="leaf bottom" cx="28" cy="42" r="11"/>
+              <circle class="leaf left"   cx="14" cy="28" r="11"/>
+            </svg>
+            <h3>Marketing</h3>
+            <p class="card-price">od 150 € / mesec</p>
             <p>Google Ads, Facebook i Instagram kampanje — kreativa, setup, optimizacija i izveštaji iz Google Analytics-a.</p>
             <a href="online-marketing.html" class="card-link">Saznaj više →</a>
           </article>
 
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">⌬</div>
-            <h3>Održavanje sajta</h3>
-            <p>Administracija sadržaja, sigurnosne zakrpe, bekapovi i tehnička podrška — <strong>od 30 € mesečno</strong>.</p>
+          <article class="card" data-leaf="left">
+            <svg class="card-clover" viewBox="0 0 56 56" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+              <circle class="leaf top"    cx="28" cy="14" r="11"/>
+              <circle class="leaf right"  cx="42" cy="28" r="11"/>
+              <circle class="leaf bottom" cx="28" cy="42" r="11"/>
+              <circle class="leaf left"   cx="14" cy="28" r="11"/>
+            </svg>
+            <h3>Održavanje</h3>
+            <p class="card-price">od 30 € / mesec</p>
+            <p>Administracija sadržaja, sigurnosne zakrpe, bekapovi i tehnička podrška — sajt radi dok vi radite svoj posao.</p>
             <a href="odrzavanje-sajta.html" class="card-link">Saznaj više →</a>
           </article>
 
