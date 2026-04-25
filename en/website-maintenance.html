@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=13">
+  <link rel="stylesheet" href="/styles.css?v=14">
 
   <script type="application/ld+json">
   {
@@ -40,9 +40,9 @@
     "url": "https://happymedia.rs/en/website-maintenance.html",
     "description": "Security patches, backups, content administration, technical support and hosting monitoring for websites.",
     "offers": [
-      { "@type": "Offer", "name": "Basic — maintenance", "price": "30", "priceCurrency": "EUR", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "30", "priceCurrency": "EUR", "unitText": "MONTH" }, "availability": "https://schema.org/InStock" },
-      { "@type": "Offer", "name": "Pro — maintenance", "price": "60", "priceCurrency": "EUR", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "60", "priceCurrency": "EUR", "unitText": "MONTH" }, "availability": "https://schema.org/InStock" },
-      { "@type": "Offer", "name": "Business — maintenance", "description": "Dedicated manager, 24/7 emergency response, SLA 99.9% uptime", "availability": "https://schema.org/InStock" }
+      { "@type": "Offer", "name": "Essentials — website maintenance", "description": "Weekly backup (30 days retention), monthly CMS/plugins updates, SSL and domain monitoring, 1h changes monthly, email support (48h response)", "price": "60", "priceCurrency": "EUR", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "60", "priceCurrency": "EUR", "unitText": "MONTH" }, "availability": "https://schema.org/InStock" },
+      { "@type": "Offer", "name": "Standard — website maintenance", "description": "Daily backup (90 days retention), weekly updates + security patches, 24/7 uptime monitoring, 4h changes monthly, email + phone support (24h), monthly performance report", "price": "140", "priceCurrency": "EUR", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "140", "priceCurrency": "EUR", "unitText": "MONTH" }, "availability": "https://schema.org/InStock" },
+      { "@type": "Offer", "name": "Priority — website maintenance", "description": "Real-time backup (1 year retention), staging environment + pre-launch testing, 24/7 uptime monitoring + SMS alert, 10h changes monthly + emergency interventions, dedicated Slack channel (4h response), monthly SEO + performance audit, priority response", "price": "320", "priceCurrency": "EUR", "priceSpecification": { "@type": "UnitPriceSpecification", "price": "320", "priceCurrency": "EUR", "unitText": "MONTH" }, "availability": "https://schema.org/InStock" }
     ],
     "audience": { "@type": "BusinessAudience", "audienceType": "Website owners who want technical maintenance and security without hiring internal IT" },
     "dateModified": "2026-04-24",
@@ -55,10 +55,11 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "How much does website maintenance cost?", "acceptedAnswer": { "@type": "Answer", "text": "Basic package — €30 monthly. Pro — €60 monthly. Business — on agreement for 24/7 SLA and critical interventions." } },
-      { "@type": "Question", "name": "What does maintenance include?", "acceptedAnswer": { "@type": "Answer", "text": "CMS, plugin, and theme updates. Off-server backups. Security and uptime monitoring. Content administration within monthly hours. Email and phone technical support." } },
-      { "@type": "Question", "name": "Do you maintain websites not built by you?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, we take over websites built by others. Before signing, we run a technical audit to assess the state — if patching existing issues is needed, we quote it separately." } },
-      { "@type": "Question", "name": "What happens if the site goes down?", "acceptedAnswer": { "@type": "Answer", "text": "Basic and Pro clients — response during business hours (Mon–Fri 09–17). Business clients — 24/7 emergency response with SLA 99.9% uptime. Backup restore within 2 hours of a serious incident." } }
+      { "@type": "Question", "name": "Do you maintain websites not built by you?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. First we do a free technical inspection (1-2 days) to see the state. If major remediation is needed — we quote it upfront." } },
+      { "@type": "Question", "name": "What counts as a change (button color too)?", "acceptedAnswer": { "@type": "Answer", "text": "Anything taking up to 30 minutes — text edit, image, banner, price, adding products — counts as 0.5h. Bigger changes (new page, new functionality) we estimate upfront and bill separately if they exceed monthly quota." } },
+      { "@type": "Question", "name": "What if I use up all hours in the first week?", "acceptedAnswer": { "@type": "Answer", "text": "We notify you before — at 70% and 90% of quota. The rest of the month we bill hourly (€35/h Essentials, €30/h Standard, €25/h Priority). Next month quota resets." } },
+      { "@type": "Question", "name": "Do you also host the website?", "acceptedAnswer": { "@type": "Answer", "text": "No. Hosting and domain are always in your ownership and on your account. We help you choose (recommendation: Hostinger, SiteGround, Namecheap) and configure. So the site isn't 'locked' with us." } },
+      { "@type": "Question", "name": "What if I want to cancel maintenance?", "acceptedAnswer": { "@type": "Answer", "text": "Cancel 30 days in advance. We hand over all access (CMS, hosting, domain, GA4, Search Console) and a final technical report. No 'cancellation fee', no content lock-in." } }
     ]
   }
   </script>
@@ -102,153 +103,147 @@
   <main id="main">
     <nav class="container crumbs" aria-label="Breadcrumb"><a href="/en/">Home</a><span class="sep">/</span><span>Website maintenance</span></nav>
 
-    <section class="hero" style="padding-top:2.5rem;">
+    <!-- HERO — split: text + status mockup (cream) -->
+    <section class="service-hero">
       <div class="container">
-        <p class="hero-eyebrow">Service</p>
-        <span class="price-tag">Starting at €30 / month</span>
-        <h1>Website maintenance — hands off.</h1>
-        <p class="hero-lead">A website is a living project — it needs regular updates, backups, and fast response when something breaks. We handle it in the background while you run your business.</p>
+        <div class="hero-grid">
+          <div>
+            <div class="hero-pills">
+              <span class="hero-pill green">04 · Service</span>
+            </div>
+            <h1>Your site is <em class="green">alive</em>. Someone has to <em>take care of it</em>.</h1>
+            <p class="hero-lead">Backups, security updates, monitoring, small changes when needed. No panic when something "breaks" — because someone is already working on it.</p>
+            <div class="hero-cta-row">
+              <a href="#packages" class="btn btn-dark">See packages →</a>
+              <a href="#whats-included" class="btn btn-secondary">What's included?</a>
+            </div>
+            <div class="hero-stats-inline">
+              <div><p class="stat-num">99.9%</p><p class="stat-label">Uptime guarantee</p></div>
+              <div><p class="stat-num">&lt;4h</p><p class="stat-label">Response time (business day)</p></div>
+              <div><p class="stat-num">40+</p><p class="stat-label">Sites under maintenance</p></div>
+            </div>
+          </div>
 
-        <dl class="answer-grid" aria-label="Key information about website maintenance">
-          <div class="answer-card">
-            <dt>What we offer</dt>
-            <dd>Security updates, off-server backups, content administration, technical support, and hosting monitoring.</dd>
+          <!-- Status mockup -->
+          <div class="status-mockup" aria-hidden="true">
+            <div class="status-header">
+              <span class="status-title">Status · happymedia.rs</span>
+              <span class="status-pill"><span class="dot"></span> Operational</span>
+            </div>
+            <div class="status-row"><span class="status-label">Uptime (30 days)</span><span class="status-value good">99.98%</span></div>
+            <div class="status-row"><span class="status-label">Load time</span><span class="status-value">1.2s</span></div>
+            <div class="status-row"><span class="status-label">SSL certificate</span><span class="status-value">valid until 2026-12-14</span></div>
+            <div class="status-row"><span class="status-label">Last backup</span><span class="status-value">4h ago · 420 MB</span></div>
+            <div class="status-row"><span class="status-label">Updates</span><div class="status-progress"><div class="status-progress-bar"></div></div></div>
           </div>
-          <div class="answer-card">
-            <dt>Who it's for</dt>
-            <dd>Website owners who don't have internal IT but want their site to run stable, secure, and fast.</dd>
-          </div>
-          <div class="answer-card">
-            <dt>How much it costs</dt>
-            <dd>Basic <strong>€30/month</strong>, Pro <strong>€60/month</strong>, Business <strong>on agreement</strong>. No lock-in — billed monthly.</dd>
-          </div>
-          <div class="answer-card">
-            <dt>How it works</dt>
-            <dd>1) Technical audit of existing site → 2) Monitoring and backup setup → 3) Monthly update cycle → 4) Status report.</dd>
-          </div>
-        </dl>
-
-        <div class="hero-cta-row">
-          <a href="/en/contact.html" class="btn btn-primary">Book a consultation →</a>
-          <a href="#packages" class="btn btn-secondary">See packages</a>
         </div>
       </div>
     </section>
 
-    <section>
+    <!-- WHY — 2-col -->
+    <section id="whats-included">
       <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">What's included</p>
-          <h2>Technical maintenance + content administration.</h2>
-        </div>
-        <div class="grid">
-          <div class="card"><div class="card-icon">🛡</div><h3>Security patches</h3><p>Regular CMS, plugin, and theme updates. Vulnerability monitoring and rapid response to new threats.</p></div>
-          <div class="card"><div class="card-icon">⎘</div><h3>Backups</h3><p>Daily and weekly off-server backups. Recovery within 2 hours in case of incident.</p></div>
-          <div class="card"><div class="card-icon">✎</div><h3>Content administration</h3><p>Posting blog articles, adding images, updating pages — by request, up to a set number of hours monthly.</p></div>
-          <div class="card"><div class="card-icon">⚡</div><h3>Speed and cache</h3><p>Licensed caching plugins, image optimization, CDN integration. Core Web Vitals monitoring.</p></div>
-          <div class="card"><div class="card-icon">☎</div><h3>Technical support</h3><p>Email and phone. 24/7 critical interventions for Pro and Business clients.</p></div>
-          <div class="card"><div class="card-icon">☁</div><h3>Hosting monitoring</h3><p>Uptime monitoring, SSL checks, domain expiry — all under control so you're never caught off guard.</p></div>
+        <div class="two-col">
+          <div>
+            <p class="section-eyebrow">Why maintenance</p>
+            <h2>A site that <em>nobody watches</em> goes down — when you need it <em class="green">most</em>.</h2>
+          </div>
+          <dl class="why-list">
+            <div class="why-item"><dt><span class="why-num">01</span><span class="why-title">Security</span></dt><dd>WordPress sites without updates — 30% get hacked in the first year. Don't worry, we monitor.</dd></div>
+            <div class="why-item"><dt><span class="why-num">02</span><span class="why-title">Performance</span></dt><dd>Load time degrades over time — images, code, databases. We optimize monthly.</dd></div>
+            <div class="why-item"><dt><span class="why-num">03</span><span class="why-title">Quick changes</span></dt><dd>Need a new price, banner, photo? You don't wait a week — 24–48h.</dd></div>
+            <div class="why-item"><dt><span class="why-num">04</span><span class="why-title">Peace of mind</span></dt><dd>Backup, monitoring, SSL, domain — all under control. You run your business.</dd></div>
+          </dl>
         </div>
       </div>
     </section>
 
+    <!-- PRICING -->
     <section id="packages" style="background: var(--surface-alt);">
       <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Packages</p>
-          <h2>Transparent pricing, no hidden items.</h2>
+        <div class="section-header" style="text-align:center; margin: 0 auto 1rem;">
+          <p class="section-eyebrow" style="justify-content:center;">Packages</p>
+          <h2>Three packages. <em class="green">No hidden costs</em>.</h2>
         </div>
-        <table class="pricing-table" aria-label="Website maintenance packages">
-          <thead>
-            <tr>
-              <th scope="col">Package</th>
-              <th scope="col">Updates</th>
-              <th scope="col">Backup</th>
-              <th scope="col">Admin</th>
-              <th scope="col">Support</th>
-              <th scope="col">Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><th scope="row">Basic</th><td>monthly</td><td>weekly</td><td>1 hour / month</td><td>email</td><td class="price-col">€30 / month</td></tr>
-            <tr><th scope="row">Pro</th><td>weekly</td><td>daily</td><td>3 hours / month</td><td>email + phone</td><td class="price-col">€60 / month</td></tr>
-            <tr><th scope="row">Business</th><td>as needed</td><td>daily + real-time</td><td>unlimited*</td><td>24/7 + SLA</td><td class="price-col">on agreement</td></tr>
-          </tbody>
-        </table>
-        <p style="color:var(--text-muted); font-size:.9rem; margin-top:1rem;">* Business: unlimited minor changes, monthly strategy call, dedicated project manager.</p>
+
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <p class="pricing-eyebrow">Basic maintenance — for stable sites</p>
+            <h3 class="pricing-name">Essentials</h3>
+            <p class="pricing-price">€60<span class="price-suffix">/ mo.</span></p>
+            <ul class="pricing-features">
+              <li>Weekly backup (30 days retention)</li>
+              <li>Monthly CMS/plugin updates</li>
+              <li>SSL and domain monitoring</li>
+              <li>1h changes monthly</li>
+              <li>Email support (48h response)</li>
+              <li class="disabled">Phone support</li>
+              <li class="disabled">Performance optimization</li>
+            </ul>
+            <a href="/en/contact.html" class="btn btn-secondary">Choose package</a>
+          </article>
+
+          <article class="pricing-card featured">
+            <span class="pricing-badge">★ Recommended</span>
+            <p class="pricing-eyebrow">Our most popular package — covers 80% of needs</p>
+            <h3 class="pricing-name">Standard</h3>
+            <p class="pricing-price">€140<span class="price-suffix">/ mo.</span></p>
+            <ul class="pricing-features">
+              <li>Daily backup (90 days retention)</li>
+              <li>Weekly updates + security patches</li>
+              <li>24/7 uptime monitoring</li>
+              <li>4h changes monthly</li>
+              <li>Email + phone support (24h)</li>
+              <li>Monthly performance report</li>
+              <li class="disabled">Priority response</li>
+            </ul>
+            <a href="/en/contact.html" class="btn">Choose package</a>
+          </article>
+
+          <article class="pricing-card">
+            <p class="pricing-eyebrow">For e-commerce and sites where every minute down = lost revenue</p>
+            <h3 class="pricing-name">Priority</h3>
+            <p class="pricing-price">€320<span class="price-suffix">/ mo.</span></p>
+            <ul class="pricing-features">
+              <li>Real-time backup (1 year retention)</li>
+              <li>Staging environment + pre-launch testing</li>
+              <li>24/7 uptime monitoring + SMS alert</li>
+              <li>10h changes monthly + emergency interventions</li>
+              <li>Dedicated Slack channel (4h response)</li>
+              <li>Monthly SEO + performance audit</li>
+              <li>Priority response — before others</li>
+            </ul>
+            <a href="/en/contact.html" class="btn btn-secondary">Choose package</a>
+          </article>
+        </div>
+
+        <p class="pricing-footnote">Annual payment — <strong>−15%</strong> · Can be changed monthly · 30 days notice for cancellation.</p>
       </div>
     </section>
 
-    <section>
+    <!-- QUICK ANSWERS -->
+    <section class="quick-answers">
       <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Frequently asked</p>
-          <h2>Common questions about maintenance.</h2>
+        <div class="qa-header">
+          <p class="section-eyebrow">Quick answers</p>
+          <h2>Everything you need to know <em class="green">in 60 seconds</em>.</h2>
         </div>
-        <div class="grid">
-          <div class="card"><h3>How much?</h3><p>Basic €30/month, Pro €60/month, Business on agreement. No contract lock-in — billed monthly.</p></div>
-          <div class="card"><h3>What's included?</h3><p>Updates, backups, monitoring, content admin within hours, technical support.</p></div>
-          <div class="card"><h3>External sites?</h3><p>Yes, we take over sites built by others. Technical audit first.</p></div>
-          <div class="card"><h3>If site crashes?</h3><p>Basic/Pro — business hours response. Business — 24/7 SLA 99.9%. Backup restore within 2 hours.</p></div>
-        </div>
+        <dl class="quick-answers-grid" aria-label="Key information about website maintenance">
+          <div class="quick-answer"><p class="qa-num">01</p><dt>What we offer</dt><dd>Security updates, off-server backups, small changes, performance monitoring and technical support.</dd></div>
+          <div class="quick-answer"><p class="qa-num">02</p><dt>Who it's for</dt><dd>Website owners who don't have internal IT but want their site to run stable, secure and fast.</dd></div>
+          <div class="quick-answer"><p class="qa-num">03</p><dt>How much it costs</dt><dd>Essentials <strong>€60/mo</strong>, Standard <strong>€140/mo</strong>, Priority <strong>€320/mo</strong>. 30 days notice.</dd></div>
+          <div class="quick-answer"><p class="qa-num">04</p><dt>How it works</dt><dd>1) Free technical inspection → 2) Monitoring + backup setup → 3) Monthly update cycle → 4) Monthly report.</dd></div>
+        </dl>
       </div>
     </section>
 
-    <section>
+    <!-- FAQ -->
+    <section style="background: var(--surface-alt);">
       <div class="container">
-        <div class="cta-band">
-          <h2>Let us handle the tech.</h2>
-          <p>You focus on business — we keep the site running, secure, and fast.</p>
-          <a href="/en/contact.html" class="btn btn-primary">Book a consultation →</a>
+        <div class="section-header" style="text-align:center; margin: 0 auto 1rem;">
+          <p class="section-eyebrow" style="justify-content:center;">FAQ</p>
+          <h2>Common questions about <em class="green">maintenance</em>.</h2>
         </div>
-      </div>
-    </section>
-  </main>
-
-  <section class="team-bar" aria-label="Our team">
-    <div class="container">
-      <div class="team-bar-header">
-        <p class="section-eyebrow">Our team</p>
-        <h3>The people behind the work.</h3>
-        <p class="team-bar-sub">A team of five with over 15 years of experience.</p>
-      </div>
-      <div class="team-bar-row">
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Marko-Covic.png" alt="Marko Čović — CEO" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Marko Čović</p><p class="role" itemprop="jobTitle">CEO</p></div>
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Natasa-Vujovic.png" alt="Nataša Vujović — Developer" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Nataša Vujović</p><p class="role" itemprop="jobTitle">Developer</p></div>
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Danijela-Maksimovic.png" alt="Danijela Maksimović — Web Designer" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Danijela Maksimović</p><p class="role" itemprop="jobTitle">Web Designer</p></div>
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Nebojsa-Jankovic-2.png" alt="Nebojša Janković — YouTube Specialist" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Nebojša Janković</p><p class="role" itemprop="jobTitle">YouTube Specialist</p></div>
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Ana-Covic.png" alt="Ana Čović — Administration" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Ana Čović</p><p class="role" itemprop="jobTitle">Administration</p></div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a class="brand" href="/en/" style="margin-bottom:1rem; display:inline-flex;"><span class="brand-dot"></span> Happy Media</a>
-          <p style="color:var(--text-muted); max-width:32ch;">Digital marketing agency. Belgrade, Serbia.</p>
-        </div>
-        <div><h4>Services</h4><ul>
-          <li><a href="/en/website-development.html">Website development</a></li>
-          <li><a href="/en/seo-services.html">SEO optimization</a></li>
-          <li><a href="/en/online-marketing.html">Marketing</a></li>
-          <li><a href="/en/website-maintenance.html">Website maintenance</a></li>
-        </ul></div>
-        <div><h4>Company</h4><ul>
-          <li><a href="/en/contact.html">Contact</a></li>
-          <li><a href="/en/contact.html">Book a consultation</a></li>
-          <li><a href="https://www.facebook.com/happymedia.rs/" rel="noopener">Facebook</a></li>
-        </ul></div>
-        <div><h4>Contact</h4><ul>
-          <li>Belgrade, Serbia</li>
-          <li><a href="tel:+381632525 70">+381 63 2525 70</a></li>
-          <li><a href="mailto:marko@happymedia.rs">marko@happymedia.rs</a></li>
-        </ul></div>
-      </div>
-      <div class="footer-bottom"><span>© <span id="y"></span> Happy Media</span><time class="last-updated" datetime="2026-04-24">Last updated: April 24, 2026</time></div>
-    </div>
-  </footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
-</body>
-</html>
+        <div class="faq-accordion">
+          <details class="faq-item" open><summary>Do you maintain sites we didn't build?</summary><p class="faq-answer">Yes. First we do a free technical inspection (1–2 days) to see the state. If major remediation is needed — we quote it upfront.</p></details>
+          <d

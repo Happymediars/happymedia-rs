@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=13">
+  <link rel="stylesheet" href="/styles.css?v=14">
 
   <script type="application/ld+json">
   {
@@ -45,9 +45,9 @@
     "url": "https://happymedia.rs/en/website-development.html",
     "description": "Professional website development — responsive design, SEO foundations, online stores. For small and medium businesses.",
     "offers": [
-      { "@type": "Offer", "name": "Presentation website", "description": "3–7 pages, contact form, blog", "price": "380", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" },
-      { "@type": "Offer", "name": "Business website", "description": "Up to 20 pages, portfolio, CMS, SEO", "price": "750", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" },
-      { "@type": "Offer", "name": "Online store", "description": "Product catalog, payment, shipping", "price": "1200", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" }
+      { "@type": "Offer", "name": "Starter — website development", "description": "Up to 5 pages, responsive design, basic SEO structure, contact form, SSL + hosting first 6 months", "price": "380", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" },
+      { "@type": "Offer", "name": "Business — website development", "description": "Up to 15 pages, custom design, advanced SEO, blog system, GA4 + Search Console, multilingual optional, SSL + hosting + CDN 12 months", "price": "780", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" },
+      { "@type": "Offer", "name": "E-commerce — online store", "description": "Unlimited products, cart + checkout, card + IPS payments, fiscal cash register, courier integrations, email automation, advanced product SEO", "price": "1450", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" }
     ],
     "dateModified": "2026-04-24",
     "inLanguage": "en"
@@ -59,10 +59,12 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": "How much does a website cost?", "acceptedAnswer": { "@type": "Answer", "text": "A basic website starts at €380. Final price depends on the number of pages, functionality, and integrations (e.g., online store, multilingual, booking calendar)." } },
-      { "@type": "Question", "name": "How long does development take?", "acceptedAnswer": { "@type": "Answer", "text": "A simple presentation website — 2 to 3 weeks. An online store — 4 to 6 weeks, depending on product count and integrations." } },
-      { "@type": "Question", "name": "Is the website mobile-friendly?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, all our websites are responsive and optimized for mobile phones, tablets, and desktops — tested on real devices." } },
-      { "@type": "Question", "name": "What's included in the price?", "acceptedAnswer": { "@type": "Answer", "text": "Design and development, hosting setup, basic SEO configuration, SSL certificate, and one hour of training on how to maintain content yourself." } }
+      { "@type": "Question", "name": "How involved do I need to be in the website project?", "acceptedAnswer": { "@type": "Answer", "text": "Realistically — 2 to 4 hours over 14 days. We need only text, images and feedback from you. We do everything else." } },
+      { "@type": "Question", "name": "What if I don't like the design?", "acceptedAnswer": { "@type": "Answer", "text": "We present 2 different design directions in the design phase. You pick the one you like, we polish details. If neither works — we make a third at no extra cost." } },
+      { "@type": "Question", "name": "Can I update content myself after launch?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. All our websites come with an admin panel for self-managing content. At launch you get 1 hour of training + written guide." } },
+      { "@type": "Question", "name": "Who owns the domain and hosting?", "acceptedAnswer": { "@type": "Answer", "text": "You. Domain and hosting are always in your ownership. We help register them in your name, or migrate existing ones. No 'lock-in' with us." } },
+      { "@type": "Question", "name": "What if you're late with the project?", "acceptedAnswer": { "@type": "Answer", "text": "In 15 years we've never been late when it depended only on us. If it does happen (our fault), you get 5% discount on the final invoice for each day of delay." } },
+      { "@type": "Question", "name": "Can you do design only or development only?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We have separate offers for design only (from €250) and development only (from €200) if you already have a design from another agency." } }
     ]
   }
   </script>
@@ -106,149 +108,172 @@
   <main id="main">
     <nav class="container crumbs" aria-label="Breadcrumb"><a href="/en/">Home</a><span class="sep">/</span><span>Website development</span></nav>
 
-    <section class="hero" style="padding-top:2.5rem;">
+    <!-- HERO — split: text + browser mockup -->
+    <section class="service-hero">
       <div class="container">
-        <p class="hero-eyebrow">Service</p>
-        <span class="price-tag">Starting at €380</span>
-        <h1>Website development.</h1>
-        <p class="hero-lead">Fast, clean, mobile-first websites that don't just look good — they deliver results. From a presentation website to a full online store.</p>
+        <div class="hero-grid">
+          <div>
+            <div class="hero-pills">
+              <span class="hero-pill green">01 · Service</span>
+              <span class="hero-pill">Belgrade · since 2010</span>
+            </div>
+            <h1>Professional website for your business <em class="green">from €380</em>.</h1>
+            <p class="hero-lead">Responsive design, fast loading, SEO foundations and online store — all at a fixed price, no hidden costs. Launch in 14 days.</p>
+            <div class="hero-cta-row">
+              <a href="/en/contact.html" class="btn btn-dark">Book a free consultation →</a>
+              <a href="#packages" class="btn btn-secondary">↓ Packages and prices</a>
+            </div>
+            <div class="hero-stats-inline">
+              <div><p class="stat-num">300+</p><p class="stat-label">Websites delivered</p></div>
+              <div><p class="stat-num">14 days</p><p class="stat-label">Average launch time</p></div>
+              <div><p class="stat-num">5.0 ★</p><p class="stat-label">Google rating</p></div>
+            </div>
+          </div>
 
-        <dl class="answer-grid" aria-label="Key information about website development">
-          <div class="answer-card">
+          <!-- Browser mockup -->
+          <div class="hero-mockup" aria-hidden="true">
+            <div class="browser-bar">
+              <div class="browser-dots"><span></span><span></span><span></span></div>
+              <div class="browser-url">your-website.com</div>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-row">
+                <div class="mockup-clover"></div>
+                <div class="mockup-line short"></div>
+                <div class="mockup-line short"></div>
+                <div class="mockup-line short"></div>
+              </div>
+              <h4>Your new website <em>that brings clients</em>.</h4>
+              <div class="mockup-line"></div>
+              <div class="mockup-cta">Book a consultation →</div>
+              <div class="mockup-image">Hero image</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGO BAR -->
+    <section class="logo-bar" aria-label="Clients we've worked with">
+      <div class="container">
+        <p class="logo-bar-eyebrow">With over 300+ companies launched</p>
+        <div class="logo-bar-row">
+          <span>Newsmax Balkans</span>
+          <span>Mega Concept</span>
+          <span>Eurodom</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING — 3 cards -->
+    <section id="packages" style="background: var(--surface-alt);">
+      <div class="container">
+        <div class="section-header" style="text-align:center; margin: 0 auto 1rem;">
+          <p class="section-eyebrow" style="justify-content:center;">Packages</p>
+          <h2>Three packages. <em class="green">Fixed prices</em>.</h2>
+          <p class="section-lead">No hidden costs, no "well it ended up more". You pay half upfront, half on delivery.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <p class="pricing-eyebrow">For small businesses</p>
+            <h3 class="pricing-name">Starter</h3>
+            <p class="pricing-price">€380<span class="price-suffix">one-time</span></p>
+            <ul class="pricing-features">
+              <li>Up to 5 pages</li>
+              <li>Responsive design (mobile + tablet)</li>
+              <li>Basic SEO structure</li>
+              <li>Contact form + Google Maps</li>
+              <li>SSL + hosting first 6 months</li>
+              <li>Admin training</li>
+            </ul>
+            <a href="/en/contact.html" class="btn btn-dark">Book Starter package →</a>
+          </article>
+
+          <article class="pricing-card featured">
+            <span class="pricing-badge">★ Most popular</span>
+            <p class="pricing-eyebrow">Most popular · 60% of clients</p>
+            <h3 class="pricing-name">Business</h3>
+            <p class="pricing-price">€780<span class="price-suffix">one-time</span></p>
+            <ul class="pricing-features">
+              <li>Up to 15 pages</li>
+              <li>Custom design (no templates)</li>
+              <li>Advanced SEO (schema, sitemap, image optimization)</li>
+              <li>Blog system + categories</li>
+              <li>GA4 and Search Console integration</li>
+              <li>Multilingual (EN/SR) optional</li>
+              <li>SSL + hosting + CDN 12 months</li>
+              <li>3 free revisions after launch</li>
+            </ul>
+            <a href="/en/contact.html" class="btn">Book Business package →</a>
+          </article>
+
+          <article class="pricing-card">
+            <p class="pricing-eyebrow">Online store</p>
+            <h3 class="pricing-name">E-commerce</h3>
+            <p class="pricing-price">€1,450<span class="price-suffix">from</span></p>
+            <ul class="pricing-features">
+              <li>Unlimited products</li>
+              <li>Cart, checkout, payments (cards + IPS)</li>
+              <li>Fiscal cash register integration</li>
+              <li>Inventory management</li>
+              <li>Courier integrations: Pošta Srbije, DExpress, BEX</li>
+              <li>Email automation (abandoned cart, etc.)</li>
+              <li>Advanced product SEO</li>
+              <li>One month of post-launch support</li>
+            </ul>
+            <a href="/en/contact.html" class="btn btn-dark">Book E-commerce package →</a>
+          </article>
+        </div>
+
+        <p class="pricing-footnote">Not sure which package? <a href="/en/contact.html">Book a 30-min consultation</a> — we'll recommend after a chat.</p>
+      </div>
+    </section>
+
+    <!-- QUICK ANSWERS -->
+    <section class="quick-answers">
+      <div class="container">
+        <div class="qa-header">
+          <p class="section-eyebrow">Quick answers</p>
+          <h2>Everything you need to know <em class="green">in 60 seconds</em>.</h2>
+        </div>
+        <dl class="quick-answers-grid" aria-label="Key information about website development">
+          <div class="quick-answer">
+            <p class="qa-num">01</p>
             <dt>What we offer</dt>
-            <dd>Development, design, and launch of professional websites — presentation, business, or online store.</dd>
+            <dd>Development, design and launch of professional websites — Starter, Business, or E-commerce package.</dd>
           </div>
-          <div class="answer-card">
+          <div class="quick-answer">
+            <p class="qa-num">02</p>
             <dt>Who it's for</dt>
-            <dd>Small and medium businesses, B2B companies, service providers, and craftsmen who want a serious online presence.</dd>
+            <dd>Small and medium businesses, B2B companies, service providers and craftsmen in Serbia who want a serious online presence.</dd>
           </div>
-          <div class="answer-card">
+          <div class="quick-answer">
+            <p class="qa-num">03</p>
             <dt>How much it costs</dt>
-            <dd>Presentation from <strong>€380</strong>, business from <strong>€750</strong>, online store from <strong>€1200</strong>. Fixed price on agreement.</dd>
+            <dd>Starter <strong>€380</strong>, Business <strong>€780</strong>, E-commerce <strong>from €1,450</strong>. Fixed price, no hidden costs.</dd>
           </div>
-          <div class="answer-card">
+          <div class="quick-answer">
+            <p class="qa-num">04</p>
             <dt>How it works</dt>
-            <dd>1) Free consultation → 2) Quote with timeline → 3) Design and development → 4) Launch + training.</dd>
+            <dd>1) Consultation → 2) Quote + wireframe → 3) Design → 4) Development + content → 5) Launch in 14 days.</dd>
           </div>
         </dl>
-
-        <div class="hero-cta-row">
-          <a href="/en/contact.html" class="btn btn-primary">Book a free consultation →</a>
-          <a href="#details" class="btn btn-secondary">See what's included</a>
-        </div>
       </div>
     </section>
 
-    <section id="details">
+    <!-- PROCESS — dark band, 5 steps -->
+    <section class="section-dark process-dark">
       <div class="container">
-        <div class="two-col">
+        <div class="process-header-row">
           <div>
-            <p class="section-eyebrow">What you get</p>
-            <h2>A website ready for Google from day one.</h2>
-            <ul class="feature-list">
-              <li>Responsive design — perfect on mobile, tablet, desktop</li>
-              <li>Speed and image optimization (Core Web Vitals)</li>
-              <li>SEO foundations — sitemap, schema markup, meta tags</li>
-              <li>SSL certificate and configured domain</li>
-              <li>Admin panel for managing content yourself</li>
-              <li>Multilingual version on request</li>
-              <li>Google Analytics and Search Console integration</li>
-              <li>One hour of training + written guide</li>
-            </ul>
+            <p class="section-eyebrow">Process</p>
+            <h2>From call to <em class="gold">launch in 14 days</em>.</h2>
           </div>
-          <div>
-            <h3>Packages and prices</h3>
-            <table class="pricing-table" aria-label="Website development packages">
-              <thead>
-                <tr>
-                  <th scope="col">Package</th>
-                  <th scope="col">What's included</th>
-                  <th scope="col">Price</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">Presentation</th><td>3–7 pages, contact form, blog</td><td class="price-col">from €380</td></tr>
-                <tr><th scope="row">Business</th><td>Up to 20 pages, portfolio, CMS, SEO</td><td class="price-col">from €750</td></tr>
-                <tr><th scope="row">Online store</th><td>Product catalog, payment, shipping</td><td class="price-col">from €1200</td></tr>
-                <tr><th scope="row">Custom</th><td>Special functionality, integrations, API</td><td class="price-col">on agreement</td></tr>
-              </tbody>
-            </table>
-            <a href="/en/contact.html" class="btn btn-primary" style="margin-top:1rem;">Request a quote →</a>
-          </div>
+          <p class="process-header-text">You know exactly what's happening every day. We communicate via email and a shared Notion page — no mystery, no "we'll get back to you".</p>
         </div>
-      </div>
-    </section>
-
-    <section style="background: var(--surface-alt);">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Frequently asked</p>
-          <h2>Common questions about website development.</h2>
-        </div>
-        <div class="grid">
-          <div class="card"><h3>How much?</h3><p>A basic website starts at €380. Final price depends on pages, functionality, and integrations.</p></div>
-          <div class="card"><h3>How long?</h3><p>Presentation website — 2–3 weeks. Online store — 4–6 weeks depending on scope.</p></div>
-          <div class="card"><h3>Mobile?</h3><p>Yes, all websites are responsive and tested on real devices — mobile, tablet, desktop.</p></div>
-          <div class="card"><h3>What's included?</h3><p>Design, development, SSL, basic SEO configuration, training. Domain and hosting optional.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="cta-band">
-          <h2>Ready for a new website?</h2>
-          <p>Send a short project brief — we'll reply with a quote within 24 hours.</p>
-          <a href="/en/contact.html" class="btn btn-primary">Book a consultation →</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <section class="team-bar" aria-label="Our team">
-    <div class="container">
-      <div class="team-bar-header">
-        <p class="section-eyebrow">Our team</p>
-        <h3>The people behind the work.</h3>
-        <p class="team-bar-sub">A team of five with over 15 years of experience.</p>
-      </div>
-      <div class="team-bar-row">
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Marko-Covic.png" alt="Marko Čović — CEO" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Marko Čović</p><p class="role" itemprop="jobTitle">CEO</p></div>
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Natasa-Vujovic.png" alt="Nataša Vujović — Developer" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Nataša Vujović</p><p class="role" itemprop="jobTitle">Developer</p></div>
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Danijela-Maksimovic.png" alt="Danijela Maksimović — Web Designer" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Danijela Maksimović</p><p class="role" itemprop="jobTitle">Web Designer</p></div>
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Nebojsa-Jankovic-2.png" alt="Nebojša Janković — YouTube Specialist" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Nebojša Janković</p><p class="role" itemprop="jobTitle">YouTube Specialist</p></div>
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Ana-Covic.png" alt="Ana Čović — Administration" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Ana Čović</p><p class="role" itemprop="jobTitle">Administration</p></div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a class="brand" href="/en/" style="margin-bottom:1rem; display:inline-flex;"><span class="brand-dot"></span> Happy Media</a>
-          <p style="color:var(--text-muted); max-width:32ch;">Digital marketing agency. Belgrade, Serbia.</p>
-        </div>
-        <div><h4>Services</h4><ul>
-          <li><a href="/en/website-development.html">Website development</a></li>
-          <li><a href="/en/seo-services.html">SEO optimization</a></li>
-          <li><a href="/en/online-marketing.html">Marketing</a></li>
-          <li><a href="/en/website-maintenance.html">Website maintenance</a></li>
-        </ul></div>
-        <div><h4>Company</h4><ul>
-          <li><a href="/en/contact.html">Contact</a></li>
-          <li><a href="/en/contact.html">Book a consultation</a></li>
-          <li><a href="https://www.facebook.com/happymedia.rs/" rel="noopener">Facebook</a></li>
-        </ul></div>
-        <div><h4>Contact</h4><ul>
-          <li>Belgrade, Serbia</li>
-          <li><a href="tel:+381632525 70">+381 63 2525 70</a></li>
-          <li><a href="mailto:marko@happymedia.rs">marko@happymedia.rs</a></li>
-        </ul></div>
-      </div>
-      <div class="footer-bottom"><span>© <span id="y"></span> Happy Media</span><time class="last-updated" datetime="2026-04-24">Last updated: April 24, 2026</time></div>
-    </div>
-  </footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
-</body>
-</html>
+        <div class="process-grid-5">
+          <div class="process-step">
+            <p class="step-num">01<span class="day">Day 1</span></p>
+            <h3>Free consultation</h3>
+            <p>30 min dis

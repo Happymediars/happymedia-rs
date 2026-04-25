@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=13">
+  <link rel="stylesheet" href="/styles.css?v=14">
 
   <script type="application/ld+json">
   {
@@ -74,116 +74,108 @@
   <main id="main">
     <nav class="container crumbs" aria-label="Breadcrumb"><a href="/en/">Home</a><span class="sep">/</span><span>Blog</span></nav>
 
-    <section class="hero" style="padding-top:2.5rem; padding-bottom:1.5rem;">
+    <!-- HERO -->
+    <section class="blog-hero">
       <div class="container">
-        <p class="hero-eyebrow">Blog</p>
-        <h1>Advice, analysis, and lessons from the field.</h1>
-        <p class="hero-lead">We write about what clients most often ask us — what it costs, what to realistically expect, where the traps are. No fluff, no "10 incredible tricks".</p>
+        <div class="hero-pills">
+          <span class="hero-pill green">Blog</span>
+        </div>
+        <h1>Ideas, case studies <em class="green">and everything we've learned</em>.</h1>
+        <p class="hero-lead">No clickbait. No AI-generated content. Just things we've built, tested, or got wrong.</p>
       </div>
     </section>
 
-    <section>
+    <!-- TOOLBAR (filter pills + search) -->
+    <section style="padding: 0;">
       <div class="container">
-        <div class="blog-list">
-
-          <article class="blog-card">
-            <p class="meta">April 24, 2026 · 8 min read · Web development</p>
-            <h3><a href="/en/blog-website-cost.html">How Much Does a Website Cost in 2026 — Real Numbers and What Affects the Price</a></h3>
-            <p>We break down pricing for presentation websites, business websites, and online stores. Where you can save — and where "cheap" becomes expensive.</p>
-            <a href="/en/blog-website-cost.html" class="read-more">Read article →</a>
-          </article>
-
-          <article class="blog-card">
-            <p class="meta">April 24, 2026 · 7 min read · SEO</p>
-            <h3><a href="/en/blog-seo-small-business.html">SEO for Small Businesses — Realistic Expectations and First Steps</a></h3>
-            <p>What a small business can realistically achieve with SEO, how long it takes, and what budget. Plus what definitely doesn't work.</p>
-            <a href="/en/blog-seo-small-business.html" class="read-more">Read article →</a>
-          </article>
-
-          <article class="blog-card">
-            <p class="meta">April 24, 2026 · 8 min read · Online marketing</p>
-            <h3><a href="/en/blog-google-ads.html">Google Ads for Small Businesses — What to Know Before the First Click</a></h3>
-            <p>Practical guide — budget, expected results, common mistakes, and choosing between DIY or agency.</p>
-            <a href="/en/blog-google-ads.html" class="read-more">Read article →</a>
-          </article>
-
-          <article class="blog-card">
-            <p class="meta">April 24, 2026 · 6 min read · Maintenance</p>
-            <h3><a href="/en/blog-maintenance-cost.html">How Much Does Website Maintenance Cost — What You Get and Why It Matters</a></h3>
-            <p>Real prices for Basic, Pro, and Business packages. What happens without maintenance — and why prevention always costs less than recovery.</p>
-            <a href="/en/blog-maintenance-cost.html" class="read-more">Read article →</a>
-          </article>
-
-          <article class="blog-card">
-            <p class="meta">April 24, 2026 · 7 min read · Web development</p>
-            <h3><a href="/en/blog-choosing-agency.html">How to Choose a Web Development Agency — 9 Questions Before You Sign</a></h3>
-            <p>Questions you must ask before signing anything. Plus red flags that mean you should walk away immediately.</p>
-            <a href="/en/blog-choosing-agency.html" class="read-more">Read article →</a>
-          </article>
-
-          <article class="blog-card">
-            <p class="meta">April 24, 2026 · 9 min read · SEO</p>
-            <h3><a href="/en/blog-local-seo.html">Local SEO — How to Rank on Google's First Page for Your City</a></h3>
-            <p>Google Business Profile, reviews, NAP consistency, local directories. The biggest opportunity for small businesses.</p>
-            <a href="/en/blog-local-seo.html" class="read-more">Read article →</a>
-          </article>
-
+        <div class="blog-toolbar">
+          <div class="blog-pills" role="group" aria-label="Filter by category">
+            <a href="#" class="filter-pill active">All</a>
+            <a href="#seo" class="filter-pill">SEO</a>
+            <a href="#marketing" class="filter-pill">Marketing</a>
+            <a href="#web" class="filter-pill">Web design</a>
+            <a href="#ai" class="filter-pill">AI</a>
+            <a href="#case-studies" class="filter-pill">Case studies</a>
+          </div>
+          <div class="blog-search">
+            <input type="search" placeholder="Search articles..." aria-label="Article search">
+          </div>
         </div>
 
-        <div class="article-cta" style="margin-top:3rem;">
-          <h3>Have a specific question about your website?</h3>
-          <p>30 minutes of free consultation — no commitment.</p>
-          <a href="/en/contact.html" class="btn btn-primary">Book a time →</a>
+        <!-- FEATURED POST -->
+        <a href="/en/blog-local-seo.html" class="featured-post">
+          <div class="post-thumb color-green">
+            <span class="post-thumb-cat">SEO · Tutorial</span>
+            <svg class="post-thumb-clover" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="0" cy="-22" r="22" fill="rgba(255,255,255,.22)"/><circle cx="22" cy="0" r="22" fill="rgba(255,255,255,.18)"/><circle cx="0" cy="22" r="22" fill="rgba(255,255,255,.16)"/><circle cx="-22" cy="0" r="22" fill="rgba(255,255,255,.24)"/><circle cx="0" cy="0" r="5" fill="rgba(255,255,255,.5)"/>
+            </svg>
+          </div>
+          <div class="featured-post-body">
+            <p class="post-cat-text">SEO · Tutorial</p>
+            <h2>Local SEO for businesses in Serbia — how to rank on Google's first page for your city</h2>
+            <p class="excerpt">Google Business Profile, reviews, NAP consistency, local directories. The biggest opportunity for small businesses that 80% of competitors ignore.</p>
+            <p class="post-meta">Marko P. · Apr 24, 2026 · 9 min read</p>
+          </div>
+        </a>
+
+        <!-- POSTS GRID -->
+        <div class="posts-grid">
+          <a href="/en/blog-website-cost.html" class="post-card">
+            <div class="post-thumb color-gold">
+              <span class="post-thumb-cat">Web design</span>
+              <svg class="post-thumb-clover" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="0" cy="-22" r="22" fill="rgba(255,255,255,.22)"/><circle cx="22" cy="0" r="22" fill="rgba(255,255,255,.18)"/><circle cx="0" cy="22" r="22" fill="rgba(255,255,255,.16)"/><circle cx="-22" cy="0" r="22" fill="rgba(255,255,255,.24)"/><circle cx="0" cy="0" r="5" fill="rgba(255,255,255,.5)"/></svg>
+            </div>
+            <div class="post-card-body"><h3>How much does a website cost in 2026 — real numbers</h3><p class="post-meta">Marko P. · Apr 24, 2026 · 8 min</p></div>
+          </a>
+
+          <a href="/en/blog-seo-small-business.html" class="post-card">
+            <div class="post-thumb color-sage">
+              <span class="post-thumb-cat">SEO</span>
+              <svg class="post-thumb-clover" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="0" cy="-22" r="22" fill="rgba(255,255,255,.22)"/><circle cx="22" cy="0" r="22" fill="rgba(255,255,255,.18)"/><circle cx="0" cy="22" r="22" fill="rgba(255,255,255,.16)"/><circle cx="-22" cy="0" r="22" fill="rgba(255,255,255,.24)"/><circle cx="0" cy="0" r="5" fill="rgba(255,255,255,.5)"/></svg>
+            </div>
+            <div class="post-card-body"><h3>SEO for small businesses — realistic expectations and first steps</h3><p class="post-meta">Marko P. · Apr 24, 2026 · 7 min</p></div>
+          </a>
+
+          <a href="/en/blog-google-ads.html" class="post-card">
+            <div class="post-thumb color-blue">
+              <span class="post-thumb-cat">Marketing</span>
+              <svg class="post-thumb-clover" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="0" cy="-22" r="22" fill="rgba(255,255,255,.22)"/><circle cx="22" cy="0" r="22" fill="rgba(255,255,255,.18)"/><circle cx="0" cy="22" r="22" fill="rgba(255,255,255,.16)"/><circle cx="-22" cy="0" r="22" fill="rgba(255,255,255,.24)"/><circle cx="0" cy="0" r="5" fill="rgba(255,255,255,.5)"/></svg>
+            </div>
+            <div class="post-card-body"><h3>Google Ads for small businesses — guide for the first attempt</h3><p class="post-meta">Marko P. · Apr 24, 2026 · 8 min</p></div>
+          </a>
+
+          <a href="/en/blog-maintenance-cost.html" class="post-card">
+            <div class="post-thumb color-green">
+              <span class="post-thumb-cat">Maintenance</span>
+              <svg class="post-thumb-clover" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="0" cy="-22" r="22" fill="rgba(255,255,255,.22)"/><circle cx="22" cy="0" r="22" fill="rgba(255,255,255,.18)"/><circle cx="0" cy="22" r="22" fill="rgba(255,255,255,.16)"/><circle cx="-22" cy="0" r="22" fill="rgba(255,255,255,.24)"/><circle cx="0" cy="0" r="5" fill="rgba(255,255,255,.5)"/></svg>
+            </div>
+            <div class="post-card-body"><h3>How much does maintenance cost in 2026 — what you get</h3><p class="post-meta">Marko P. · Apr 24, 2026 · 6 min</p></div>
+          </a>
+
+          <a href="/en/blog-choosing-agency.html" class="post-card">
+            <div class="post-thumb color-terracotta">
+              <span class="post-thumb-cat">Web design</span>
+              <svg class="post-thumb-clover" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="0" cy="-22" r="22" fill="rgba(255,255,255,.22)"/><circle cx="22" cy="0" r="22" fill="rgba(255,255,255,.18)"/><circle cx="0" cy="22" r="22" fill="rgba(255,255,255,.16)"/><circle cx="-22" cy="0" r="22" fill="rgba(255,255,255,.24)"/><circle cx="0" cy="0" r="5" fill="rgba(255,255,255,.5)"/></svg>
+            </div>
+            <div class="post-card-body"><h3>How to choose a web development agency — 9 questions before you sign</h3><p class="post-meta">Marko P. · Apr 24, 2026 · 7 min</p></div>
+          </a>
+
+          <a href="/en/blog-local-seo.html" class="post-card">
+            <div class="post-thumb color-coral">
+              <span class="post-thumb-cat">SEO</span>
+              <svg class="post-thumb-clover" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="0" cy="-22" r="22" fill="rgba(255,255,255,.22)"/><circle cx="22" cy="0" r="22" fill="rgba(255,255,255,.18)"/><circle cx="0" cy="22" r="22" fill="rgba(255,255,255,.16)"/><circle cx="-22" cy="0" r="22" fill="rgba(255,255,255,.24)"/><circle cx="0" cy="0" r="5" fill="rgba(255,255,255,.5)"/></svg>
+            </div>
+            <div class="post-card-body"><h3>Local SEO — how to appear on Google maps</h3><p class="post-meta">Marko P. · Apr 24, 2026 · 9 min</p></div>
+          </a>
+        </div>
+
+        <div class="load-more-row">
+          <a href="#" class="btn-load">Load more articles →</a>
         </div>
       </div>
     </section>
-  </main>
 
-  <section class="team-bar" aria-label="Our team">
-    <div class="container">
-      <div class="team-bar-header">
-        <p class="section-eyebrow">Our team</p>
-        <h3>The people behind the work.</h3>
-        <p class="team-bar-sub">A team of five with over 15 years of experience.</p>
-      </div>
-      <div class="team-bar-row">
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Marko-Covic.png" alt="Marko Čović — CEO" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Marko Čović</p><p class="role" itemprop="jobTitle">CEO</p></div>
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Natasa-Vujovic.png" alt="Nataša Vujović — Developer" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Nataša Vujović</p><p class="role" itemprop="jobTitle">Developer</p></div>
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Danijela-Maksimovic.png" alt="Danijela Maksimović — Web Designer" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Danijela Maksimović</p><p class="role" itemprop="jobTitle">Web Designer</p></div>
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Nebojsa-Jankovic-2.png" alt="Nebojša Janković — YouTube Specialist" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Nebojša Janković</p><p class="role" itemprop="jobTitle">YouTube Specialist</p></div>
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Ana-Covic.png" alt="Ana Čović — Administration" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Ana Čović</p><p class="role" itemprop="jobTitle">Administration</p></div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a class="brand" href="/en/" style="margin-bottom:1rem; display:inline-flex;"><span class="brand-dot"></span> Happy Media</a>
-          <p style="color:var(--text-muted); max-width:32ch;">Digital marketing agency. Belgrade, Serbia.</p>
-        </div>
-        <div><h4>Services</h4><ul>
-          <li><a href="/en/website-development.html">Website development</a></li>
-          <li><a href="/en/seo-services.html">SEO optimization</a></li>
-          <li><a href="/en/online-marketing.html">Marketing</a></li>
-          <li><a href="/en/website-maintenance.html">Website maintenance</a></li>
-        </ul></div>
-        <div><h4>Company</h4><ul>
-          <li><a href="/en/blog.html">Blog</a></li>
-          <li><a href="/en/contact.html">Contact</a></li>
-          <li><a href="/en/contact.html">Book a consultation</a></li>
-          <li><a href="https://www.facebook.com/happymedia.rs/" rel="noopener">Facebook</a></li>
-        </ul></div>
-        <div><h4>Contact</h4><ul>
-          <li>Belgrade, Serbia</li>
-          <li><a href="tel:+381632525 70">+381 63 2525 70</a></li>
-          <li><a href="mailto:marko@happymedia.rs">marko@happymedia.rs</a></li>
-        </ul></div>
-      </div>
-      <div class="footer-bottom"><span>© <span id="y"></span> Happy Media</span><time class="last-updated" datetime="2026-04-24">Last updated: April 24, 2026</time></div>
-    </div>
-  </footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
-</body>
-</html>
+    <!-- NEWSLETTER -->
+    <section class="newsletter-band">
+      <svg class="nl-clover" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="0" cy="-22" r="22" fill="#5A9D6F"/><circle cx="22" cy="0" r="22" fill="#4D8B5F"/><circle cx="0" cy="22" r="22" fill="#3D7A4E"/><circle cx="-22" cy="0" r="22" fill="#
