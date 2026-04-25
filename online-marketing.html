@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=10">
 
   <script type="application/ld+json">
   {
@@ -51,23 +51,28 @@
       {
         "@type": "Offer",
         "name": "Starter — upravljanje kampanjama",
-        "description": "Do 300 € oglasnog budžeta, jedna platforma (Google ili Meta)",
-        "price": "150",
+        "description": "Do 1.500 € oglasnog budžeta, jedna platforma (Google ili Meta), 1-2 kampanje, osnovna optimizacija, mesečni izveštaj, GA4 setup, 3 creative mesečno",
+        "price": "300",
         "priceCurrency": "EUR",
-        "priceSpecification": { "@type": "UnitPriceSpecification", "price": "150", "priceCurrency": "EUR", "unitText": "MONTH" },
+        "priceSpecification": { "@type": "UnitPriceSpecification", "price": "300", "priceCurrency": "EUR", "unitText": "MONTH" },
         "availability": "https://schema.org/InStock"
       },
       {
         "@type": "Offer",
         "name": "Growth — upravljanje kampanjama",
-        "description": "300–2000 € oglasnog budžeta, više platformi, remarketing",
-        "priceSpecification": { "@type": "UnitPriceSpecification", "price": "15", "priceCurrency": "EUR", "unitText": "MONTH", "description": "15–20% oglasnog budžeta mesečno" },
+        "description": "1.500-5.000 € oglasnog budžeta, Google + Meta, 3-5 kampanja, A/B testiranje, nedeljna optimizacija, retargeting, bi-nedeljni strategy calls, 8 kreativa mesečno",
+        "price": "550",
+        "priceCurrency": "EUR",
+        "priceSpecification": { "@type": "UnitPriceSpecification", "price": "550", "priceCurrency": "EUR", "unitText": "MONTH" },
         "availability": "https://schema.org/InStock"
       },
       {
         "@type": "Offer",
         "name": "Scale — upravljanje kampanjama",
-        "description": "Preko 2000 € oglasnog budžeta, full-funnel strategija",
+        "description": "Preko 5.000 € oglasnog budžeta, sve platforme, dedicated account manager, dnevna optimizacija, server-side tracking (CAPI), nedeljni calls + Slack",
+        "price": "900",
+        "priceCurrency": "EUR",
+        "priceSpecification": { "@type": "UnitPriceSpecification", "price": "900", "priceCurrency": "EUR", "unitText": "MONTH" },
         "availability": "https://schema.org/InStock"
       }
     ],
@@ -93,23 +98,28 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Koliko košta online marketing?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Upravljanje kampanjama — Starter paket 150 EUR mesečno za budžete do 300 EUR. Za veće budžete naplaćujemo 15–20 posto oglasnog budžeta. Minimalni oglasni budžet za ozbiljnu kampanju — 300 EUR mesečno po platformi." }
+        "name": "Koji budžet mi treba da počnem sa online marketingom?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Za testiranje — minimum 500 EUR mesečno. Za ozbiljne rezultate — 1.500 EUR i više. Manji budžet nema dovoljno podataka za optimizaciju." }
       },
       {
         "@type": "Question",
-        "name": "Koliko mesečno treba uložiti u oglase da bi kampanja imala smisla?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Minimum 300 EUR mesečno po platformi (Google ili Meta). Ispod toga algoritam nema dovoljno podataka za optimizaciju i rezultati su nekonzistentni. Za kompetitivne niše preporuka je 500–1000 EUR mesečno." }
+        "name": "Ko drži reklamne naloge (Google Ads, Meta)?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Vi. Google Ads, Meta Business i svi drugi nalozi su u vašem vlasništvu. Mi smo menadžeri preko Manager pristupa, ne vlasnici. Sav istorijat i podaci ostaju vaši." }
       },
       {
         "@type": "Question",
-        "name": "Ko je vlasnik oglasnih naloga?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Isključivo klijent. Google Ads, Meta Business i svi drugi oglasni nalozi uvek su u vašem vlasništvu. Mi smo menadžeri, ne vlasnici — kad god poželite, sav istorijat i podaci ostaju vaši." }
+        "name": "Koliko brzo ću videti rezultate od oglasa?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Prve klikove i lead-ove dobijate u roku od nekoliko dana. Optimizovane, profitabilne kampanje — obično nakon 4 do 6 nedelja učenja i A/B testiranja. Remarketing daje najbolji povrat nakon prvih 2 nedelje." }
       },
       {
         "@type": "Question",
-        "name": "Koliko brzo se vide rezultati od oglasa?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Prve klikove i leadove dobijate u roku od nekoliko dana. Optimizovane, profitabilne kampanje — obično nakon 4 do 6 nedelja učenja i A/B testiranja. Remarketing daje najbolji povrat uloženog nakon prvih 2 nedelje." }
+        "name": "Pravite li i kreative za oglase (video, slike)?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Da. Tekst i statične slike radimo u svakom paketu. Video kreative (do 30s) radimo u Growth i Scale paketima. Kompleksniju video produkciju (sa snimanjem) nudimo kao zasebnu uslugu." }
+      },
+      {
+        "@type": "Question",
+        "name": "Šta ako već imam marketing agenciju?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Radimo besplatan audit trenutnog naloga. Ako agencija radi dobro — kažemo vam to. Ako vidimo bacanje budžeta — pokazujemo konkretno gde i kako bi se popravilo. Bez pritiska da menjate." }
       }
     ]
   }
@@ -143,152 +153,268 @@
   <main id="main">
     <nav class="container crumbs"><a href="/">Početna</a><span class="sep">/</span><span>Online marketing</span></nav>
 
-    <section class="hero" style="padding-top:2.5rem;">
+    <!-- HERO — split: text + dark dashboard mockup -->
+    <section class="service-hero">
       <div class="container">
-        <p class="hero-eyebrow">Usluga</p>
-        <span class="price-tag">Upravljanje od 150 € / mesec</span>
-        <h1>Online marketing sa jasnom metrikom.</h1>
-        <p class="hero-lead">Google Ads, Facebook i Instagram kampanje. Ne postavljamo oglase i zaboravljamo — svakog meseca analiziramo šta donosi klijente, a šta je bacanje budžeta.</p>
+        <div class="hero-grid">
+          <div>
+            <div class="hero-pills">
+              <span class="hero-pill green">03 · Usluga</span>
+              <span class="hero-pill terracotta">Plaćeni kanali · Google + Meta</span>
+            </div>
+            <h1>Google Ads i Meta kampanje <em class="green">koje se isplate</em>.</h1>
+            <p class="hero-lead">Kreativa, setup, optimizacija i izveštaji iz GA4. Svaki evro koji potrošite — znate tačno koliko je doneo nazad.</p>
+            <div class="hero-cta-row">
+              <a href="kontakt.html" class="btn btn-dark">Zatraži strategiju kampanje →</a>
+              <a href="#paketi" class="btn btn-secondary">↓ Kako naplatimo</a>
+            </div>
+            <div class="hero-stats-inline">
+              <div><p class="stat-num">4.2x</p><p class="stat-label">Prosek ROAS-a</p></div>
+              <div><p class="stat-num">38%</p><p class="stat-label">Prosek pada CPA</p></div>
+              <div><p class="stat-num">120+</p><p class="stat-label">Kampanja mesečno</p></div>
+            </div>
+          </div>
 
-        <dl class="answer-grid" aria-label="Ključne informacije o uslugama online marketinga">
-          <div class="answer-card">
+          <!-- Dark dashboard mockup — analytics aesthetic -->
+          <div class="dashboard-mockup" aria-hidden="true">
+            <div class="dash-header">
+              <span class="dash-title">Kampanja · Q1 2026</span>
+              <span class="dash-live"><span class="dot"></span> Live</span>
+            </div>
+            <div class="dash-stats">
+              <div class="dash-stat">
+                <p class="dash-label">Utrošeno</p>
+                <p class="dash-num">3.240 €</p>
+              </div>
+              <div class="dash-stat">
+                <p class="dash-label">Konverzije</p>
+                <p class="dash-num">187<span class="dash-delta up">+12</span></p>
+              </div>
+              <div class="dash-stat">
+                <p class="dash-label">CPA</p>
+                <p class="dash-num">17 €</p>
+              </div>
+              <div class="dash-stat">
+                <p class="dash-label">ROAS</p>
+                <p class="dash-num">5.8x<span class="dash-delta up">+0.7</span></p>
+              </div>
+            </div>
+            <div class="dash-chart">
+              <p class="dash-label">Konverzije / dan</p>
+              <svg class="dash-svg" viewBox="0 0 300 60" preserveAspectRatio="none">
+                <path d="M0,52 Q40,48 75,42 T150,28 T230,18 T300,8" stroke="#C4A57B" fill="none" stroke-width="2" stroke-linecap="round"/>
+                <path d="M0,52 Q40,48 75,42 T150,28 T230,18 T300,8 L300,60 L0,60 Z" fill="#C4A57B" opacity="0.18"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLATFORMS — 2×2 flat grid -->
+    <section>
+      <div class="container">
+        <div class="services-header">
+          <div>
+            <p class="section-eyebrow">Platforme</p>
+            <h2>Radimo tamo gde su <em class="green">vaši klijenti</em>.</h2>
+          </div>
+          <p class="lead">Svaka platforma ima svoju logiku. Kombinujemo ih tako da se ne preklapaju, već da grade jedna na drugoj.</p>
+        </div>
+        <div class="platforms-grid">
+          <article class="service-item">
+            <p class="item-num">01</p>
+            <h3>Google Ads</h3>
+            <p>Search, Shopping, Display, YouTube. Kampanje za ljude koji aktivno traže vaš proizvod.</p>
+          </article>
+          <article class="service-item">
+            <p class="item-num">02</p>
+            <h3>Facebook &amp; Instagram</h3>
+            <p>Meta kampanje za širenje svesti, retargeting i direktnu prodaju. Kreativa + copy + testiranje.</p>
+          </article>
+          <article class="service-item">
+            <p class="item-num">03</p>
+            <h3>LinkedIn Ads</h3>
+            <p>B2B kampanje za SaaS, agencije, konsultante. Skupije po kliku, ali leadovi koji konvertuju.</p>
+          </article>
+          <article class="service-item">
+            <p class="item-num">04</p>
+            <h3>TikTok &amp; YouTube</h3>
+            <p>Video-first platforme. Kratka forma za TikTok, edukacija za YouTube. Idealno za brendove.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING — 3 cards (Starter, Growth featured, Scale) -->
+    <section id="paketi" style="background: var(--surface-alt);">
+      <div class="container">
+        <div class="section-header" style="text-align:center; margin: 0 auto 1rem;">
+          <p class="section-eyebrow" style="justify-content:center;">Kako naplatimo</p>
+          <h2>Fiksna naknada. <em class="green">Bez procenta od potrošnje</em>.</h2>
+          <p class="section-lead">Ne zarađujemo više kada vi trošite više. Podstaknuti smo da smanjujemo CPA, ne da napuhavamo budžet.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <p class="pricing-eyebrow">Do 1.500 € budžeta</p>
+            <h3 class="pricing-name">Starter</h3>
+            <p class="pricing-price">300 €<span class="price-suffix">mesečno</span><span class="price-plus">+ budžet</span></p>
+            <ul class="pricing-features">
+              <li>Setup 1–2 kampanje</li>
+              <li>Google Ads ILI Meta</li>
+              <li>Osnovna optimizacija</li>
+              <li>Mesečni izveštaj</li>
+              <li>GA4 setup</li>
+              <li>3 creative mesečno</li>
+            </ul>
+            <a href="kontakt.html" class="btn btn-dark">Započni Starter →</a>
+          </article>
+
+          <article class="pricing-card featured">
+            <span class="pricing-badge">★ Popularno</span>
+            <p class="pricing-eyebrow">Popularno · 1.500–5.000 € budžeta</p>
+            <h3 class="pricing-name">Growth</h3>
+            <p class="pricing-price">550 €<span class="price-suffix">mesečno</span><span class="price-plus">+ budžet</span></p>
+            <ul class="pricing-features">
+              <li>Setup 3–5 kampanja</li>
+              <li>Google Ads + Meta</li>
+              <li>A/B testiranje kreative</li>
+              <li>Nedeljna optimizacija</li>
+              <li>Retargeting kampanje</li>
+              <li>Bi-nedeljni strategy calls</li>
+              <li>Custom izveštaj (GA4 + Looker)</li>
+              <li>8 kreativa mesečno</li>
+            </ul>
+            <a href="kontakt.html" class="btn">Započni Growth →</a>
+          </article>
+
+          <article class="pricing-card">
+            <p class="pricing-eyebrow">5.000+ € budžeta</p>
+            <h3 class="pricing-name">Scale</h3>
+            <p class="pricing-price">od 900 €<span class="price-suffix">mesečno</span><span class="price-plus">+ budžet</span></p>
+            <ul class="pricing-features">
+              <li>Neograničen broj kampanja</li>
+              <li>Sve platforme</li>
+              <li>Dedicated account manager</li>
+              <li>Dnevna optimizacija</li>
+              <li>Napredni conversion tracking</li>
+              <li>Server-side tracking (CAPI)</li>
+              <li>Nedeljni calls + Slack kanal</li>
+              <li>Custom kreative brief</li>
+            </ul>
+            <a href="kontakt.html" class="btn btn-dark">Razmotri Scale →</a>
+          </article>
+        </div>
+
+        <p class="pricing-footnote">Niste sigurni koji nivo? <a href="kontakt.html">Zatražite besplatan audit naloga</a> — predložićemo strategiju nakon pregleda.</p>
+      </div>
+    </section>
+
+    <!-- QUICK ANSWERS — AI-SEO friendly summary -->
+    <section class="quick-answers">
+      <div class="container">
+        <div class="qa-header">
+          <p class="section-eyebrow">Brzi odgovori</p>
+          <h2>Sve što treba da znate <em class="green">u 60 sekundi</em>.</h2>
+        </div>
+        <dl class="quick-answers-grid" aria-label="Ključne informacije o uslugama online marketinga">
+          <div class="quick-answer">
+            <p class="qa-num">01</p>
             <dt>Šta prodajemo</dt>
-            <dd>Google Ads (Search, Display, YouTube), Facebook i Instagram kampanje, remarketing, kreativa i mesečni izveštaji.</dd>
+            <dd>Google Ads (Search, Shopping, Display, YouTube), Meta kampanje, LinkedIn, TikTok. Setup, kreativa, optimizacija i izveštaji.</dd>
           </div>
-          <div class="answer-card">
+          <div class="quick-answer">
+            <p class="qa-num">02</p>
             <dt>Za koga je</dt>
-            <dd>Firme u Srbiji sa minimalnim oglasnim budžetom od 300 € mesečno koje žele merljive konverzije, ne samo lajkove.</dd>
+            <dd>Firme sa oglasnim budžetom od 500 € mesečno koje žele merljive konverzije, ne samo lajkove.</dd>
           </div>
-          <div class="answer-card">
+          <div class="quick-answer">
+            <p class="qa-num">03</p>
             <dt>Koliko košta</dt>
-            <dd>Upravljanje od <strong>150 € / mesec</strong> (Starter). Za budžete preko 300 € — <strong>15–20 %</strong> oglasnog budžeta.</dd>
+            <dd>Starter <strong>300 €/mes</strong>, Growth <strong>550 €/mes</strong>, Scale <strong>od 900 €/mes</strong>. Fiksna naknada + vaš budžet.</dd>
           </div>
-          <div class="answer-card">
+          <div class="quick-answer">
+            <p class="qa-num">04</p>
             <dt>Kako funkcioniše</dt>
             <dd>1) Strategija + proračun CPA → 2) Setup pixela i tagova → 3) Pokretanje kampanja → 4) Mesečna optimizacija + izveštaj.</dd>
           </div>
         </dl>
-
-        <div class="hero-cta-row">
-          <a href="kontakt.html" class="btn btn-primary">Zakaži konsultacije →</a>
-          <a href="#kanali" class="btn btn-secondary">Pogledaj kanale</a>
-        </div>
       </div>
     </section>
 
-    <section id="kanali">
+    <!-- REVIEWS -->
+    <section class="reviews-stripe">
       <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Kanali</p>
-          <h2>Gde se oglašavamo i zašto.</h2>
+        <div class="reviews-head">
+          <div>
+            <p class="section-eyebrow">Klijenti o nama</p>
+            <h2><em class="green">5.0</em> ★ na Google-u.</h2>
+          </div>
+          <p class="reviews-meta"><a href="https://maps.app.goo.gl/Vhd9KJZTwp1xYk1q7" rel="noopener">Vidi sve recenzije →</a></p>
         </div>
-        <div class="grid">
-          <div class="card">
-            <div class="card-icon">G</div>
-            <h3>Google Ads</h3>
-            <p>Search kampanje za ljude koji već traže vaš proizvod. Display i YouTube kampanje za brendiranje i remarketing.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon">f</div>
-            <h3>Facebook Ads</h3>
-            <p>Targeting po demografiji, interesovanjima, lookalike auditorijumi. Lead generation forme i conversion kampanje.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon">◎</div>
-            <h3>Instagram Ads</h3>
-            <p>Story, Reels i feed oglasi — kreativa koja se ne preskače. Shopping tagovi za e-commerce.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon">↻</div>
-            <h3>Remarketing</h3>
-            <p>Vraćamo posetioce koji nisu konvertovali prvi put. Prosečno najprofitabilniji segment kampanje.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon">✎</div>
-            <h3>Kreativa</h3>
-            <p>Tekst, slike, video — prilagođeno platformi. A/B test varijante da nađemo šta najbolje radi.</p>
-          </div>
-          <div class="card">
-            <div class="card-icon">∫</div>
-            <h3>Analytics i izveštaji</h3>
-            <p>Google Analytics 4, UTM parametri, Meta Pixel. Mesečni izveštaji sa konkretnim preporukama.</p>
-          </div>
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="stars" aria-label="5 od 5 zvezdica">★★★★★</div>
+            <blockquote>"Ozbiljna kompanija. Svi moji zahtevi su ispunjeni. Veoma sam zadovoljan."</blockquote>
+            <p class="reviewer">Dušan Marković</p>
+            <p class="reviewer-meta">Klijent · 2017.</p>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 od 5 zvezdica">★★★★★</div>
+            <blockquote>"Zadovoljan u svakom pogledu, svaka preporuka!"</blockquote>
+            <p class="reviewer">Milan Damnjanović</p>
+            <p class="reviewer-meta">Klijent · 2017.</p>
+          </article>
+          <article class="review-card">
+            <div class="stars" aria-label="5 od 5 zvezdica">★★★★★</div>
+            <blockquote>"Sve pohvale za korektnu i stručnu saradnju! Pouzdani i brzi."</blockquote>
+            <p class="reviewer">Tajci Lalić</p>
+            <p class="reviewer-meta">Klijent · 2014.</p>
+          </article>
         </div>
       </div>
     </section>
 
+    <!-- FAQ — accordion -->
     <section style="background: var(--surface-alt);">
       <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Pristup</p>
-          <h2>Transparentno: vaš budžet, vaš nalog.</h2>
-          <p class="section-lead">Oglasni nalozi su uvek u vlasništvu klijenta. Mi smo menadžeri, ne vlasnici. Kad god želite — sav istorijat je vaš.</p>
+        <div class="section-header" style="text-align:center; margin: 0 auto 1rem;">
+          <p class="section-eyebrow" style="justify-content:center;">FAQ</p>
+          <h2>Pitanja pre <em class="green">prvog evra</em>.</h2>
         </div>
-        <div class="two-col">
-          <div>
-            <ul class="feature-list">
-              <li>Postavljanje i verifikacija Meta Pixel-a i Google Tag Manager-a</li>
-              <li>Strategija pre setup-a — ne jurimo CPC bez plana</li>
-              <li>Mesečna komunikacija (poziv + pisani izveštaj)</li>
-              <li>Konverzije vezane za biznis cilj, ne za "engagement"</li>
-              <li>Preporuke za landing stranice i CRO</li>
-            </ul>
-            <a href="kontakt.html" class="btn btn-primary" style="margin-top:1rem;">Traži strategiju →</a>
-          </div>
-          <div>
-            <h3>Paketi upravljanja kampanjama</h3>
-            <table class="pricing-table" aria-label="Paketi online marketinga sa cenama upravljanja">
-              <thead>
-                <tr>
-                  <th scope="col">Paket</th>
-                  <th scope="col">Oglasni budžet</th>
-                  <th scope="col">Upravljanje</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Starter</th>
-                  <td>do 300 € / mesec</td>
-                  <td class="price-col">od 150 € / mesec</td>
-                </tr>
-                <tr>
-                  <th scope="row">Growth</th>
-                  <td>300 – 2000 € / mesec</td>
-                  <td class="price-col">15 – 20 % budžeta</td>
-                </tr>
-                <tr>
-                  <th scope="row">Scale</th>
-                  <td>preko 2000 € / mesec</td>
-                  <td class="price-col">fiksno + % po dogovoru</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="faq-accordion">
+          <details class="faq-item" open>
+            <summary>Koji budžet mi treba da počnem?</summary>
+            <p class="faq-answer">Za testiranje — minimum 500 € mesečno. Za ozbiljne rezultate — 1.500 € i više. Manji budžet nema dovoljno podataka za optimizaciju.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Ko drži reklamne naloge?</summary>
+            <p class="faq-answer">Vi. Google Ads, Meta Business i svi drugi nalozi su u vašem vlasništvu. Mi smo menadžeri preko Manager pristupa, ne vlasnici. Sav istorijat i podaci ostaju vaši.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Koliko brzo ću videti rezultate?</summary>
+            <p class="faq-answer">Prve klikove i lead-ove dobijate u roku od nekoliko dana. Optimizovane, profitabilne kampanje — obično nakon 4–6 nedelja učenja i A/B testiranja. Remarketing daje najbolji povrat nakon prvih 2 nedelje.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Pravite li i kreative (video, slike)?</summary>
+            <p class="faq-answer">Da. Tekst i statične slike radimo u svakom paketu. Video kreative (do 30s) radimo u Growth i Scale paketima. Kompleksniji video produkciju (sa snimanjem) nudimo kao zasebnu uslugu.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Šta ako već imam agenciju?</summary>
+            <p class="faq-answer">Radimo besplatan audit trenutnog naloga. Ako agencija radi dobro — kažemo vam to. Ako vidimo bacanje budžeta — pokazujemo konkretno gde i kako bi se popravilo. Bez pritiska da menjate.</p>
+          </details>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Česta pitanja</p>
-          <h2>Najčešća pitanja o online marketingu.</h2>
-        </div>
-        <div class="grid">
-          <div class="card"><h3>Koliko košta?</h3><p>Upravljanje od 150 € mesečno (Starter, budžet do 300 €). Za veće budžete — 15–20 % oglasnog budžeta mesečno.</p></div>
-          <div class="card"><h3>Koji je minimalni budžet?</h3><p>Minimum 300 € mesečno po platformi za ozbiljnu kampanju. Ispod toga algoritam nema dovoljno podataka.</p></div>
-          <div class="card"><h3>Čiji su oglasni nalozi?</h3><p>Uvek vaši. Google Ads i Meta Business su u vlasništvu klijenta — mi smo samo menadžeri.</p></div>
-          <div class="card"><h3>Kada se vide rezultati?</h3><p>Prve konverzije — nekoliko dana. Optimizovane profitabilne kampanje — 4 do 6 nedelja.</p></div>
-        </div>
-      </div>
-    </section>
-
+    <!-- CTA BAND -->
     <section>
       <div class="container">
         <div class="cta-band">
-          <h2>Hajde da proračunamo šta vam se isplati.</h2>
-          <p>Besplatna konsultacija — proračunamo očekivani CPA i realne brojeve pre nego što potrošite prvi dinar.</p>
-          <a href="kontakt.html" class="btn btn-primary">Zakaži termin →</a>
+          <h2>Koliko zaista plaćate Google-u?</h2>
+          <p>Besplatan audit reklamnog naloga (vrednost 250 €) — pokazujemo skrivene troškove i konkretne korake za smanjenje CPA.</p>
+          <a href="kontakt.html" class="btn btn-primary">Zatraži besplatan audit naloga →</a>
         </div>
       </div>
     </section>

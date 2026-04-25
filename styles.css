@@ -1918,3 +1918,269 @@ html[lang="zh-Hans"] h3 em.gold { font-style: normal; color: var(--accent-gold);
   color: var(--text);
   font-weight: 500;
 }
+
+/* Hero pill — terracotta variant (for "Besplatna SEO analiza" type CTAs) */
+.hero-pill.terracotta {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* Google search results mockup — for SEO page hero */
+.search-mockup {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 40px rgba(20,20,19,0.08);
+  overflow: hidden;
+  font-family: var(--font-heading);
+}
+.search-mockup .search-bar {
+  background: var(--surface-alt);
+  padding: .75rem 1rem;
+  display: flex; align-items: center; gap: .5rem;
+  border-bottom: 1px solid var(--border);
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: .72rem;
+  color: var(--text-muted);
+  word-break: break-all;
+}
+.search-mockup .search-query {
+  color: var(--accent);
+}
+.search-mockup .search-result {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+.search-mockup .search-result:last-child { border-bottom: none; }
+.search-mockup .search-result.featured {
+  background: var(--accent-green-soft);
+  border-left: 3px solid var(--accent-green);
+}
+.search-mockup .result-rank {
+  position: absolute;
+  top: .9rem; right: 1rem;
+  font-family: var(--font-heading);
+  font-size: .65rem; font-weight: 700;
+  color: var(--accent-green);
+  background: var(--surface);
+  padding: .2rem .5rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent-green);
+  margin: 0;
+  letter-spacing: .05em;
+}
+.search-mockup .result-url {
+  font-size: .68rem;
+  color: var(--text-muted);
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  margin: 0 0 .25rem;
+}
+.search-mockup .result-title {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: .92rem;
+  color: var(--accent-green);
+  margin: 0 0 .35rem;
+  line-height: 1.3;
+  text-decoration: underline;
+  text-decoration-color: var(--accent-green-soft);
+  text-underline-offset: 3px;
+}
+.search-mockup .search-result:not(.featured) .result-title {
+  color: var(--blue);
+}
+.search-mockup .result-snippet {
+  font-family: var(--font-body);
+  font-size: .78rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* 6-services grid (3×2 cells with thin dividers) */
+.services-grid-6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--border);
+  margin-top: 2.5rem;
+}
+@media (max-width: 860px) { .services-grid-6 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px) { .services-grid-6 { grid-template-columns: 1fr; } }
+
+.service-item {
+  padding: 2rem 1.75rem;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  display: flex; flex-direction: column;
+  background: transparent;
+  transition: background .2s ease;
+}
+.services-grid-6 .service-item:nth-child(3n) { border-right: none; }
+@media (max-width: 860px) {
+  .services-grid-6 .service-item:nth-child(3n) { border-right: 1px solid var(--border); }
+  .services-grid-6 .service-item:nth-child(2n) { border-right: none; }
+}
+@media (max-width: 540px) {
+  .services-grid-6 .service-item { border-right: none; }
+}
+.service-item:hover { background: var(--surface-alt); }
+.service-item .item-num {
+  font-family: var(--font-heading);
+  font-size: .7rem;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+}
+.service-item h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.4rem, 2.2vw, 1.75rem);
+  letter-spacing: -0.01em;
+  margin: 0 0 .65rem;
+  color: var(--text);
+  line-height: 1.15;
+}
+.service-item p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Pricing — monthly price suffix variant */
+.pricing-card .pricing-price.monthly {
+  font-family: var(--font-display);
+  font-weight: 400;
+  display: flex;
+  align-items: baseline;
+  gap: .35rem;
+}
+.pricing-card .pricing-price.monthly .month {
+  font-style: italic;
+  font-size: .55em;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+.pricing-card.featured .pricing-price.monthly .month { color: var(--ink-muted); }
+
+/* Dashboard mockup — dark, for marketing hero (analytics aesthetic) */
+.dashboard-mockup {
+  background: var(--ink);
+  color: var(--ink-text);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  font-family: var(--font-heading);
+  box-shadow: 0 12px 40px rgba(20,20,19,0.18);
+}
+.dashboard-mockup .dash-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 1.25rem;
+}
+.dashboard-mockup .dash-title {
+  font-size: .68rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--ink-muted);
+}
+.dashboard-mockup .dash-live {
+  display: inline-flex; align-items: center; gap: .35rem;
+  font-size: .65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--accent-gold);
+  background: rgba(196,165,123,.1);
+  padding: .25rem .6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(196,165,123,.3);
+}
+.dashboard-mockup .dash-live .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent-gold);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .4; }
+}
+.dashboard-mockup .dash-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .65rem;
+  margin-bottom: 1rem;
+}
+.dashboard-mockup .dash-stat {
+  background: rgba(255,255,255,.04);
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255,255,255,.06);
+}
+.dashboard-mockup .dash-label {
+  font-size: .62rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  color: var(--ink-muted);
+  margin: 0 0 .35rem;
+}
+.dashboard-mockup .dash-num {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--accent-gold);
+  margin: 0;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+.dashboard-mockup .dash-delta {
+  font-family: var(--font-heading);
+  font-size: .65rem;
+  font-weight: 500;
+  margin-left: .4rem;
+}
+.dashboard-mockup .dash-delta.up { color: var(--leaf-top); }
+.dashboard-mockup .dash-chart {
+  background: rgba(255,255,255,.04);
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255,255,255,.06);
+}
+.dashboard-mockup .dash-chart .dash-label { margin-bottom: .65rem; }
+.dashboard-mockup .dash-svg {
+  width: 100%;
+  height: 60px;
+  display: block;
+}
+
+/* Platforms grid — 2×2 flat dividers (variant of services-grid) */
+.platforms-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--border);
+  margin-top: 2.5rem;
+}
+.platforms-grid .service-item {
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+.platforms-grid .service-item:nth-child(2n) { border-right: none; }
+@media (max-width: 540px) {
+  .platforms-grid { grid-template-columns: 1fr; }
+  .platforms-grid .service-item { border-right: none; }
+}
+
+/* Pricing price with "+ budžet" suffix (marketing fee + spend separation) */
+.pricing-price .price-plus {
+  font-family: var(--font-heading);
+  font-size: .42em;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-left: .35rem;
+  font-style: normal;
+  display: inline-block;
+}
+.pricing-card.featured .pricing-price .price-plus { color: var(--ink-muted); }
