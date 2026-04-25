@@ -103,8 +103,12 @@
       <div class="container">
         <div class="contact-main">
           <!-- LEFT — Form -->
-          <!-- TODO: replace action URL with real endpoint (Formspree, Web3Forms, or your backend). -->
-          <form class="contact-form" action="https://formspree.io/f/YOUR_ID" method="POST" aria-label="Contact form">
+          <!-- Web3Forms endpoint — sends to marko@happymedia.rs -->
+          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" aria-label="Contact form">
+            <input type="hidden" name="access_key" value="a15309f9-32ab-4962-b407-4685f6c3df41">
+            <input type="hidden" name="subject" value="[HM-EN] New contact form submission">
+            <input type="hidden" name="from_name" value="Happy Media — Contact form (EN)">
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
             <div class="form-row">
               <div class="form-field">
                 <label class="field-label" for="cf-name">Full name <span class="req">*</span></label>
@@ -187,4 +191,27 @@
               <h3>30 min discovery call — pick a time.</h3>
               <div class="calendly-inline-widget" data-url="https://calendly.com/marko-happymedia/30min?hide_gdpr_banner=1&primary_color=d97757&background_color=ffffff" style="min-width:280px;height:600px;" aria-label="Calendly booking widget"></div>
               <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-              <noscript><p style="color:#fff; margin-top:1rem;">Please ena
+              <noscript><p style="color:#fff; margin-top:1rem;">Please enable JavaScript to view the booking widget, or email <a href="mailto:marko@happymedia.rs" style="color:#fff;">marko@happymedia.rs</a> directly.</p></noscript>
+            </div>
+
+            <div class="contact-block">
+              <p class="block-eyebrow">Office</p>
+              <div class="info-row"><p class="info-label">Address</p><p class="info-value">Belgrade, Serbia</p></div>
+              <div class="info-row"><p class="info-label">Remote</p><p class="info-value">Working with clients worldwide</p></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>© <span id="y"></span> Happy Media. All rights reserved.</span>
+        <span><a href="mailto:marko@happymedia.rs">marko@happymedia.rs</a> · <a href="tel:+381632525 70">+381 63 2525 70</a></span>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>

@@ -105,9 +105,12 @@
       <div class="container">
         <div class="contact-main">
           <!-- LEFT — Form -->
-          <!-- TODO: zameni action URL pravim endpoint-om (Formspree, Web3Forms, ili svoj backend).
-               Trenutno postavljen na placeholder, dugme neće poslati podatke dok ne podesiš action. -->
-          <form class="contact-form" action="https://formspree.io/f/YOUR_ID" method="POST" aria-label="Kontakt forma">
+          <!-- Web3Forms endpoint — šalje na marko@happymedia.rs -->
+          <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" aria-label="Kontakt forma">
+            <input type="hidden" name="access_key" value="a15309f9-32ab-4962-b407-4685f6c3df41">
+            <input type="hidden" name="subject" value="[HM-SR] Nova poruka sa kontakt forme">
+            <input type="hidden" name="from_name" value="Happy Media — Kontakt forma (SR)">
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
             <div class="form-row">
               <div class="form-field">
                 <label class="field-label" for="cf-name">Ime i prezime <span class="req">*</span></label>
