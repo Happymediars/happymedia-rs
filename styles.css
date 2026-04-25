@@ -4,6 +4,151 @@
    Typography: Instrument Serif (display) + Inter (UI & body)
    ======================================================================== */
 
+/* ─── Pricing Compare Table — semantic <table> for AI + visual UX ──────── */
+.pricing-compare-section {
+  padding: clamp(3rem, 6vw, 5rem) 0;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+.pricing-compare-section .compare-header {
+  text-align: center;
+  margin: 0 auto 2.5rem;
+  max-width: 56ch;
+}
+.pricing-compare-section .compare-header .section-eyebrow {
+  justify-content: center;
+}
+.pricing-compare-section .compare-header h2 {
+  margin: .5rem 0 .75rem;
+}
+.pricing-compare-section .compare-header p {
+  color: var(--text-muted);
+  font-size: .95rem;
+  margin: 0;
+}
+.pricing-compare-table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: 0 8px 24px -12px rgba(0,0,0,.08);
+  -webkit-overflow-scrolling: touch;
+}
+.pricing-compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+  font-family: var(--font-heading);
+  font-size: .9rem;
+  background: var(--surface);
+}
+.pricing-compare-table thead th {
+  padding: 1.5rem 1rem 1.25rem;
+  background: var(--surface-alt);
+  font-weight: 500;
+  text-align: center;
+  color: var(--text);
+  border-bottom: 2px solid var(--border);
+  vertical-align: bottom;
+}
+.pricing-compare-table thead th:first-child {
+  background: transparent;
+  text-align: left;
+  font-family: var(--font-heading);
+  font-size: .68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: .14em;
+  vertical-align: bottom;
+}
+.pricing-compare-table thead th .plan-name {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.1;
+}
+.pricing-compare-table thead th .plan-price {
+  display: block;
+  margin-top: .45rem;
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: .82rem;
+  color: var(--accent-green);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+.pricing-compare-table thead th.featured {
+  background: linear-gradient(180deg, rgba(45,90,61,.10) 0%, rgba(45,90,61,.04) 100%);
+  border-bottom-color: var(--accent-green);
+  position: relative;
+}
+.pricing-compare-table thead th.featured::before {
+  content: '★ Preporučeno';
+  display: block;
+  font-family: var(--font-heading);
+  font-size: .6rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--accent-green);
+  margin-bottom: .65rem;
+  text-align: center;
+}
+.pricing-compare-table tbody td {
+  padding: .95rem 1rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+  text-align: center;
+  color: var(--text);
+  font-size: .88rem;
+}
+.pricing-compare-table tbody td:first-child {
+  font-weight: 500;
+  color: var(--text);
+  text-align: left;
+  font-size: .9rem;
+}
+.pricing-compare-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.pricing-compare-table tbody tr:hover {
+  background: rgba(217,119,87,.03);
+}
+.pricing-compare-table tbody td.yes {
+  color: var(--accent-green);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.pricing-compare-table tbody td.no {
+  color: var(--text-muted);
+  opacity: .35;
+}
+.pricing-compare-table tbody td.featured-cell {
+  background: linear-gradient(180deg, rgba(45,90,61,.05) 0%, rgba(45,90,61,.02) 100%);
+}
+.pricing-compare-section .compare-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: .8rem;
+  color: var(--text-muted);
+}
+.pricing-compare-section .compare-footer a {
+  color: var(--accent-green);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@media (max-width: 768px) {
+  .pricing-compare-table { min-width: 620px; font-size: .82rem; }
+  .pricing-compare-table thead th .plan-name { font-size: 1.05rem; }
+  .pricing-compare-table thead th .plan-price { font-size: .75rem; }
+  .pricing-compare-table tbody td { padding: .75rem .65rem; font-size: .8rem; }
+  .pricing-compare-table tbody td:first-child { font-size: .82rem; }
+}
+
+
 :root {
   --bg: #FAF9F5;
   --surface: #FFFFFF;
