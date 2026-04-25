@@ -27,7 +27,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=10">
+  <link rel="stylesheet" href="styles.css?v=11">
 
   <!-- Calendly embed CSS -->
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
@@ -95,57 +95,167 @@
   <main id="main">
     <nav class="container crumbs"><a href="/">Početna</a><span class="sep">/</span><span>Kontakt</span></nav>
 
-    <section class="hero" style="padding-top:2.5rem; padding-bottom:2rem;">
+    <!-- HERO — editorial big headline -->
+    <section class="contact-hero">
       <div class="container">
-        <p class="hero-eyebrow">Kontakt · Besplatne konsultacije</p>
-        <h1>Hajde da popričamo.</h1>
-        <p class="hero-lead">Izaberite termin koji vam odgovara — 30 minuta, bez obaveze. Ako vam je lakše, pošaljite email ili pozovite.</p>
+        <div class="hero-pills">
+          <span class="hero-pill green">Kontakt</span>
+        </div>
+        <h1>Razgovor <em class="green">bez obaveze</em>. 30 minuta. Dobijate <em>konkretan plan</em>.</h1>
+        <p class="hero-lead">Popunite formu ili zakažite termin direktno. Odgovaramo u roku od 4h radnim danom.</p>
       </div>
     </section>
 
-    <section style="padding-top:1rem;">
+    <!-- MAIN — 2-col: form + side (info + calendly + address) -->
+    <section style="padding-top:0;">
       <div class="container">
-        <div class="contact-grid">
-          <aside class="contact-info">
-            <div class="card">
-              <h3>Happy Media</h3>
-              <p><strong>Adresa</strong><br>Jurija Gagarina 269-5<br>11070 Novi Beograd, Srbija</p>
-              <p><strong>Telefon</strong><br><a href="tel:+381632525 70">+381 63 2525 70</a></p>
-              <p><strong>Email</strong><br><a href="mailto:marko@happymedia.rs">marko@happymedia.rs</a></p>
-              <p><strong>Radno vreme</strong><br>Pon–Pet: 09:00–17:00</p>
-              <p style="margin-top:1.5rem;"><strong>Društvene mreže</strong><br>
-                <a href="https://www.facebook.com/happymedia.rs/" rel="noopener">Facebook</a>
+        <div class="contact-main">
+          <!-- LEFT — Form -->
+          <!-- TODO: zameni action URL pravim endpoint-om (Formspree, Web3Forms, ili svoj backend).
+               Trenutno postavljen na placeholder, dugme neće poslati podatke dok ne podesiš action. -->
+          <form class="contact-form" action="https://formspree.io/f/YOUR_ID" method="POST" aria-label="Kontakt forma">
+            <div class="form-row">
+              <div class="form-field">
+                <label class="field-label" for="cf-name">Ime i prezime <span class="req">*</span></label>
+                <input type="text" id="cf-name" name="name" placeholder="Marko Petrović" required>
+              </div>
+              <div class="form-field">
+                <label class="field-label" for="cf-company">Firma</label>
+                <input type="text" id="cf-company" name="company" placeholder="Naziv firme">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label class="field-label" for="cf-email">Email <span class="req">*</span></label>
+                <input type="email" id="cf-email" name="email" placeholder="vi@firme.rs" required>
+              </div>
+              <div class="form-field">
+                <label class="field-label" for="cf-phone">Telefon</label>
+                <input type="tel" id="cf-phone" name="phone" placeholder="+381 63 000 0000">
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="field-label">Koja usluga vas zanima? (možete više)</label>
+              <div class="pill-group" role="group">
+                <input type="checkbox" id="svc-1" name="service" value="izrada-sajta">
+                <label for="svc-1">Izrada sajta</label>
+                <input type="checkbox" id="svc-2" name="service" value="seo">
+                <label for="svc-2">SEO optimizacija</label>
+                <input type="checkbox" id="svc-3" name="service" value="marketing">
+                <label for="svc-3">Online marketing</label>
+                <input type="checkbox" id="svc-4" name="service" value="ai">
+                <label for="svc-4">AI automatizacija</label>
+                <input type="checkbox" id="svc-5" name="service" value="odrzavanje">
+                <label for="svc-5">Održavanje</label>
+                <input type="checkbox" id="svc-6" name="service" value="drugo">
+                <label for="svc-6">Nešto drugo</label>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="field-label">Okvirni budžet</label>
+              <div class="pill-group" role="radiogroup">
+                <input type="radio" id="bud-1" name="budget" value="under-1000">
+                <label for="bud-1">&lt; 1.000 €</label>
+                <input type="radio" id="bud-2" name="budget" value="1000-3000">
+                <label for="bud-2">1.000–3.000 €</label>
+                <input type="radio" id="bud-3" name="budget" value="3000-8000">
+                <label for="bud-3">3.000–8.000 €</label>
+                <input type="radio" id="bud-4" name="budget" value="over-8000">
+                <label for="bud-4">8.000 €+</label>
+                <input type="radio" id="bud-5" name="budget" value="unsure">
+                <label for="bud-5">Ne znam još</label>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="field-label" for="cf-msg">Opišite projekat</label>
+              <textarea id="cf-msg" name="message" placeholder="Recite nam šta pravite, za koga, i šta je cilj. Što više detalja — bolja ponuda."></textarea>
+            </div>
+
+            <div class="form-field">
+              <label class="field-label">Kako ste čuli za nas?</label>
+              <div class="pill-group" role="radiogroup">
+                <input type="radio" id="src-1" name="source" value="google">
+                <label for="src-1">Google pretraga</label>
+                <input type="radio" id="src-2" name="source" value="referral">
+                <label for="src-2">Preporuka</label>
+                <input type="radio" id="src-3" name="source" value="linkedin">
+                <label for="src-3">LinkedIn</label>
+                <input type="radio" id="src-4" name="source" value="instagram">
+                <label for="src-4">Instagram</label>
+                <input type="radio" id="src-5" name="source" value="organic">
+                <label for="src-5">Organska pretraga</label>
+                <input type="radio" id="src-6" name="source" value="other">
+                <label for="src-6">Drugo</label>
+              </div>
+            </div>
+
+            <div class="form-footer">
+              <p class="form-footnote">Odgovor — max 4h (radni dan)</p>
+              <button type="submit" class="btn btn-dark">Pošaljite zahtev →</button>
+            </div>
+          </form>
+
+          <!-- RIGHT — Direct info + Calendly + Address -->
+          <aside class="contact-side">
+            <!-- Direktno -->
+            <div class="contact-block">
+              <p class="block-eyebrow">Direktno</p>
+              <div class="info-row">
+                <p class="info-label">Email</p>
+                <p class="info-value"><a href="mailto:marko@happymedia.rs">marko@happymedia.rs</a></p>
+              </div>
+              <div class="info-row">
+                <p class="info-label">Telefon</p>
+                <p class="info-value"><a href="tel:+381632525 70">+381 63 2525 70</a></p>
+              </div>
+              <div class="info-row">
+                <p class="info-label">Radno vreme</p>
+                <p class="info-value">Pon–Pet · 09:00–17:00</p>
+              </div>
+            </div>
+
+            <!-- Calendly dark -->
+            <div class="contact-block calendly-dark">
+              <p class="block-eyebrow">Zakažite odmah</p>
+              <h3>30 min. discovery poziv — izaberite termin.</h3>
+              <div
+                class="calendly-inline-widget"
+                data-url="https://calendly.com/marko-happymedia/30min?hide_gdpr_banner=1&primary_color=d97757&background_color=ffffff"
+                style="min-width:280px;height:600px;"
+                aria-label="Calendly — zakazivanje termina"
+              ></div>
+              <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+              <noscript>
+                <p style="color:#fff; margin-top:1rem;">Za zakazivanje omogućite JavaScript ili posetite <a href="https://calendly.com/marko-happymedia/30min" style="color:#fff;">Calendly stranicu direktno</a>.</p>
+              </noscript>
+            </div>
+
+            <!-- Adresa -->
+            <div class="contact-block">
+              <p class="block-eyebrow">Adresa</p>
+              <p class="address-name">Happy Media d.o.o.</p>
+              <p class="info-value" style="font-family:var(--font-body); font-size:.95rem; line-height:1.55;">
+                Jurija Gagarina 269-5<br>
+                11070 Novi Beograd, Srbija
               </p>
+              <p class="address-meta">MB: 21458321 · PIB: 111457893</p>
             </div>
           </aside>
-
-          <div>
-            <h2 style="font-size:1.5rem;">Zakaži termin preko Calendly-ja</h2>
-            <p style="color:var(--text-muted);">Izaberite termin u kalendaru ispod. Poziv ide preko Google Meet-a — link dobijate odmah na email.</p>
-
-            <!-- Calendly inline widget — 30 Minuta sastanak -->
-            <div
-              class="calendly-inline-widget"
-              data-url="https://calendly.com/marko-happymedia/30min?hide_gdpr_banner=1&primary_color=d97757"
-              style="min-width:320px;height:680px;"
-              aria-label="Calendly — zakazivanje termina"
-            ></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-
-            <noscript>
-              <p style="margin-top:1rem;">Za zakazivanje omogućite JavaScript ili posetite <a href="https://calendly.com/marko-happymedia/30min">Calendly stranicu direktno</a>.</p>
-            </noscript>
-          </div>
         </div>
-      </div>
-    </section>
 
-    <section>
-      <div class="container">
-        <div class="cta-band">
-          <h2>Ne znate da li vam je potreban ceo paket usluga?</h2>
-          <p>U redu je. Na konsultacijama dogovaramo tačno ono što vama treba — može biti samo izrada sajta, samo SEO, ili kompletan paket.</p>
-          <a href="tel:+381632525 70" class="btn btn-primary">Pozovi odmah: +381 63 2525 70</a>
+        <!-- SOCIAL -->
+        <div class="social-section">
+          <h2>Pratite nas i van <em class="green">sajta</em>.</h2>
+          <div class="social-pills">
+            <a href="https://www.instagram.com/happymedia.rs/" class="social-pill" rel="noopener">Instagram</a>
+            <a href="https://www.linkedin.com/company/happy-media-rs/" class="social-pill" rel="noopener">LinkedIn</a>
+            <a href="https://www.youtube.com/@HappyMediaRS" class="social-pill" rel="noopener">YouTube</a>
+            <a href="https://www.facebook.com/happymedia.rs/" class="social-pill" rel="noopener">Facebook</a>
+          </div>
         </div>
       </div>
     </section>
