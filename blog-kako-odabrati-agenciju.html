@@ -38,7 +38,16 @@
     "image": "https://happymedia.rs/og-image.jpg",
     "datePublished": "2026-04-24",
     "dateModified": "2026-04-24",
-    "author": { "@type": "Organization", "@id": "https://happymedia.rs/#organization", "name": "Happy Media" },
+    "author": {
+      "@type": "Person",
+      "@id": "https://happymedia.rs/nas-tim.html#marko-covic",
+      "name": "Marko Čović",
+      "jobTitle": "CEO, Happy Media",
+      "url": "https://happymedia.rs/nas-tim.html",
+      "sameAs": [
+        "https://www.linkedin.com/in/marko-čović-0095a45/"
+      ]
+    },
     "publisher": {
       "@type": "Organization",
       "@id": "https://happymedia.rs/#organization",
@@ -78,6 +87,53 @@
         "acceptedAnswer": { "@type": "Answer", "text": "Tražite 2-3 kontakta bivših klijenata. Pitajte ih: da li je rok ispoštovan, da li su cene ostale iste kao u ponudi, kako agencija reaguje kad nešto krene loše, i da li bi ih ponovo angažovali." }
       }
     ]
+  }
+  </script>
+
+  <!-- HowTo schema — strukturisani vodič za AI -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Kako odabrati agenciju za izradu sajta u Beogradu",
+    "description": "Korak-po-korak vodič za odabir prave agencije za izradu sajta — od istraživanja do potpisa ugovora.",
+    "totalTime": "PT2H",
+    "estimatedCost": { "@type": "MonetaryAmount", "currency": "EUR", "value": "0" },
+    "supply": [
+      { "@type": "HowToSupply", "name": "Lista 5–10 kandidata agencija" },
+      { "@type": "HowToSupply", "name": "Brief sa ciljevima projekta" },
+      { "@type": "HowToSupply", "name": "Okvirni budžet" }
+    ],
+    "step": [
+      { "@type": "HowToStep", "position": 1, "name": "Definiši cilj sajta", "text": "Pre kontakta sa agencijom, jasno odredi šta sajt treba da postigne — više leadova, online prodaja, autoritet u industriji. Cilj diktira tip sajta i izbor agencije." },
+      { "@type": "HowToStep", "position": 2, "name": "Traži minimum 3 ponude", "text": "Pošalji isti brief na 3+ agencije sličnog opsega. Ne poredi samo cenu — uporedi šta je tačno uključeno u ponudu." },
+      { "@type": "HowToStep", "position": 3, "name": "Proveri portfolio i sličnost", "text": "Traži 2–3 projekta slična tvojem. Pitaj ko je tačno radio koji deo (često agencije pokazuju radove freelancera)." },
+      { "@type": "HowToStep", "position": 4, "name": "Proveri reference", "text": "Traži kontakte 2–3 bivših klijenata. Pitaj o rokovima, cenama, reakciji na probleme, i da li bi ih ponovo angažovali." },
+      { "@type": "HowToStep", "position": 5, "name": "Pitaj o vlasništvu", "text": "Domen, hosting, dizajn fajlovi, sav kod — sve mora biti u tvom vlasništvu. Bez 'zaključavanja' kod agencije." },
+      { "@type": "HowToStep", "position": 6, "name": "Razjasni proces komunikacije", "text": "Ko je tvoj kontakt? Koliko često imaš updejte? Da li imaš pristup u alat za praćenje napretka? Bez 'crne kutije'." },
+      { "@type": "HowToStep", "position": 7, "name": "Pregledaj ugovor pažljivo", "text": "Posebno: rok plaćanja, garancija, šta se računa kao 'extra' (najčešći skriveni trošak), uslovi prekida, IP prava." },
+      { "@type": "HowToStep", "position": 8, "name": "Identifikuj crvene flegove", "text": "Pre-niska cena (ispod €300 za prezentacioni sajt), garancije rangiranja na Google-u, ponuda za nedelju dana, nedostatak portfolija — sve su to znaci za oprez." },
+      { "@type": "HowToStep", "position": 9, "name": "Potpisi i prati napredak", "text": "Po potpisu, postavi nedeljne check-pointove. Ako agencija ne komunicira jasno tokom prve 2 nedelje, problem će se samo povećavati." }
+    ],
+    "author": {
+      "@type": "Person",
+      "@id": "https://happymedia.rs/nas-tim.html#marko-covic",
+      "name": "Marko Čović",
+      "sameAs": ["https://www.linkedin.com/in/marko-čović-0095a45/"]
+    }
+  }
+  </script>
+
+  <!-- Speakable schema — za voice asistente (Alexa, Google Home) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://happymedia.rs/blog-kako-odabrati-agenciju.html#webpage",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".faq-answer", ".article-lead", "h1", "h2"]
+    }
   }
   </script>
 </head>

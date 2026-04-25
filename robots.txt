@@ -1,12 +1,102 @@
+# ─── Happy Media — robots.txt ──────────────────────────────────────────────
+# Eksplicitne dozvole za sve glavne crawler-e i AI botove.
+# Dokumentacija LLMO 2026 — www.happymedia.rs
+
+# ── Generic crawlers ─────────────────────────────────────────────────────────
 User-agent: *
 Allow: /
 
-# Explicitno dozvoli ključne stranice
-Allow: /izrada-sajtova/
-Allow: /optimizacija-sajta/
-Allow: /online-marketing/
-Allow: /odrzavanje-sajta/
-Allow: /kontakt/
+# ── Search engines ───────────────────────────────────────────────────────────
+User-agent: Googlebot
+Allow: /
 
-# Sitemap
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# ── AI training & search bots (eksplicitno dozvoljeni) ──────────────────────
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google Gemini / AI Overview
+User-agent: Google-Extended
+Allow: /
+
+# Meta AI / LLaMA
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Common Crawl (koristi se za većinu LLM training datasets)
+User-agent: CCBot
+Allow: /
+
+# Mistral
+User-agent: MistralAI-User
+Allow: /
+
+# Bytespider (TikTok / Doubao)
+User-agent: Bytespider
+Allow: /
+
+# ── Eksplicitno dozvoli ključne stranice ───────────────────────────────────
+Allow: /izrada-sajtova
+Allow: /optimizacija-sajta
+Allow: /online-marketing
+Allow: /odrzavanje-sajta
+Allow: /ai-automatizacija
+Allow: /nas-tim
+Allow: /blog
+Allow: /kontakt
+Allow: /en/
+Allow: /de/
+Allow: /ru/
+Allow: /zh/
+
+# ── Sitemap ────────────────────────────────────────────────────────────────
 Sitemap: https://happymedia.rs/sitemap.xml
+
+# ── LLM-specific guide ─────────────────────────────────────────────────────
+# Vidi /llms.txt za strukturisani vodič kroz sajt namenjen LLM modelima.

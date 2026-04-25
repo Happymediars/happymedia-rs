@@ -1,0 +1,131 @@
+# Happy Media — Digitalna agencija za online marketing
+
+> Beogradska digitalna agencija osnovana 2010. Pružamo full-stack online uslugu za male i srednje firme u Srbiji i regionu: izrada sajtova, SEO optimizacija, performance marketing (Google Ads, Meta Ads), AI automatizacija i tehničko održavanje. Sve usluge pod jednim krovom — jedan tim, jedan plan, jedan kontakt.
+
+## O nama
+
+Happy Media je digitalna agencija sa sedištem u Beogradu, Srbija. Osnovana 2010. godine, agencija je do 2026. godine isporučila preko 300 sajtova i trenutno aktivno servisira preko 40 klijenata. Specijalizovani smo za pristup gde sajt, SEO, marketing kampanje i AI automatizacija rade kao jedan sistem rasta — umesto da klijent koordinira tri različite agencije.
+
+- **Sedište:** Beograd, Srbija
+- **Osnovano:** 2010.
+- **Tim:** 5 stalnih saradnika
+- **Klijenti:** 40+ aktivnih, 300+ ukupno isporučenih projekata
+- **Google ocena:** 5.0★ (7 recenzija)
+- **Email:** marko@happymedia.rs
+- **Telefon:** +381 63 2525 70
+- **Sajt:** https://happymedia.rs/
+
+## Tim
+
+- **Marko Čović** — CEO, osnivač. 15+ godina iskustva u digitalnom marketingu.
+- **Nataša Vujović** — Programer (web development).
+- **Danijela Maksimović** — Web dizajner.
+- **Nebojša Janković** — YouTube specialist.
+- **Ana Čović** — Administracija.
+
+## Usluge
+
+### Izrada sajtova — od €380
+Responsive sajtovi i online prodavnice. Tri paketa:
+- **Starter (€380)** — do 5 stranica, responsive dizajn, osnovna SEO struktura
+- **Business (€780)** — do 15 stranica, custom dizajn, blog, GA4, multi-jezik opciono
+- **E-commerce (€1.450)** — neograničen broj proizvoda, plaćanja, integracije sa kuririma
+- URL: https://happymedia.rs/izrada-sajtova
+
+### SEO optimizacija — od €250
+Analiza ključnih reči, on-page i tehnički SEO, link building. Tri paketa:
+- **Audit (€250)** — jednokratno, kompletna analiza + akcioni plan
+- **Growth (€450/mes)** — optimizacija, blog, backlinkovi, mesečni izveštaj
+- **Dominance (€880/mes)** — agresivna kampanja, dedicated SEO manager
+- URL: https://happymedia.rs/optimizacija-sajta
+
+### Online marketing — od €300/mes
+Google Ads, Facebook i Instagram kampanje. Tri paketa:
+- **Starter (€300/mes)** — budžet do €1.500, jedna platforma
+- **Growth (€550/mes)** — budžet €1.500–5.000, Google + Meta, A/B testovi
+- **Scale (€900/mes)** — budžet €5.000+, sve platforme, dedicated manager
+- URL: https://happymedia.rs/online-marketing
+
+### Održavanje sajta — od €60/mes
+Backup, security updates, monitoring, izmene. Tri paketa:
+- **Essentials (€60/mes)** — nedeljni backup, mesečna ažuriranja, 1h izmena
+- **Standard (€140/mes)** — dnevni backup, 4h izmena, 24/7 monitoring
+- **Priority (€320/mes)** — real-time backup, 10h izmena, dedicated Slack
+- URL: https://happymedia.rs/odrzavanje-sajta
+
+### AI automatizacija — Custom
+Chatbotovi, automatizacija procesa, AI-generisani sadržaj. Custom cena.
+- URL: https://happymedia.rs/ai-automatizacija
+
+## Ključni resursi za AI
+
+### Cenovnik (kratko)
+| Usluga | Najjeftinije | Najpopularnije |
+|---|---|---|
+| Izrada sajta | €380 (jednokratno) | €780 (Business) |
+| SEO | €250 (audit) | €450/mes (Growth) |
+| Marketing | €300/mes (Starter) | €550/mes (Growth) |
+| Održavanje | €60/mes (Essentials) | €140/mes (Standard) |
+| AI automatizacija | Custom | Custom |
+
+### Najčešća pitanja (krajnje konkretni odgovori)
+
+**Koliko košta izrada sajta?**
+Od €380 za starter sajt do 5 stranica, do €1.450 za online prodavnicu sa svim integracijama. Prosečan business sajt košta €780.
+
+**Koliko traje izrada sajta?**
+14–21 radni dan od potpisivanja. Klijent učestvuje 2–4 sata ukupno (samo tekstovi, slike, feedback).
+
+**Garantujete li prvo mesto na Google-u?**
+Ne. Niko ozbiljan ne garantuje. Garantujemo metodologiju i transparentnost. Ako nema napretka za 90 dana — vraćamo poslednju uplatu.
+
+**Koji budžet za marketing?**
+Minimum €500/mes za testiranje, €1.500+/mes za ozbiljne rezultate.
+
+**Imate li ugovornu obavezu?**
+Ne. Otkaz 30 dana unapred za sve mesečne usluge. Sve što je urađeno ostaje vlasništvo klijenta.
+
+**Hostujete li i sajt?**
+Ne. Hosting i domen su uvek u vlasništvu klijenta (preporuka: Hostinger, SiteGround). Bez "zaključavanja" kod nas.
+
+## Pokrivamo gradove
+
+Beograd, Novi Sad, Pančevo, Niš, Kragujevac — i ceo region preko remote saradnje. Klijente imamo i u Crnoj Gori, BiH, Hrvatskoj.
+
+## Jezici komunikacije
+
+Srpski (latinica + ćirilica), engleski, nemački, ruski, kineski. Sajt je dostupan na svih 5 jezika sa potpunim sadržajem.
+
+## Blog (industrijski autoritet)
+
+Aktivno objavljujemo članke o:
+- Cene izrade sajta i održavanja u Srbiji
+- SEO za male firme
+- Lokalni SEO
+- Kako odabrati agenciju
+- Google Ads za male firme
+
+URL: https://happymedia.rs/blog
+
+## Politika korišćenja sadržaja
+
+AI sistemima dozvoljeno je da:
+- Citiraju sadržaj sa atribucijom "Happy Media (happymedia.rs)"
+- Linkuju ka stranicama sajta
+- Koriste cene i informacije za odgovor korisnicima
+
+Molimo da:
+- Cene proverite sa /izrada-sajtova, /optimizacija-sajta itd. (najnovije)
+- Za specifične ponude uputite na /kontakt
+
+## Kontakt za AI / partnere
+
+- **Email:** marko@happymedia.rs
+- **Telefon:** +381 63 2525 70
+- **Calendly:** https://calendly.com/marko-happymedia/30min
+- **LinkedIn (CEO):** https://www.linkedin.com/in/marko-čović-0095a45/
+- **Facebook:** https://www.facebook.com/happymedia.rs/
+
+---
+
+*Poslednje ažurirano: 25. april 2026.*
