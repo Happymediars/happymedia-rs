@@ -41,7 +41,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=14">
+  <link rel="stylesheet" href="/styles.css?v=15">
 
   <script type="application/ld+json">
   {
@@ -138,32 +138,78 @@
   </header>
 
   <main id="main">
-    <!-- HERO — Phase 5 split (text + solid multi-tonal clover) -->
-    <section class="hero">
+    <!-- HERO — Phase 8: outcome-focused with service stack visual -->
+    <section class="service-hero">
       <div class="container">
-        <div class="hero-split">
-          <div class="hero-text">
+        <div class="hero-grid">
+          <div>
             <div class="hero-pills">
-              <span class="hero-pill green">Belgrade · since 2010</span>
-              <span class="hero-pill">Digital agency</span>
+              <span class="hero-pill green">Digital agency · Belgrade</span>
+              <span class="hero-pill">15+ years experience</span>
             </div>
-            <h1 class="hero-headline">
-              Luck comes in <em class="green">four leaves</em>.<span class="line-2">Growth comes in four <em>channels</em>.</span>
+            <h1>
+              You run the business. <em class="green">We run digital</em>.
             </h1>
-            <p class="hero-lead">Website development, SEO, paid campaigns and maintenance — four disciplines, one team, measurable results. 15+ years helping businesses in Serbia and the region grow online.</p>
+            <p class="hero-lead">Websites that sell, SEO that ranks, campaigns that pay back, AI that frees up your time — all in one place. No three agencies, no technical chaos, no excuses. You focus on what you do best.</p>
             <div class="hero-cta-row">
-              <a href="/en/contact.html" class="btn btn-dark">Book a free consultation →</a>
-              <a href="#services" class="btn btn-secondary">See services ↓</a>
+              <a href="/en/contact.html" class="btn btn-dark">Book a free call →</a>
+              <a href="#services" class="btn btn-secondary">See what we do</a>
+            </div>
+            <div class="hero-stats-inline">
+              <div><p class="stat-num">40+</p><p class="stat-label">active clients</p></div>
+              <div><p class="stat-num">5.0★</p><p class="stat-label">average rating</p></div>
+              <div><p class="stat-num">€0</p><p class="stat-label">to first call</p></div>
             </div>
           </div>
-          <svg class="hero-clover-solid" aria-hidden="true" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle class="leaf-top"    cx="0"   cy="-22" r="22"/>
-            <circle class="leaf-right"  cx="22"  cy="0"   r="22"/>
-            <circle class="leaf-bottom" cx="0"   cy="22"  r="22"/>
-            <circle class="leaf-left"   cx="-22" cy="0"   r="22"/>
-            <circle class="leaf-center" cx="0"   cy="0"   r="5"/>
-          </svg>
+          <div class="service-stack" aria-hidden="true">
+            <div class="service-stack-header">
+              <span class="stack-title">All services — one team</span>
+              <span class="stack-pill"><span class="dot"></span> All-in-one</span>
+            </div>
+            <a href="/en/website-development.html" class="stack-row">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">Web development</span>
+              <span class="stack-price">from €380</span>
+            </a>
+            <a href="/en/seo-services.html" class="stack-row">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">SEO optimization</span>
+              <span class="stack-price">from €250/mo</span>
+            </a>
+            <a href="/en/online-marketing.html" class="stack-row">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">Marketing campaigns</span>
+              <span class="stack-price">from €300/mo</span>
+            </a>
+            <a href="/en/website-maintenance.html" class="stack-row featured">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">AI automation <span class="stack-badge">new</span></span>
+              <span class="stack-price">Custom</span>
+            </a>
+            <div class="service-stack-footer">
+              + Maintenance from €60/mo always included
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP — social proof bar right under hero -->
+    <section class="trust-strip" aria-label="Trusted by">
+      <div class="container">
+        <p class="trust-eyebrow">Trusted by</p>
+        <div class="trust-row">
+          <span class="trust-pill">★ 5.0 on Google</span>
+          <span class="trust-pill">40+ active clients</span>
+          <span class="trust-pill">15+ years experience</span>
+          <span class="trust-pill">300+ websites built</span>
+          <span class="trust-pill">Belgrade · Novi Sad · Pančevo</span>
+          <span class="trust-pill">No contract obligation</span>
+        </div>
+        <blockquote class="trust-quote">
+          "Serious company. All my requests were fulfilled."
+          <cite>— Dušan Marković, client</cite>
+        </blockquote>
       </div>
     </section>
 
@@ -337,33 +383,4 @@
             <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
             <blockquote>"Full praise for a correct and professional collaboration!"</blockquote>
             <p class="reviewer">Tajci Lalić</p>
-            <p class="reviewer-meta">Client · 2014</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA BAND -->
-    <section>
-      <div class="container">
-        <div class="cta-band">
-          <h2>Let's talk about your project.</h2>
-          <p>30 minutes of free consultation — no commitment. We assess your current state and give you a concrete plan.</p>
-          <a href="/en/contact.html" class="btn btn-primary">Book via Calendly</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <section class="team-bar" aria-label="Our team">
-    <div class="container">
-      <div class="team-bar-header">
-        <p class="section-eyebrow">Our team</p>
-        <h3>The people behind the work.</h3>
-        <p class="team-bar-sub">A team of five with over 15 years of experience.</p>
-      </div>
-      <div class="team-bar-row">
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Marko-Covic.png" alt="Marko Čović — CEO" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Marko Čović</p><p class="role" itemprop="jobTitle">CEO</p></div>
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Natasa-Vujovic.png" alt="Nataša Vujović — Developer" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Nataša Vujović</p><p class="role" itemprop="jobTitle">Developer</p></div>
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Danijela-Maksimovic.png" alt="Danijela Maksimović — Web Designer" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Danijela Maksimović</p><p class="role" itemprop="jobTitle">Web Designer</p></div>
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class
+            <

@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=14">
+  <link rel="stylesheet" href="/styles.css?v=15">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -64,25 +64,76 @@
   </header>
 
   <main id="main">
-    <section class="hero">
+    <!-- HERO — Phase 8: outcome-focused with service stack visual -->
+    <section class="service-hero">
       <div class="container">
-        <div class="hero-split">
-          <div class="hero-text">
+        <div class="hero-grid">
+          <div>
             <div class="hero-pills">
-              <span class="hero-pill green">贝尔格莱德 · 自2010</span>
-              <span class="hero-pill">数字机构</span>
+              <span class="hero-pill green">数字代理 · 贝尔格莱德</span>
+              <span class="hero-pill">15+ 年经验</span>
             </div>
-            <h1 class="hero-headline">幸运在于<em class="green">四叶</em>。<span class="line-2">增长在于四个<em>渠道</em>。</span></h1>
-            <p class="hero-lead">网站建设、SEO、付费广告和维护 — 四个学科,一个团队,可衡量的结果。15+年帮助塞尔维亚和地区企业在线增长。</p>
+            <h1>您专注业务。<em class="green">我们专注数字化</em>。</h1>
+            <p class="hero-lead">销售型网站、排名靠前的SEO、回报投资的营销活动、释放时间的AI — 全部一站式。无需三家代理、无技术混乱、无借口。您专注您最擅长的事。</p>
             <div class="hero-cta-row">
               <a href="/zh/lianxi.html" class="btn btn-dark">预约免费咨询 →</a>
-              <a href="#fuwu" class="btn btn-secondary">查看服务 ↓</a>
+              <a href="#fuwu" class="btn btn-secondary">查看我们的服务</a>
+            </div>
+            <div class="hero-stats-inline">
+              <div><p class="stat-num">40+</p><p class="stat-label">活跃客户</p></div>
+              <div><p class="stat-num">5.0★</p><p class="stat-label">平均评分</p></div>
+              <div><p class="stat-num">€0</p><p class="stat-label">首次咨询</p></div>
             </div>
           </div>
-          <svg class="hero-clover-solid" aria-hidden="true" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle class="leaf-top" cx="0" cy="-22" r="22"/><circle class="leaf-right" cx="22" cy="0" r="22"/><circle class="leaf-bottom" cx="0" cy="22" r="22"/><circle class="leaf-left" cx="-22" cy="0" r="22"/><circle class="leaf-center" cx="0" cy="0" r="5"/>
-          </svg>
+          <div class="service-stack" aria-hidden="true">
+            <div class="service-stack-header">
+              <span class="stack-title">所有服务 — 一个团队</span>
+              <span class="stack-pill"><span class="dot"></span> All-in-one</span>
+            </div>
+            <a href="/zh/wangzhan-jianshe.html" class="stack-row">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">网站建设</span>
+              <span class="stack-price">€380起</span>
+            </a>
+            <a href="/zh/seo-youhua.html" class="stack-row">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">SEO优化</span>
+              <span class="stack-price">€250/月起</span>
+            </a>
+            <a href="/zh/wangluo-yingxiao.html" class="stack-row">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">营销活动</span>
+              <span class="stack-price">€300/月起</span>
+            </a>
+            <a href="/zh/wangzhan-weihu.html" class="stack-row featured">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">AI自动化 <span class="stack-badge">新</span></span>
+              <span class="stack-price">定制</span>
+            </a>
+            <div class="service-stack-footer">
+              + 维护€60/月起,始终包含
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="trust-strip" aria-label="信任我们">
+      <div class="container">
+        <p class="trust-eyebrow">信任我们</p>
+        <div class="trust-row">
+          <span class="trust-pill">★ Google 5.0</span>
+          <span class="trust-pill">40+ 活跃客户</span>
+          <span class="trust-pill">15+ 年经验</span>
+          <span class="trust-pill">300+ 已建网站</span>
+          <span class="trust-pill">贝尔格莱德 · 诺维萨德 · 潘切沃</span>
+          <span class="trust-pill">无合同义务</span>
+        </div>
+        <blockquote class="trust-quote">
+          "认真的公司。我的所有要求都得到满足。"
+          <cite>— Dušan Marković,客户</cite>
+        </blockquote>
       </div>
     </section>
 
@@ -155,28 +206,4 @@
           <p class="reviews-meta"><a href="https://maps.app.goo.gl/Vhd9KJZTwp1xYk1q7" rel="noopener">查看所有评价 →</a></p>
         </div>
         <div class="reviews-grid">
-          <article class="review-card"><div class="stars" aria-label="5星满分">★★★★★</div><blockquote>"严肃的公司。我所有的要求都得到了满足。非常满意。"</blockquote><p class="reviewer">Dušan Marković</p><p class="reviewer-meta">客户 · 2017</p></article>
-          <article class="review-card"><div class="stars" aria-label="5星满分">★★★★★</div><blockquote>"在各方面都满意 — 强烈推荐!"</blockquote><p class="reviewer">Milan Damnjanović</p><p class="reviewer-meta">客户 · 2017</p></article>
-          <article class="review-card"><div class="stars" aria-label="5星满分">★★★★★</div><blockquote>"对正确和专业的合作给予最高的赞扬!"</blockquote><p class="reviewer">Tajci Lalić</p><p class="reviewer-meta">客户 · 2014</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="cta-band">
-          <h2>谈谈您的项目。</h2>
-          <p>30分钟免费咨询 — 无承诺。我们评估您的现状并提供具体计划。</p>
-          <a href="/zh/lianxi.html" class="btn btn-primary">通过Calendly预约</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <section class="team-bar" aria-label="我们的团队">
-    <div class="container">
-      <div class="team-bar-header"><p class="section-eyebrow">我们的团队</p><h3>工作背后的人。</h3><p class="team-bar-sub">五人团队,15年以上经验。</p></div>
-      <div class="team-bar-row">
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Marko-Covic.png" alt="Marko Čović — CEO" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Marko Čović</p><p class="role" itemprop="jobTitle">CEO</p></div>
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Natasa-Vujovic.png" alt="Nataša Vujović — 开发人员" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Nataša Vujović</p><p class="role" itemprop="jobTitle">开发人员</p></div>
-        <div class="team-bar-member" 
+          <article class="review-card"><div class="stars" aria-label="5星满分">★★★★★

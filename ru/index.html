@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=14">
+  <link rel="stylesheet" href="/styles.css?v=15">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -64,25 +64,76 @@
   </header>
 
   <main id="main">
-    <section class="hero">
+    <!-- HERO — Phase 8: outcome-focused with service stack visual -->
+    <section class="service-hero">
       <div class="container">
-        <div class="hero-split">
-          <div class="hero-text">
+        <div class="hero-grid">
+          <div>
             <div class="hero-pills">
-              <span class="hero-pill green">Белград · с 2010</span>
-              <span class="hero-pill">Digital-агентство</span>
+              <span class="hero-pill green">Digital-агентство · Белград</span>
+              <span class="hero-pill">15+ лет опыта</span>
             </div>
-            <h1 class="hero-headline">Удача — в <em class="green">четырёх листьях</em>.<span class="line-2">Рост — в четырёх <em>каналах</em>.</span></h1>
-            <p class="hero-lead">Разработка сайтов, SEO, платные кампании и поддержка — четыре дисциплины, одна команда, измеримые результаты. 15+ лет помогаем бизнесу в Сербии и регионе расти онлайн.</p>
+            <h1>Вы ведёте бизнес. <em class="green">Мы ведём digital</em>.</h1>
+            <p class="hero-lead">Сайт, который продаёт, SEO, который ранжируется, кампании, которые возвращают вложения, AI, который освобождает время — всё в одном месте. Без трёх агентств, без технического хаоса, без отговорок. Вы сосредотачиваетесь на том, что делаете лучше всего.</p>
             <div class="hero-cta-row">
-              <a href="/ru/kontakt.html" class="btn btn-dark">Бесплатная консультация →</a>
-              <a href="#uslugi" class="btn btn-secondary">Услуги ↓</a>
+              <a href="/ru/kontakt.html" class="btn btn-dark">Заказать бесплатный звонок →</a>
+              <a href="#uslugi" class="btn btn-secondary">Что мы делаем</a>
+            </div>
+            <div class="hero-stats-inline">
+              <div><p class="stat-num">40+</p><p class="stat-label">активных клиентов</p></div>
+              <div><p class="stat-num">5.0★</p><p class="stat-label">средняя оценка</p></div>
+              <div><p class="stat-num">€0</p><p class="stat-label">до первого звонка</p></div>
             </div>
           </div>
-          <svg class="hero-clover-solid" aria-hidden="true" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle class="leaf-top" cx="0" cy="-22" r="22"/><circle class="leaf-right" cx="22" cy="0" r="22"/><circle class="leaf-bottom" cx="0" cy="22" r="22"/><circle class="leaf-left" cx="-22" cy="0" r="22"/><circle class="leaf-center" cx="0" cy="0" r="5"/>
-          </svg>
+          <div class="service-stack" aria-hidden="true">
+            <div class="service-stack-header">
+              <span class="stack-title">Все услуги — одна команда</span>
+              <span class="stack-pill"><span class="dot"></span> All-in-one</span>
+            </div>
+            <a href="/ru/razrabotka-saytov.html" class="stack-row">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">Разработка сайтов</span>
+              <span class="stack-price">от €380</span>
+            </a>
+            <a href="/ru/seo-prodvizhenie.html" class="stack-row">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">SEO продвижение</span>
+              <span class="stack-price">от €250/мес</span>
+            </a>
+            <a href="/ru/internet-marketing.html" class="stack-row">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">Маркетинг кампании</span>
+              <span class="stack-price">от €300/мес</span>
+            </a>
+            <a href="/ru/podderzhka-saytov.html" class="stack-row featured">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">AI автоматизация <span class="stack-badge">ново</span></span>
+              <span class="stack-price">Custom</span>
+            </a>
+            <div class="service-stack-footer">
+              + Поддержка от €60/мес всегда включена
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="trust-strip" aria-label="Нам доверяют">
+      <div class="container">
+        <p class="trust-eyebrow">Нам доверяют</p>
+        <div class="trust-row">
+          <span class="trust-pill">★ 5.0 на Google</span>
+          <span class="trust-pill">40+ активных клиентов</span>
+          <span class="trust-pill">15+ лет опыта</span>
+          <span class="trust-pill">300+ созданных сайтов</span>
+          <span class="trust-pill">Белград · Нови-Сад · Панчево</span>
+          <span class="trust-pill">Без договорных обязательств</span>
+        </div>
+        <blockquote class="trust-quote">
+          "Серьёзная компания. Все мои запросы выполнены."
+          <cite>— Душан Маркович, клиент</cite>
+        </blockquote>
       </div>
     </section>
 
@@ -152,30 +203,4 @@
       <div class="container">
         <div class="reviews-head">
           <div><p class="section-eyebrow">Отзывы Google</p><h2><em class="green">5.0</em> ★ на Google.</h2></div>
-          <p class="reviews-meta"><a href="https://maps.app.goo.gl/Vhd9KJZTwp1xYk1q7" rel="noopener">Все отзывы →</a></p>
-        </div>
-        <div class="reviews-grid">
-          <article class="review-card"><div class="stars" aria-label="5 из 5 звёзд">★★★★★</div><blockquote>«Серьёзная компания. Все мои требования выполнены. Очень доволен.»</blockquote><p class="reviewer">Душан Маркович</p><p class="reviewer-meta">Клиент · 2017</p></article>
-          <article class="review-card"><div class="stars" aria-label="5 из 5 звёзд">★★★★★</div><blockquote>«Доволен во всех отношениях — настоятельно рекомендую!»</blockquote><p class="reviewer">Милан Дамнянович</p><p class="reviewer-meta">Клиент · 2017</p></article>
-          <article class="review-card"><div class="stars" aria-label="5 из 5 звёзд">★★★★★</div><blockquote>«Все похвалы за корректное и профессиональное сотрудничество!»</blockquote><p class="reviewer">Тайци Лалич</p><p class="reviewer-meta">Клиент · 2014</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="cta-band">
-          <h2>Поговорим о вашем проекте.</h2>
-          <p>30 минут бесплатной консультации — без обязательств. Оценим текущее состояние и дадим конкретный план.</p>
-          <a href="/ru/kontakt.html" class="btn btn-primary">Записаться через Calendly</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <section class="team-bar" aria-label="Наша команда">
-    <div class="container">
-      <div class="team-bar-header"><p class="section-eyebrow">Наша команда</p><h3>Люди за работой.</h3><p class="team-bar-sub">Команда из пяти человек с опытом более 15 лет.</p></div>
-      <div class="team-bar-row">
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Marko-Covic.png" alt="Marko Čović — CEO" itemprop="image" loading="lazy" width="500" height="500"></div><p class="name" itemprop="name">Marko Čović</p><p class="role" itemprop="jobTitle">CEO</p></div>
-        <div class="team-bar-member" itemscope itemtype="https://schema.org/Person"><div class="photo-wrap"><img src="https://happymedia.rs/wp-content/uploads/2026/04/Natasa-Vujovic.png" alt="Nataša Vujović — Разра
+          <p class="reviews-meta"><a href="https://maps.app.goo.g

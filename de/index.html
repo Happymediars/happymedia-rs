@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=14">
+  <link rel="stylesheet" href="/styles.css?v=15">
 
   <script type="application/ld+json">
   {
@@ -87,32 +87,78 @@
   </header>
 
   <main id="main">
-    <!-- HERO — split -->
-    <section class="hero">
+    <!-- HERO — Phase 8: outcome-focused with service stack visual -->
+    <section class="service-hero">
       <div class="container">
-        <div class="hero-split">
-          <div class="hero-text">
+        <div class="hero-grid">
+          <div>
             <div class="hero-pills">
-              <span class="hero-pill green">Belgrad · seit 2010</span>
-              <span class="hero-pill">Digitalagentur</span>
+              <span class="hero-pill green">Digitalagentur · Belgrad</span>
+              <span class="hero-pill">15+ Jahre Erfahrung</span>
             </div>
-            <h1 class="hero-headline">
-              Glück hat <em class="green">vier Blätter</em>.<span class="line-2">Wachstum hat vier <em>Kanäle</em>.</span>
+            <h1>
+              Sie führen das Unternehmen. <em class="green">Wir führen das Digitale</em>.
             </h1>
-            <p class="hero-lead">Webseiten-Erstellung, SEO, bezahlte Kampagnen und Wartung — vier Disziplinen, ein Team, messbare Ergebnisse. 15+ Jahre helfen wir Unternehmen in Serbien und der Region beim Online-Wachstum.</p>
+            <p class="hero-lead">Webseiten, die verkaufen, SEO, das rangiert, Kampagnen, die sich rechnen, KI, die Zeit freisetzt — alles aus einer Hand. Keine drei Agenturen, kein technisches Chaos, keine Ausreden. Sie konzentrieren sich auf das, was Sie am besten können.</p>
             <div class="hero-cta-row">
-              <a href="/de/kontakt.html" class="btn btn-dark">Kostenlose Beratung vereinbaren →</a>
-              <a href="#leistungen" class="btn btn-secondary">Leistungen ↓</a>
+              <a href="/de/kontakt.html" class="btn btn-dark">Kostenloses Gespräch buchen →</a>
+              <a href="#leistungen" class="btn btn-secondary">Was wir tun</a>
+            </div>
+            <div class="hero-stats-inline">
+              <div><p class="stat-num">40+</p><p class="stat-label">aktive Kunden</p></div>
+              <div><p class="stat-num">5.0★</p><p class="stat-label">Durchschnittsbewertung</p></div>
+              <div><p class="stat-num">€0</p><p class="stat-label">bis zum ersten Gespräch</p></div>
             </div>
           </div>
-          <svg class="hero-clover-solid" aria-hidden="true" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle class="leaf-top" cx="0" cy="-22" r="22"/>
-            <circle class="leaf-right" cx="22" cy="0" r="22"/>
-            <circle class="leaf-bottom" cx="0" cy="22" r="22"/>
-            <circle class="leaf-left" cx="-22" cy="0" r="22"/>
-            <circle class="leaf-center" cx="0" cy="0" r="5"/>
-          </svg>
+          <div class="service-stack" aria-hidden="true">
+            <div class="service-stack-header">
+              <span class="stack-title">Alle Leistungen — ein Team</span>
+              <span class="stack-pill"><span class="dot"></span> All-in-one</span>
+            </div>
+            <a href="/de/webseiten-erstellung.html" class="stack-row">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">Webseiten-Erstellung</span>
+              <span class="stack-price">ab €380</span>
+            </a>
+            <a href="/de/seo-optimierung.html" class="stack-row">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">SEO-Optimierung</span>
+              <span class="stack-price">ab €250/Mon</span>
+            </a>
+            <a href="/de/online-marketing.html" class="stack-row">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">Marketing-Kampagnen</span>
+              <span class="stack-price">ab €300/Mon</span>
+            </a>
+            <a href="/de/webseiten-wartung.html" class="stack-row featured">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">KI-Automatisierung <span class="stack-badge">neu</span></span>
+              <span class="stack-price">Custom</span>
+            </a>
+            <div class="service-stack-footer">
+              + Wartung ab €60/Mon immer inklusive
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP -->
+    <section class="trust-strip" aria-label="Vertrauen uns">
+      <div class="container">
+        <p class="trust-eyebrow">Vertrauen uns</p>
+        <div class="trust-row">
+          <span class="trust-pill">★ 5.0 auf Google</span>
+          <span class="trust-pill">40+ aktive Kunden</span>
+          <span class="trust-pill">15+ Jahre Erfahrung</span>
+          <span class="trust-pill">300+ erstellte Webseiten</span>
+          <span class="trust-pill">Belgrad · Novi Sad · Pančevo</span>
+          <span class="trust-pill">Keine Vertragsbindung</span>
+        </div>
+        <blockquote class="trust-quote">
+          "Seriöses Unternehmen. Alle meine Anfragen wurden erfüllt."
+          <cite>— Dušan Marković, Kunde</cite>
+        </blockquote>
       </div>
     </section>
 
@@ -190,27 +236,4 @@
     <!-- PROCESS — dark -->
     <section class="section-dark process-dark">
       <div class="container">
-        <div class="process-header">
-          <p class="section-eyebrow">So arbeiten wir</p>
-          <h2>Vorhersehbarer Prozess. <em class="gold">Keine Überraschungen</em>.</h2>
-        </div>
-        <div class="process-grid">
-          <div class="process-step"><p class="step-num">Schritt 01</p><h3>Kostenlose Beratung</h3><p>Wir besprechen Ziele vor jedem Angebot. 30 Minuten, unverbindlich.</p></div>
-          <div class="process-step"><p class="step-num">Schritt 02</p><h3>Klares Angebot</h3><p>Festpreise pro Phase. Keine versteckten Kosten oder "Extra"-Rechnungen.</p></div>
-          <div class="process-step"><p class="step-num">Schritt 03</p><h3>Design und Entwicklung</h3><p>Direkte Kommunikation, keine "Black Box". Updates bei jedem Schritt.</p></div>
-          <div class="process-step"><p class="step-num">Schritt 04</p><h3>Launch und Wachstum</h3><p>SEO, Kampagnen, Wartung. Monatliche Berichte aus GA4 und Search Console.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- REVIEWS -->
-    <section class="reviews-stripe">
-      <div class="container">
-        <div class="reviews-head">
-          <div><p class="section-eyebrow">Google Bewertungen</p><h2><em class="green">5.0</em> ★ bei Google.</h2></div>
-          <p class="reviews-meta"><a href="https://maps.app.goo.gl/Vhd9KJZTwp1xYk1q7" rel="noopener">Alle Bewertungen ansehen →</a></p>
-        </div>
-        <div class="reviews-grid">
-          <article class="review-card"><div class="stars" aria-label="5 von 5 Sternen">★★★★★</div><blockquote>"Seriöses Unternehmen. Alle meine Anforderungen wurden erfüllt. Sehr zufrieden."</blockquote><p class="reviewer">Dušan Marković</p><p class="reviewer-meta">Kunde · 2017</p></article>
-          <article class="review-card"><div class="stars" aria-label="5 von 5 Sternen">★★★★★</div><blockquote>"In jeder Hinsicht zufrieden — sehr empfehlenswert!"</blockquote><p class="reviewer">Milan Damnjanović</p><p class="reviewer-meta">Kunde · 2017</p></article>
-          <article class="review-card"><div class="stars" aria-label="5 von 5 Sternen">★★★★★</div><blockquote>"Volles Lob für eine korrekte und professionelle Zusammenarbeit!"</blockquote><p class="reviewer">Tajci Lalić</p><p class="reviewer-me
+        <div cla

@@ -2256,6 +2256,180 @@ html[lang="zh-Hans"] h3 em.gold { font-style: normal; color: var(--accent-gold);
   width: 65%;
 }
 
+/* ─── Service-stack mockup — homepage hero right column ─────────────────────
+   Vertical "all-in-one" card with 4 service rows. Replaces the lone clover.   */
+.service-stack {
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  box-shadow: 0 24px 60px -28px rgba(0,0,0,.18), 0 4px 12px -4px rgba(0,0,0,.06);
+  overflow: hidden;
+  align-self: center;
+  width: 100%;
+  max-width: 460px;
+  justify-self: end;
+}
+.service-stack-header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--surface-alt);
+}
+.service-stack .stack-title {
+  font-family: var(--font-heading);
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  color: var(--text);
+  text-transform: uppercase;
+}
+.service-stack .stack-pill {
+  display: inline-flex; align-items: center; gap: .4rem;
+  font-family: var(--font-heading);
+  font-size: .62rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  color: var(--accent-green);
+  text-transform: uppercase;
+}
+.service-stack .stack-pill .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent-green);
+  box-shadow: 0 0 0 3px rgba(45,90,61,.18);
+}
+.service-stack .stack-row {
+  display: grid;
+  grid-template-columns: 22px 1fr auto;
+  align-items: center;
+  gap: .9rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  transition: background .18s ease, transform .18s ease;
+}
+.service-stack .stack-row:hover {
+  background: var(--surface-alt);
+}
+.service-stack .stack-row:last-of-type { border-bottom: none; }
+.service-stack .stack-check {
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: var(--accent-green);
+  color: #fff;
+  font-size: .72rem;
+  font-weight: 700;
+  display: inline-flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.service-stack .stack-name {
+  font-family: var(--font-heading);
+  font-size: .95rem;
+  font-weight: 500;
+  color: var(--text);
+}
+.service-stack .stack-badge {
+  display: inline-block;
+  margin-left: .35rem;
+  font-family: var(--font-heading);
+  font-size: .55rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  background: var(--accent-gold);
+  color: #fff;
+  padding: .15rem .4rem;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+.service-stack .stack-price {
+  font-family: ui-monospace, SFMono-Regular, monospace;
+  font-size: .78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+.service-stack .stack-row.featured {
+  background: linear-gradient(135deg, rgba(45,90,61,.04) 0%, rgba(196,165,123,.06) 100%);
+}
+.service-stack .stack-row.featured .stack-check {
+  background: var(--accent-gold);
+}
+.service-stack-footer {
+  padding: .85rem 1.5rem;
+  background: #1a1a1a;
+  color: rgba(255,255,255,.85);
+  font-family: var(--font-heading);
+  font-size: .75rem;
+  text-align: center;
+  letter-spacing: .01em;
+}
+
+/* ─── Trust strip — social proof bar right under hero ───────────────────── */
+.trust-strip {
+  padding: clamp(2rem, 5vw, 3.5rem) 0 clamp(2.5rem, 6vw, 4.5rem);
+  background: var(--surface-alt);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.trust-strip .trust-eyebrow {
+  font-family: var(--font-heading);
+  font-size: .68rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 0 0 1.5rem;
+}
+.trust-strip .trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: .65rem 1rem;
+  margin-bottom: 2rem;
+}
+.trust-strip .trust-pill {
+  display: inline-flex; align-items: center;
+  font-family: var(--font-heading);
+  font-size: .82rem;
+  font-weight: 500;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: .55rem 1rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.trust-strip .trust-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  line-height: 1.45;
+  color: var(--text);
+  text-align: center;
+  max-width: 56ch;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+}
+.trust-strip .trust-quote cite {
+  display: block;
+  font-family: var(--font-heading);
+  font-style: normal;
+  font-size: .78rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-top: .8rem;
+  letter-spacing: .02em;
+}
+
+/* Mobile — service stack stacks naturally below text, trust strip wraps */
+@media (max-width: 820px) {
+  .service-stack { max-width: 100%; justify-self: stretch; margin-top: 1.5rem; }
+  .trust-strip .trust-quote { font-size: 1.1rem; }
+}
+
 /* Why-list — numbered editorial list (right column of why-section) */
 .why-list { margin: 0; padding: 0; }
 .why-list .why-item {

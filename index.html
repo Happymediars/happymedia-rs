@@ -47,7 +47,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css?v=14">
+  <link rel="stylesheet" href="styles.css?v=15">
 
   <!-- JSON-LD: Organization -->
   <script type="application/ld+json">
@@ -212,32 +212,78 @@
 
   <main id="main">
 
-    <!-- HERO — Phase 5 editorial redesign: split (text + solid clover) -->
-    <section class="hero">
+    <!-- HERO — Phase 8: outcome-focused with service stack visual -->
+    <section class="service-hero">
       <div class="container">
-        <div class="hero-split">
-          <div class="hero-text">
+        <div class="hero-grid">
+          <div>
             <div class="hero-pills">
-              <span class="hero-pill green">Beograd · od 2010</span>
-              <span class="hero-pill">Agencija od 2010</span>
+              <span class="hero-pill green">Digitalna agencija · Beograd</span>
+              <span class="hero-pill">15+ godina iskustva</span>
             </div>
-            <h1 class="hero-headline">
-              Sreća dolazi u <em class="green">četiri lista</em>.<span class="line-2">Rast dolazi u četiri <em>kanala</em>.</span>
+            <h1>
+              Vi vodite biznis. <em class="green">Mi vodimo digital</em>.
             </h1>
-            <p class="hero-lead">Izrada sajtova, SEO, plaćene kampanje i AI automatizacija — četiri discipline, jedan tim, merljiv rezultat. 15+ godina pravimo da firme u Srbiji rastu online.</p>
+            <p class="hero-lead">Sajt koji prodaje, SEO koji rangira, kampanje koje vraćaju ulog, AI koji oslobađa vreme — sve na jednom mestu. Bez tri agencije, bez tehničkog haosa, bez izgovora. Vi se fokusirate na ono što radite najbolje.</p>
             <div class="hero-cta-row">
-              <a href="kontakt.html" class="btn btn-dark">Zakaži besplatne konsultacije →</a>
-              <a href="#usluge" class="btn btn-secondary">Pogledaj usluge ↓</a>
+              <a href="kontakt.html" class="btn btn-dark">Zakaži besplatni razgovor →</a>
+              <a href="#usluge" class="btn btn-secondary">Vidi šta radimo</a>
+            </div>
+            <div class="hero-stats-inline">
+              <div><p class="stat-num">40+</p><p class="stat-label">aktivnih klijenata</p></div>
+              <div><p class="stat-num">5.0★</p><p class="stat-label">prosečna ocena</p></div>
+              <div><p class="stat-num">€0</p><p class="stat-label">do prvog razgovora</p></div>
             </div>
           </div>
-          <svg class="hero-clover-solid" aria-hidden="true" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle class="leaf-top"    cx="0"   cy="-22" r="22"/>
-            <circle class="leaf-right"  cx="22"  cy="0"   r="22"/>
-            <circle class="leaf-bottom" cx="0"   cy="22"  r="22"/>
-            <circle class="leaf-left"   cx="-22" cy="0"   r="22"/>
-            <circle class="leaf-center" cx="0"   cy="0"   r="5"/>
-          </svg>
+          <div class="service-stack" aria-hidden="true">
+            <div class="service-stack-header">
+              <span class="stack-title">Sve usluge — jedan tim</span>
+              <span class="stack-pill"><span class="dot"></span> All-in-one</span>
+            </div>
+            <a href="izrada-sajtova.html" class="stack-row">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">Izrada sajtova</span>
+              <span class="stack-price">od €380</span>
+            </a>
+            <a href="optimizacija-sajta.html" class="stack-row">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">SEO optimizacija</span>
+              <span class="stack-price">od €250/mes</span>
+            </a>
+            <a href="online-marketing.html" class="stack-row">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">Marketing kampanje</span>
+              <span class="stack-price">od €300/mes</span>
+            </a>
+            <a href="ai-automatizacija.html" class="stack-row featured">
+              <span class="stack-check">✓</span>
+              <span class="stack-name">AI automatizacija <span class="stack-badge">novo</span></span>
+              <span class="stack-price">Custom</span>
+            </a>
+            <div class="service-stack-footer">
+              + Održavanje već od €60/mes uvek uključeno
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- TRUST STRIP — social proof bar right under hero -->
+    <section class="trust-strip" aria-label="Veruju nam">
+      <div class="container">
+        <p class="trust-eyebrow">Veruju nam</p>
+        <div class="trust-row">
+          <span class="trust-pill">★ 5.0 na Google-u</span>
+          <span class="trust-pill">40+ aktivnih klijenata</span>
+          <span class="trust-pill">15+ godina iskustva</span>
+          <span class="trust-pill">300+ izrađenih sajtova</span>
+          <span class="trust-pill">Beograd · Novi Sad · Pančevo</span>
+          <span class="trust-pill">Bez ugovorne obaveze</span>
+        </div>
+        <blockquote class="trust-quote">
+          "Ozbiljna kompanija. Svi moji zahtevi su ispunjeni."
+          <cite>— Dušan Marković, klijent</cite>
+        </blockquote>
       </div>
     </section>
 
